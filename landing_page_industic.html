@@ -1,0 +1,876 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="Landing page institucional da LF PAK Equipamentos Industriais para soluções em automação industrial, PLC, painéis elétricos e integração de sistemas." name="description"/>
+<link href="industic/assets/7469351dee093d00_favicon.png" rel="icon"/>
+<title>LF PAK Equipamentos Industriais | Automação Industrial</title>
+<link href="industic/assets/e2da548ef716b1d7_css.css" rel="stylesheet"/>
+<link href="industic/assets/2928f6e8fd44ab8d_libraries.css" rel="stylesheet"/>
+<link href="industic/assets/faf6356a07da485b_style.css" rel="stylesheet"/>
+<style>
+:root {
+  --brand-primary: #005B9F;
+  --brand-secondary: #0077C3;
+  --brand-accent: #0090E6;
+  --brand-gray-dark: #666666;
+  --brand-gray-medium: #8C8C8C;
+  --brand-gray-light: #D9D9D9;
+  --brand-white: #FFFFFF;
+  --brand-background: #F7F8FA;
+  --brand-text: #333333;
+  --shadow: 0 14px 32px rgba(0, 91, 159, .11);
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  background: var(--brand-white);
+  color: var(--brand-text);
+  font-family: "Roboto", Arial, sans-serif;
+  line-height: 1.65;
+}
+a { color: var(--brand-secondary); transition: color .2s ease, background .2s ease, border-color .2s ease, transform .2s ease; }
+a:hover, a:focus { color: var(--brand-accent); text-decoration: none; }
+img { max-width: 100%; }
+.container { max-width: 1170px; }
+.section { padding: 96px 0; }
+.section--gray { background: var(--brand-background); }
+.section__eyebrow {
+  color: var(--brand-primary);
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 0;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+}
+.section__title {
+  color: var(--brand-text);
+  font-size: 42px;
+  font-weight: 800;
+  line-height: 1.12;
+  margin-bottom: 18px;
+}
+.section__text {
+  color: var(--brand-gray-dark);
+  font-size: 16px;
+  margin-bottom: 0;
+}
+.btn {
+  align-items: center;
+  border-radius: 0;
+  display: inline-flex;
+  font-size: 14px;
+  font-weight: 800;
+  gap: 10px;
+  justify-content: center;
+  min-height: 54px;
+  padding: 0 28px;
+  text-transform: capitalize;
+}
+.btn__primary {
+  background: var(--brand-primary);
+  border: 2px solid var(--brand-primary);
+  color: var(--brand-white);
+}
+.btn__primary:hover, .btn__primary:focus {
+  background: var(--brand-secondary);
+  border-color: var(--brand-secondary);
+  color: var(--brand-white);
+  transform: translateY(-2px);
+}
+.btn__white {
+  background: var(--brand-white);
+  border: 2px solid var(--brand-white);
+  color: var(--brand-primary);
+}
+.btn__white:hover, .btn__white:focus {
+  background: transparent;
+  border-color: var(--brand-white);
+  color: var(--brand-white);
+}
+.btn__outline {
+  background: transparent;
+  border: 2px solid var(--brand-gray-light);
+  color: var(--brand-primary);
+}
+.btn__outline:hover, .btn__outline:focus {
+  background: var(--brand-primary);
+  border-color: var(--brand-primary);
+  color: var(--brand-white);
+  transform: translateY(-2px);
+}
+.hero .btn__outline {
+  border-color: rgba(255, 255, 255, .72);
+  color: var(--brand-white);
+}
+.hero .btn__outline:hover, .hero .btn__outline:focus {
+  background: var(--brand-white);
+  border-color: var(--brand-white);
+  color: var(--brand-primary);
+}
+.site-header {
+  background: var(--brand-white);
+  border-bottom: 1px solid var(--brand-gray-light);
+  left: 0;
+  position: sticky;
+  right: 0;
+  top: 0;
+  z-index: 1000;
+}
+.header__inner {
+  align-items: center;
+  display: flex;
+  gap: 28px;
+  justify-content: space-between;
+  min-height: 86px;
+}
+.brand img {
+  background: var(--brand-white);
+  display: block;
+  max-height: 56px;
+  width: auto;
+}
+.nav {
+  align-items: center;
+  display: flex;
+  gap: 4px;
+  margin-left: auto;
+}
+.nav a {
+  color: var(--brand-text);
+  font-size: 14px;
+  font-weight: 800;
+  padding: 30px 13px;
+  position: relative;
+}
+.nav a:after {
+  background: var(--brand-accent);
+  bottom: 22px;
+  content: "";
+  height: 3px;
+  left: 13px;
+  opacity: 0;
+  position: absolute;
+  right: 13px;
+  transform: scaleX(.35);
+  transition: opacity .2s ease, transform .2s ease;
+}
+.nav a:hover:after, .nav a:focus:after { opacity: 1; transform: scaleX(1); }
+.header__cta { flex: 0 0 auto; }
+.menu-toggle {
+  align-items: center;
+  background: var(--brand-primary);
+  border: 0;
+  color: var(--brand-white);
+  display: none;
+  height: 46px;
+  justify-content: center;
+  width: 46px;
+}
+.hero {
+  background-image: linear-gradient(90deg, rgba(0, 91, 159, .90), rgba(0, 91, 159, .62)), url("industic/assets/33b158d65185fb3a_2.jpg");
+  background-position: center;
+  background-size: cover;
+  color: var(--brand-white);
+  min-height: 720px;
+  overflow: hidden;
+  position: relative;
+}
+.hero:after {
+  background: linear-gradient(180deg, rgba(0, 91, 159, 0), rgba(0, 91, 159, .22));
+  bottom: 0;
+  content: "";
+  height: 160px;
+  left: 0;
+  position: absolute;
+  right: 0;
+}
+.hero__grid {
+  align-items: center;
+  display: grid;
+  gap: 56px;
+  grid-template-columns: minmax(0, 1.05fr) minmax(320px, .75fr);
+  min-height: 720px;
+  padding: 80px 0 70px;
+  position: relative;
+  z-index: 1;
+}
+.hero__eyebrow {
+  color: var(--brand-white);
+  display: inline-flex;
+  font-size: 13px;
+  font-weight: 800;
+  margin-bottom: 18px;
+  text-transform: uppercase;
+}
+.hero h1 {
+  color: var(--brand-white);
+  font-size: 56px;
+  font-weight: 900;
+  line-height: 1.06;
+  margin-bottom: 24px;
+  max-width: 760px;
+}
+.hero p {
+  color: rgba(255, 255, 255, .9);
+  font-size: 18px;
+  line-height: 1.7;
+  margin-bottom: 34px;
+  max-width: 680px;
+}
+.hero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+.hero__panel {
+  background: var(--brand-white);
+  border-top: 5px solid var(--brand-accent);
+  box-shadow: var(--shadow);
+  color: var(--brand-text);
+  padding: 34px 32px;
+}
+.hero__panel h2 {
+  color: var(--brand-text);
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 1.25;
+  margin-bottom: 16px;
+}
+.hero__panel p {
+  color: var(--brand-gray-dark);
+  font-size: 15px;
+  margin-bottom: 22px;
+}
+.hero__checklist {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.hero__checklist li {
+  align-items: flex-start;
+  color: var(--brand-gray-dark);
+  display: flex;
+  font-weight: 700;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+.hero__checklist i { color: var(--brand-primary); line-height: 1.6; }
+.card-grid {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+.feature-card, .solution-card, .step-card {
+  background: var(--brand-white);
+  border: 1px solid var(--brand-gray-light);
+  min-height: 100%;
+  padding: 32px;
+  transition: box-shadow .2s ease, transform .2s ease, border-color .2s ease;
+}
+.feature-card:hover, .solution-card:hover, .step-card:hover {
+  border-color: rgba(0, 91, 159, .28);
+  box-shadow: var(--shadow);
+  transform: translateY(-4px);
+}
+.card-icon {
+  align-items: center;
+  background: var(--brand-background);
+  color: var(--brand-primary);
+  display: inline-flex;
+  font-size: 38px;
+  height: 74px;
+  justify-content: center;
+  margin-bottom: 24px;
+  width: 74px;
+}
+.feature-card h3, .solution-card h3, .step-card h3 {
+  color: var(--brand-text);
+  font-size: 21px;
+  font-weight: 800;
+  line-height: 1.3;
+  margin-bottom: 12px;
+}
+.feature-card p, .solution-card p, .step-card p {
+  color: var(--brand-gray-dark);
+  margin-bottom: 0;
+}
+.solutions__layout {
+  align-items: center;
+  display: grid;
+  gap: 54px;
+  grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr);
+}
+.image-frame {
+  background: var(--brand-primary);
+  position: relative;
+}
+.image-frame img {
+  display: block;
+  height: 100%;
+  min-height: 520px;
+  object-fit: cover;
+  width: 100%;
+}
+.image-frame__note {
+  background: var(--brand-white);
+  border-left: 5px solid var(--brand-accent);
+  bottom: 28px;
+  box-shadow: var(--shadow);
+  left: 28px;
+  max-width: 330px;
+  padding: 24px;
+  position: absolute;
+}
+.image-frame__note strong {
+  color: var(--brand-primary);
+  display: block;
+  font-size: 18px;
+  margin-bottom: 6px;
+}
+.image-frame__note span { color: var(--brand-gray-dark); display: block; }
+.solution-list {
+  display: grid;
+  gap: 18px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+.solution-card {
+  padding: 26px;
+}
+.solution-card .card-icon {
+  font-size: 30px;
+  height: 58px;
+  margin-bottom: 18px;
+  width: 58px;
+}
+.applications {
+  background-image: linear-gradient(90deg, rgba(0, 91, 159, .92), rgba(0, 119, 195, .82)), url("industic/assets/a592b6b0aed0c30c_2.jpg");
+  background-position: center;
+  background-size: cover;
+  color: var(--brand-white);
+}
+.applications .section__eyebrow, .applications .section__title, .applications .section__text { color: var(--brand-white); }
+.app-grid {
+  display: grid;
+  gap: 18px;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  margin-top: 42px;
+}
+.app-item {
+  align-items: center;
+  background: rgba(255, 255, 255, .10);
+  border: 1px solid rgba(255, 255, 255, .22);
+  color: var(--brand-white);
+  display: flex;
+  font-weight: 800;
+  gap: 12px;
+  min-height: 82px;
+  padding: 20px;
+}
+.app-item i { color: var(--brand-white); font-size: 24px; }
+.process {
+  counter-reset: step;
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+.step-card {
+  counter-increment: step;
+  position: relative;
+}
+.step-card:before {
+  color: rgba(0, 91, 159, .10);
+  content: counter(step, decimal-leading-zero);
+  font-size: 58px;
+  font-weight: 900;
+  position: absolute;
+  right: 24px;
+  top: 16px;
+}
+.about__grid {
+  align-items: center;
+  display: grid;
+  gap: 54px;
+  grid-template-columns: minmax(0, 1fr) minmax(0, .9fr);
+}
+.about__media {
+  display: grid;
+  gap: 22px;
+  grid-template-columns: 1fr .72fr;
+}
+.about__media img {
+  height: 460px;
+  object-fit: cover;
+  width: 100%;
+}
+.about__media img:last-child {
+  height: 330px;
+  margin-top: 70px;
+}
+.about__points {
+  display: grid;
+  gap: 14px;
+  margin-top: 28px;
+}
+.about__point {
+  align-items: flex-start;
+  display: flex;
+  gap: 12px;
+}
+.about__point i {
+  color: var(--brand-primary);
+  font-size: 18px;
+  margin-top: 5px;
+}
+.about__point span { color: var(--brand-gray-dark); }
+.cta-band {
+  background: var(--brand-primary);
+  color: var(--brand-white);
+  overflow: hidden;
+  position: relative;
+}
+.cta-band:before {
+  background-image: linear-gradient(135deg, rgba(255,255,255,.09) 25%, transparent 25%, transparent 50%, rgba(255,255,255,.09) 50%, rgba(255,255,255,.09) 75%, transparent 75%, transparent);
+  background-size: 28px 28px;
+  content: "";
+  inset: 0;
+  opacity: .22;
+  position: absolute;
+}
+.cta-band__inner {
+  align-items: center;
+  display: grid;
+  gap: 34px;
+  grid-template-columns: minmax(0, 1fr) auto;
+  position: relative;
+}
+.cta-band h2 {
+  color: var(--brand-white);
+  font-size: 40px;
+  font-weight: 900;
+  line-height: 1.15;
+  margin-bottom: 14px;
+}
+.cta-band p {
+  color: rgba(255,255,255,.88);
+  font-size: 17px;
+  margin-bottom: 0;
+  max-width: 760px;
+}
+.footer {
+  background: #063F6C;
+  color: rgba(255,255,255,.82);
+  padding: 70px 0 24px;
+}
+.footer__grid {
+  display: grid;
+  gap: 42px;
+  grid-template-columns: 1.3fr .75fr 1fr;
+  margin-bottom: 42px;
+}
+.footer h3, .footer h4 {
+  color: var(--brand-white);
+  font-weight: 800;
+  margin-bottom: 18px;
+}
+.footer p, .footer li, .footer a { color: rgba(255,255,255,.82); }
+.footer a:hover { color: var(--brand-white); }
+.footer__logo {
+  background: var(--brand-white);
+  display: inline-block;
+  margin-bottom: 22px;
+  padding: 8px 12px;
+}
+.footer__logo img { max-height: 56px; width: auto; }
+.footer ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.footer li { margin-bottom: 10px; }
+.footer__bottom {
+  border-top: 1px solid rgba(255,255,255,.14);
+  color: rgba(255,255,255,.68);
+  font-size: 14px;
+  padding-top: 22px;
+}
+.reveal {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity .55s ease, transform .55s ease;
+}
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (max-width: 1199px) {
+  .hero h1 { font-size: 48px; }
+  .section__title { font-size: 38px; }
+}
+@media (max-width: 991px) {
+  .header__inner { min-height: 76px; }
+  .menu-toggle { display: inline-flex; }
+  .nav {
+    background: var(--brand-white);
+    border-bottom: 1px solid var(--brand-gray-light);
+    box-shadow: var(--shadow);
+    display: none;
+    left: 0;
+    padding: 12px 20px 22px;
+    position: absolute;
+    right: 0;
+    top: 76px;
+  }
+  .nav.is-open { display: block; }
+  .nav a {
+    display: block;
+    padding: 13px 0;
+  }
+  .nav a:after { display: none; }
+  .header__cta { display: none; }
+  .hero, .hero__grid { min-height: auto; }
+  .hero__grid, .solutions__layout, .about__grid, .cta-band__inner {
+    grid-template-columns: 1fr;
+  }
+  .hero__grid { padding: 92px 0 76px; }
+  .hero h1 { font-size: 42px; }
+  .card-grid, .process { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .app-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .footer__grid { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 767px) {
+  .section { padding: 72px 0; }
+  .section__title { font-size: 32px; }
+  .hero h1 { font-size: 36px; }
+  .hero p { font-size: 16px; }
+  .hero__actions { align-items: stretch; flex-direction: column; }
+  .btn { width: 100%; }
+  .card-grid, .solution-list, .process, .app-grid, .footer__grid {
+    grid-template-columns: 1fr;
+  }
+  .image-frame img { min-height: 360px; }
+  .image-frame__note {
+    bottom: auto;
+    left: auto;
+    margin-top: 0;
+    max-width: none;
+    position: static;
+  }
+  .about__media { grid-template-columns: 1fr; }
+  .about__media img, .about__media img:last-child {
+    height: 300px;
+    margin-top: 0;
+  }
+  .cta-band h2 { font-size: 31px; }
+}
+</style>
+</head>
+<body>
+<header class="site-header">
+<div class="container">
+<div class="header__inner">
+<a class="brand" href="#inicio" aria-label="LF PAK Equipamentos Industriais">
+<img alt="Logo horizontal da LF PAK Equipamentos Industriais" src="lfpack_logo_horizontal.png"/>
+</a>
+<nav class="nav" id="siteNav" aria-label="Navegação principal">
+<a href="#inicio">Início</a>
+<a href="#solucoes">Soluções</a>
+<a href="#aplicacoes">Aplicações</a>
+<a href="#sobre">Sobre</a>
+<a href="#contato">Contato</a>
+</nav>
+<a class="btn btn__primary header__cta" href="#contato">Falar com especialista <i class="icon-arrow-right2"></i></a>
+<button class="menu-toggle" type="button" aria-label="Abrir menu" aria-controls="siteNav" aria-expanded="false">
+<i class="fa fa-bars"></i>
+</button>
+</div>
+</div>
+</header>
+
+<main>
+<section class="hero" id="inicio">
+<div class="container">
+<div class="hero__grid">
+<div class="hero__content reveal">
+<span class="hero__eyebrow">Automação industrial, PLC e integração de sistemas</span>
+<h1>Automação industrial para processos mais eficientes, seguros e produtivos</h1>
+<p>A LF PAK desenvolve soluções em PLC, integração de sistemas e modernização de máquinas para empresas que precisam de controle, confiabilidade e performance na produção.</p>
+<div class="hero__actions">
+<a class="btn btn__white" href="#contato">Solicitar orçamento <i class="icon-arrow-right2"></i></a>
+<a class="btn btn__outline" href="#solucoes">Conhecer soluções</a>
+</div>
+</div>
+<aside class="hero__panel reveal" aria-label="Principais frentes técnicas">
+<h2>Controle técnico para operações industriais críticas</h2>
+<p>Projetos voltados para reduzir falhas, integrar equipamentos e dar mais previsibilidade ao processo produtivo.</p>
+<ul class="hero__checklist">
+<li><i class="fa fa-check"></i><span>Programação e adequação de PLC / CLP</span></li>
+<li><i class="fa fa-check"></i><span>Painéis elétricos e comandos industriais</span></li>
+<li><i class="fa fa-check"></i><span>Modernização de máquinas e suporte técnico</span></li>
+</ul>
+</aside>
+</div>
+</div>
+</section>
+
+<section class="section" id="diferenciais">
+<div class="container">
+<div class="row mb-50">
+<div class="col-lg-7">
+<span class="section__eyebrow">Diferenciais</span>
+<h2 class="section__title">Soluções construídas a partir da realidade da sua operação</h2>
+</div>
+<div class="col-lg-5">
+<p class="section__text">A automação precisa conversar com o chão de fábrica, com a manutenção e com as metas de produção. Por isso, cada projeto considera o equipamento, o processo e o nível de controle necessário para operar com segurança.</p>
+</div>
+</div>
+<div class="card-grid">
+<article class="feature-card reveal">
+<span class="card-icon"><i class="icon-management"></i></span>
+<h3>Projetos sob medida</h3>
+<p>Desenvolvimento orientado ao processo real da indústria, evitando soluções genéricas que não se adaptam à operação.</p>
+</article>
+<article class="feature-card reveal">
+<span class="card-icon"><i class="icon-gears"></i></span>
+<h3>Especialistas em PLC / CLP</h3>
+<p>Programação, ajustes, lógica de controle e integração para máquinas que exigem resposta precisa e operação estável.</p>
+</article>
+<article class="feature-card reveal">
+<span class="card-icon"><i class="icon-factory-1"></i></span>
+<h3>Modernização de máquinas</h3>
+<p>Retrofit de equipamentos com foco em confiabilidade, manutenção mais simples e melhor controle do ciclo produtivo.</p>
+</article>
+<article class="feature-card reveal">
+<span class="card-icon"><i class="icon-container"></i></span>
+<h3>Integração industrial</h3>
+<p>Conexão entre sensores, inversores, IHMs, painéis e sistemas para melhorar leitura, comando e rastreabilidade.</p>
+</article>
+<article class="feature-card reveal">
+<span class="card-icon"><i class="icon-wheel"></i></span>
+<h3>Suporte técnico</h3>
+<p>Atuação técnica para diagnosticar falhas, ajustar sistemas e apoiar equipes de manutenção em demandas de automação.</p>
+</article>
+<article class="feature-card reveal">
+<span class="card-icon"><i class="icon-eco"></i></span>
+<h3>Produtividade e segurança</h3>
+<p>Projetos pensados para reduzir intervenção manual, estabilizar processos e aumentar a previsibilidade da produção.</p>
+</article>
+</div>
+</div>
+</section>
+
+<section class="section section--gray" id="solucoes">
+<div class="container">
+<div class="solutions__layout">
+<div class="image-frame reveal">
+<img alt="Técnico avaliando painel elétrico industrial com equipamentos de automação" src="industic/assets/37aedfb164027ebc_3.jpg"/>
+<div class="image-frame__note">
+<strong>Precisão na execução</strong>
+<span>Da análise elétrica à validação da lógica de controle em campo.</span>
+</div>
+</div>
+<div>
+<span class="section__eyebrow">Soluções</span>
+<h2 class="section__title">Automação aplicada a máquinas, painéis e processos industriais</h2>
+<p class="section__text mb-30">A LF PAK atua em frentes técnicas que ajudam a indústria a controlar melhor seus equipamentos, reduzir paradas e preparar a operação para novas demandas de produtividade.</p>
+<div class="solution-list">
+<article class="solution-card reveal">
+<span class="card-icon"><i class="icon-gears"></i></span>
+<h3>Programação de PLC / CLP</h3>
+<p>Lógicas de controle, ajustes de sequência, intertravamentos e melhorias no comportamento da máquina.</p>
+</article>
+<article class="solution-card reveal">
+<span class="card-icon"><i class="icon-factory-1"></i></span>
+<h3>Painéis elétricos</h3>
+<p>Desenvolvimento e adequação de painéis para comando, proteção, automação e controle industrial.</p>
+</article>
+<article class="solution-card reveal">
+<span class="card-icon"><i class="icon-manufacturing-plant"></i></span>
+<h3>Automação de máquinas</h3>
+<p>Automatização de etapas manuais, ciclos produtivos e comandos repetitivos com maior estabilidade operacional.</p>
+</article>
+<article class="solution-card reveal">
+<span class="card-icon"><i class="icon-wheel"></i></span>
+<h3>Retrofit industrial</h3>
+<p>Modernização de equipamentos existentes para ampliar vida útil, facilitar manutenção e melhorar desempenho.</p>
+</article>
+<article class="solution-card reveal">
+<span class="card-icon"><i class="icon-container"></i></span>
+<h3>Sensores, inversores e IHMs</h3>
+<p>Integração de dispositivos para leitura, acionamento, visualização e controle de variáveis do processo.</p>
+</article>
+<article class="solution-card reveal">
+<span class="card-icon"><i class="icon-tank-1"></i></span>
+<h3>Diagnóstico e manutenção</h3>
+<p>Análise de falhas, correções em sistemas automatizados e suporte técnico para retomada operacional.</p>
+</article>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="section applications" id="aplicacoes">
+<div class="container">
+<div class="row">
+<div class="col-lg-7">
+<span class="section__eyebrow">Aplicações industriais</span>
+<h2 class="section__title">Onde a automação da LF PAK pode apoiar sua operação</h2>
+</div>
+<div class="col-lg-5">
+<p class="section__text">As soluções podem ser aplicadas em processos produtivos que exigem repetibilidade, comando elétrico confiável, integração de equipamentos e maior controle técnico.</p>
+</div>
+</div>
+<div class="app-grid">
+<div class="app-item reveal"><i class="icon-manufacturing-plant"></i><span>Linhas de produção</span></div>
+<div class="app-item reveal"><i class="icon-container"></i><span>Máquinas de embalagem</span></div>
+<div class="app-item reveal"><i class="icon-wheel"></i><span>Esteiras transportadoras</span></div>
+<div class="app-item reveal"><i class="icon-tank-1"></i><span>Sistemas de envase</span></div>
+<div class="app-item reveal"><i class="icon-gears"></i><span>Controle de motores</span></div>
+<div class="app-item reveal"><i class="icon-management"></i><span>Processos repetitivos</span></div>
+<div class="app-item reveal"><i class="icon-factory-1"></i><span>Células industriais</span></div>
+<div class="app-item reveal"><i class="icon-eco"></i><span>Monitoramento de equipamentos</span></div>
+</div>
+</div>
+</section>
+
+<section class="section" id="processo">
+<div class="container">
+<div class="text-center mb-50">
+<span class="section__eyebrow">Como trabalhamos</span>
+<h2 class="section__title">Um processo técnico, claro e orientado à entrega</h2>
+<p class="section__text mx-auto" style="max-width:760px">Cada etapa busca reduzir incertezas antes da implementação e garantir que a solução seja validada com critérios práticos de operação, manutenção e segurança.</p>
+</div>
+<div class="process">
+<article class="step-card reveal">
+<span class="card-icon"><i class="fa fa-search"></i></span>
+<h3>Diagnóstico técnico</h3>
+<p>Análise do equipamento, painel, sinais, lógica atual e pontos críticos que afetam a produção.</p>
+</article>
+<article class="step-card reveal">
+<span class="card-icon"><i class="fa fa-pencil-square-o"></i></span>
+<h3>Planejamento da solução</h3>
+<p>Definição da arquitetura, componentes, interligações, lógica de controle e estratégia de implantação.</p>
+</article>
+<article class="step-card reveal">
+<span class="card-icon"><i class="fa fa-cogs"></i></span>
+<h3>Implementação e testes</h3>
+<p>Execução técnica, parametrização, validações funcionais e ajustes para operação em ambiente industrial.</p>
+</article>
+<article class="step-card reveal">
+<span class="card-icon"><i class="fa fa-life-ring"></i></span>
+<h3>Entrega e suporte</h3>
+<p>Orientação de uso, apoio à equipe técnica e suporte para manter o sistema operando com estabilidade.</p>
+</article>
+</div>
+</div>
+</section>
+
+<section class="section section--gray" id="sobre">
+<div class="container">
+<div class="about__grid">
+<div>
+<span class="section__eyebrow">Sobre a LF PAK</span>
+<h2 class="section__title">Conhecimento técnico aplicado à automação de processos industriais</h2>
+<p class="section__text">A LF PAK Equipamentos Industriais atua no desenvolvimento de soluções para automação industrial, combinando conhecimento técnico, precisão na execução e foco nas necessidades reais da operação. Nosso objetivo é entregar sistemas confiáveis, seguros e preparados para aumentar a eficiência da produção.</p>
+<div class="about__points">
+<div class="about__point"><i class="fa fa-check-circle"></i><span>Projetos com foco em controle, confiabilidade e manutenção mais eficiente.</span></div>
+<div class="about__point"><i class="fa fa-check-circle"></i><span>Atuação em máquinas, painéis, sensores, acionamentos e sistemas de comando.</span></div>
+<div class="about__point"><i class="fa fa-check-circle"></i><span>Comunicação objetiva com equipes técnicas e gestores industriais.</span></div>
+</div>
+</div>
+<div class="about__media reveal">
+<img alt="Ambiente fabril moderno com máquinas industriais automatizadas" src="industic/assets/fdbf56380ff81c3b_3.jpg"/>
+<img alt="Close de equipamento industrial e componentes de controle" src="industic/assets/51ce8970c66f4bda_3.jpg"/>
+</div>
+</div>
+</div>
+</section>
+
+<section class="section cta-band">
+<div class="container">
+<div class="cta-band__inner">
+<div>
+<h2>Pronto para modernizar sua operação industrial?</h2>
+<p>Fale com a LF PAK e descubra como a automação pode reduzir falhas, melhorar o controle do processo e aumentar a produtividade da sua empresa.</p>
+</div>
+<a class="btn btn__white" href="#contato">Solicitar contato técnico <i class="icon-arrow-right2"></i></a>
+</div>
+</div>
+</section>
+</main>
+
+<footer class="footer" id="contato">
+<div class="container">
+<div class="footer__grid">
+<div>
+<a class="footer__logo" href="#inicio" aria-label="LF PAK Equipamentos Industriais">
+<img alt="Logo horizontal da LF PAK Equipamentos Industriais" src="lfpack_logo_horizontal.png"/>
+</a>
+<p>Automação industrial, painéis elétricos, integração de sistemas e suporte técnico para empresas que buscam mais controle, produtividade e confiabilidade no processo produtivo.</p>
+</div>
+<div>
+<h4>Links rápidos</h4>
+<ul>
+<li><a href="#inicio">Início</a></li>
+<li><a href="#solucoes">Soluções</a></li>
+<li><a href="#aplicacoes">Aplicações</a></li>
+<li><a href="#sobre">Sobre</a></li>
+<li><a href="#contato">Contato</a></li>
+</ul>
+</div>
+<div>
+<h4>Contato</h4>
+<ul>
+<li>Telefone: (00) 0000-0000</li>
+<li>WhatsApp: (00) 00000-0000</li>
+<li>E-mail: contato@lfpak.com.br</li>
+<li>Cidade/Estado: informar localização</li>
+</ul>
+</div>
+</div>
+<div class="footer__bottom">
+<span>© 2026 LF PAK Equipamentos Industriais. Todos os direitos reservados.</span>
+</div>
+</div>
+</footer>
+
+<script>
+(function () {
+  var toggle = document.querySelector(".menu-toggle");
+  var nav = document.querySelector("#siteNav");
+  if (toggle && nav) {
+    toggle.addEventListener("click", function () {
+      var isOpen = nav.classList.toggle("is-open");
+      toggle.setAttribute("aria-expanded", String(isOpen));
+    });
+    nav.querySelectorAll("a").forEach(function (link) {
+      link.addEventListener("click", function () {
+        nav.classList.remove("is-open");
+        toggle.setAttribute("aria-expanded", "false");
+      });
+    });
+  }
+
+  var revealItems = document.querySelectorAll(".reveal");
+  if ("IntersectionObserver" in window) {
+    var observer = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("is-visible");
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+    revealItems.forEach(function (item) { observer.observe(item); });
+  } else {
+    revealItems.forEach(function (item) { item.classList.add("is-visible"); });
+  }
+})();
+</script>
+</body>
+</html>

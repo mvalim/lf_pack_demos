@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="LF PAK Equipamentos Industriais design system and pattern library" name="description"/>
+<link href="assets/7469351dee093d00_favicon.png" rel="icon"/>
+<title>LF PAK Equipamentos Industriais Design System</title>
+<link href="assets/e2da548ef716b1d7_css.css" rel="stylesheet"/>
+<link href="assets/2928f6e8fd44ab8d_libraries.css" rel="stylesheet"/>
+<link href="assets/faf6356a07da485b_style.css" rel="stylesheet"/>
+<style>
+:root{--brand-primary:#005B9F;--brand-secondary:#0077C3;--brand-accent:#0090E6;--brand-gray-dark:#666666;--brand-gray-medium:#8C8C8C;--brand-gray-light:#D9D9D9;--brand-white:#FFFFFF;--brand-background:#F7F8FA;--brand-text:#333333}
+body{background:var(--brand-white);color:var(--brand-text)}
+a{color:var(--brand-secondary)}
+a:hover,a:focus{color:var(--brand-accent)}
+.bg-gray{background:var(--brand-background)!important}
+.bg-heading{background:var(--brand-primary)!important}
+.color-theme,.heading__subtitle,.service__icon,.slider__panel-icon,.feature__link,.footer a:hover{color:var(--brand-primary)!important}
+.header .navbar-brand img{max-height:54px;width:auto}
+.header .navbar-brand .logo-light,.header .navbar-brand .logo-dark{background:var(--brand-white);border-radius:4px;padding:7px 10px}
+.sticky-navbar.fixed-navbar{background:var(--brand-white)}
+.navbar .nav__item .nav__item-link:before,.navbar .nav__item .nav__item-link.active:before,.navbar .nav__item .nav__item-link:hover:before{background:var(--brand-accent)}
+.btn__primary,.btn__secondary,.btn__primary.btn__hover2:hover,.btn__secondary.btn__hover2:hover{background:var(--brand-primary);border-color:var(--brand-primary);color:var(--brand-white)}
+.btn__primary:hover,.btn__primary:focus,.btn__secondary:hover,.btn__secondary:focus,.btn__white:hover,.btn__white:focus{background:var(--brand-secondary);border-color:var(--brand-secondary);color:var(--brand-white)}
+.btn__primary:before,.btn__secondary:before,.btn__white:before{background:var(--brand-secondary)}
+.btn__video .video__player{background:var(--brand-primary);color:var(--brand-white)}
+.btn__video .video__player-animation{border-color:rgba(0,91,159,.32)}
+.slide__title,.heading__title,h1,h2,h3,h4,h5,h6{color:var(--brand-text)}
+.slide__content .slide__title,.slide__content .slide__desc{color:var(--brand-white)}
+.slide__desc,.heading__desc,p{color:var(--brand-gray-dark)}
+.bg-overlay:before{background-color:rgba(0,91,159,.72)!important}
+.bg-overlay-gradient:before{background:linear-gradient(180deg,rgba(0,91,159,0) 0,var(--brand-primary) 85%)!important}
+.slider__panel{border-top-color:var(--brand-accent)}
+.service__overlay{background:rgba(0,91,159,.88)}
+.feature__link:hover,.ds-active-feature .feature__link{background:var(--brand-primary)!important;color:var(--brand-white)}
+.request__form-title,.footer__widget-title{color:var(--brand-white)}
+.request__form-body,.footer{background:var(--brand-primary)}
+.footer-top{background:var(--brand-primary)}
+.footer p,.footer a,.footer li a{color:rgba(255,255,255,.82)}
+.footer img{background:var(--brand-white);border-radius:4px;max-height:58px;padding:8px 12px;width:auto}
+.form-control:focus{border-color:var(--brand-secondary)}
+#scrollTopBtn{background:var(--brand-primary);color:var(--brand-white)}
+#scrollTopBtn:hover{background:var(--brand-secondary)}
+.ds-nav{background:var(--brand-primary);border-top:1px solid rgba(255,255,255,.12);position:relative;z-index:99}
+.ds-nav ul{display:flex;flex-wrap:wrap;justify-content:center;margin:0}
+.ds-nav a{color:#fff;display:block;font-size:14px;font-weight:700;padding:18px 16px;text-transform:capitalize}
+.ds-nav a:hover,.ds-nav a:focus{background:var(--brand-accent);color:#fff}
+.ds-section{padding:100px 0}
+.ds-spec-row{align-items:center;border-bottom:1px solid #eaeaea;display:flex;padding:24px 0}
+.ds-spec-name{color:var(--brand-text);flex:0 0 190px;font-weight:700;text-transform:capitalize}
+.ds-spec-preview{flex:1;padding:0 30px}
+.ds-spec-size{color:#9b9b9b;flex:0 0 130px;font-weight:700;text-align:right}
+.ds-dark-preview{background:var(--brand-primary);padding:30px}
+.ds-swatch{min-height:132px;margin-bottom:30px;padding:24px}
+.ds-swatch h4,.ds-swatch p{margin-bottom:8px}
+.ds-swatch-white{background:#fff;border:1px solid #eaeaea}
+.ds-swatch-gray{background:#f9f9f9;border:1px solid #eaeaea}
+.ds-swatch-dark{background:#222}
+.ds-swatch-heading{background:var(--brand-primary)}
+.ds-swatch-theme{background:var(--brand-primary)}
+.ds-swatch-overlay{background:rgba(0,91,159,.72)}
+.ds-swatch-gradient{background:linear-gradient(180deg,rgba(0,91,159,0) 0,var(--brand-primary) 85%)}
+.ds-component-row{margin-bottom:45px}
+.ds-state-label{color:#9b9b9b;font-size:13px;font-weight:700;margin-bottom:12px;text-transform:capitalize}
+.ds-state-box{background:#fff;border:1px solid #eaeaea;margin-bottom:30px;padding:25px}
+.ds-state-box.bg-heading{border:none}
+.ds-active-service .service__overlay{opacity:1}
+.ds-active-service .btn__link i{opacity:1;transform:translateX(5px)}
+.ds-active-feature .feature__link{background:var(--brand-primary);color:#fff}
+.ds-motion-box{background:var(--brand-primary);color:#fff;font-weight:700;margin-bottom:20px;padding:22px;text-align:center;text-transform:capitalize}
+.ds-icon-grid i{color:var(--brand-primary);font-size:46px;line-height:1;margin:0 24px 24px 0}
+.ds-logo-cell{background:var(--brand-primary);margin-bottom:30px;padding:25px}
+.ds-nav{background:var(--brand-primary);border-top:1px solid rgba(255,255,255,.2)}
+.ds-nav a:hover,.ds-nav a:focus{background:var(--brand-accent)}
+.ds-spec-name{color:var(--brand-text)}
+.ds-spec-size,.ds-state-label{color:var(--brand-gray-medium)}
+.ds-dark-preview,.ds-swatch-heading,.ds-logo-cell{background:var(--brand-primary)}
+.ds-swatch-white{background:var(--brand-white);border-color:var(--brand-gray-light)}
+.ds-swatch-gray{background:var(--brand-background);border-color:var(--brand-gray-light)}
+.ds-swatch-dark{background:var(--brand-gray-dark)}
+.ds-swatch-theme{background:var(--brand-primary)}
+.ds-swatch-secondary{background:var(--brand-secondary)}
+.ds-swatch-accent{background:var(--brand-accent)}
+.ds-swatch-light-gray{background:var(--brand-gray-light)}
+.ds-swatch-overlay{background:rgba(0,91,159,.72)}
+.ds-swatch-gradient{background:linear-gradient(180deg,rgba(0,91,159,0) 0,var(--brand-primary) 85%)}
+.ds-active-feature .feature__link,.ds-motion-box,.ds-icon-grid i{background:var(--brand-primary);color:var(--brand-white)}
+.ds-icon-grid i{background:transparent;color:var(--brand-primary)}
+.ds-logo-cell img{background:var(--brand-white);border-radius:4px;max-height:68px;padding:10px 14px;width:auto}
+@media (max-width:767px){.ds-spec-row{align-items:flex-start;display:block}.ds-spec-preview{padding:15px 0}.ds-spec-size{text-align:left}.ds-nav a{padding:12px 10px}}
+</style>
+</head>
+<body>
+<div class="wrapper">
+<header class="header header-transparent" id="header">
+<nav class="navbar navbar-expand-lg sticky-navbar">
+<div class="container">
+<a class="navbar-brand" href="index.html">
+<img alt="logo" class="logo-light" src="../lfpack_logo_horizontal.png"/>
+<img alt="logo" class="logo-dark" src="../lfpack_logo_horizontal.png"/>
+</a>
+<button class="navbar-toggler" type="button">
+<span class="menu-lines"><span></span></span>
+</button>
+<div class="collapse navbar-collapse" id="mainNavigation">
+<ul class="navbar-nav ml-auto">
+<li class="nav__item"><a class="nav__item-link active" href="#slider1">Hero</a></li>
+<li class="nav__item"><a class="nav__item-link" href="#typography">Typography</a></li>
+<li class="nav__item"><a class="nav__item-link" href="#colors">Colors</a></li>
+<li class="nav__item"><a class="nav__item-link" href="#components">Components</a></li>
+<li class="nav__item"><a class="nav__item-link" href="#layout">Layout</a></li>
+<li class="nav__item"><a class="nav__item-link" href="#motion">Motion</a></li>
+<li class="nav__item"><a class="nav__item-link" href="#icons">Icons</a></li>
+</ul>
+</div>
+<div class="navbar-modules">
+<ul class="list-unstyled d-flex align-items-center modules__btns-list">
+<li><a class="module__btn module__btn-search" href="#"><i class="fa fa-search"></i></a></li>
+<li class="d-none d-lg-block"><a class="btn btn__primary module__btn-request" href="#components">
+<span>Request A Quote</span><i class="icon-arrow-right2"></i>
+</a></li>
+</ul>
+</div>
+</div>
+</nav>
+<nav class="ds-nav">
+<div class="container">
+<ul>
+<li><a href="#slider1">Hero</a></li>
+<li><a href="#typography">Typography</a></li>
+<li><a href="#colors">Colors &amp; Surfaces</a></li>
+<li><a href="#components">UI Components</a></li>
+<li><a href="#layout">Layout &amp; Spacing</a></li>
+<li><a href="#motion">Motion</a></li>
+<li><a href="#icons">Icons</a></li>
+</ul>
+</div>
+</nav>
+</header>
+<!-- ============================
+        Slider
+    ============================== -->
+<section class="slider slider-1" id="slider1">
+<div class="carousel owl-carousel carousel-arrows owl-loaded owl-drag" data-animate-in="fadeIn" data-animate-out="fadeOut" data-autoplay="true" data-dots="false" data-loop="true" data-nav="true" data-slide="1" data-slide-md="1" data-slide-sm="1" data-space="0" data-speed="3000" data-transition="fade">
+<!-- /.slide-item -->
+<!-- /.slide-item -->
+<!-- /.slide-item -->
+<div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(-5760px, 0px, 0px); transition: all; width: 13440px;"><div class="owl-item cloned" style="width: 1920px;"><div class="slide-item align-v-h bg-overlay bg-img" style='background-image: url("assets/33b158d65185fb3a_2.jpg"); background-size: cover; background-position: center center;'>
+<div class="container">
+<div class="row">
+<div class="col-sm-12 col-md-12 col-lg-8 col-xl-5">
+<div class="slide__content">
+<h2 class="slide__title">Design System</h2>
+<p class="slide__desc">A living library for the LF PAK interface, preserving the original components, motion, spacing, color, and industrial layout language.</p>
+<a class="btn btn__white mr-40" href="#">Components</a>
+<a class="btn btn__video popup-video" href="https://www.youtube.com/watch?v=nrJtHemSPW4">
+<div class="video__player">
+<span class="video__player-animation"></span>
+<span class="video__player-animation video__player-animation-2"></span>
+<span class="video__player-animation video__player-animation-3"></span>
+<i class="fa fa-play"></i>
+</div>Motion!
+                  </a>
+</div><!-- /.slide-content -->
+</div><!-- /.col-xl-5 -->
+<div class="col-sm-12 col-md-12 col-lg-4 col-xl-3 offset-xl-4">
+<div class="slider__panel d-none d-lg-block">
+<div class="slider__panel-icon">
+<i class="icon-wheel"></i>
+</div>
+<h3 class="slider__panel-title">Patterns</h3>
+<p class="slider__panel-desc">Canonical typography, surfaces, icons, cards, forms, and buttons.
+                  </p>
+<a class="btn btn__primary btn__link" href="#">
+<span>Explore</span>
+<i class="icon-arrow-right2"></i>
+</a>
+</div><!-- /.slider-panel -->
+</div><!-- /.col-xl-5 -->
+</div><!-- /.row -->
+</div><!-- /.container -->
+</div></div><div class="owl-item cloned" style="width: 1920px;"><div class="slide-item align-v-h bg-overlay bg-img" style='background-image: url("assets/37aedfb164027ebc_3.jpg"); background-size: cover; background-position: center center;'>
+<div class="container">
+<div class="row">
+<div class="col-sm-12 col-md-12 col-lg-8 col-xl-5">
+<div class="slide__content">
+<h2 class="slide__title">Visual Rules</h2>
+<p class="slide__desc">Reference examples document the exact HTML classes, effects, buttons, media treatments, and layout structures used by the template.</p>
+<a class="btn btn__primary mr-40" href="#">Colors</a>
+<a class="btn btn__video popup-video" href="https://www.youtube.com/watch?v=nrJtHemSPW4">
+<div class="video__player">
+<span class="video__player-animation"></span>
+<span class="video__player-animation video__player-animation-2"></span>
+<span class="video__player-animation video__player-animation-3"></span>
+<i class="fa fa-play"></i>
+</div>Motion!
+                  </a>
+</div><!-- /.slide-content -->
+</div><!-- /.col-xl-5 -->
+<div class="col-sm-12 col-md-12 col-lg-4 col-xl-3 offset-xl-4">
+<div class="slider__panel d-none d-lg-block">
+<div class="slider__panel-icon">
+<i class="icon-container"></i>
+</div>
+<h3 class="slider__panel-title">Assets</h3>
+<p class="slider__panel-desc">Original logos, images, icon fonts, plugin behavior, and transitions.</p>
+<a class="btn btn__primary btn__link" href="#">
+<span>Explore</span>
+<i class="icon-arrow-right2"></i>
+</a>
+</div><!-- /.slider-panel -->
+</div><!-- /.col-xl-5 -->
+</div><!-- /.row -->
+</div><!-- /.container -->
+</div></div><div class="owl-item" style="width: 1920px;"><div class="slide-item align-v-h bg-overlay bg-img" style='background-image: url("assets/07dff85617721cab_1.jpg"); background-size: cover; background-position: center center;'>
+<div class="container">
+<div class="row">
+<div class="col-sm-12 col-md-12 col-lg-8 col-xl-5">
+<div class="slide__content">
+<h2 class="slide__title">Pattern Library</h2>
+<p class="slide__desc">A practical showcase of section headings, service cards, quote forms, project tiles, overlays, and industrial UI treatments.</p>
+<a class="btn btn__white mr-40" href="#">Layouts</a>
+<a class="btn btn__video popup-video" href="https://www.youtube.com/watch?v=nrJtHemSPW4">
+<div class="video__player">
+<span class="video__player-animation"></span>
+<span class="video__player-animation video__player-animation-2"></span>
+<span class="video__player-animation video__player-animation-3"></span>
+<i class="fa fa-play"></i>
+</div>Motion!
+                  </a>
+</div><!-- /.slide-content -->
+</div><!-- /.col-xl-5 -->
+<div class="col-sm-12 col-md-12 col-lg-4 col-xl-3 offset-xl-4">
+<div class="slider__panel d-none d-lg-block">
+<div class="slider__panel-icon">
+<i class="icon-manufacturing-plant"></i>
+</div>
+<h3 class="slider__panel-title">System</h3>
+<p class="slider__panel-desc">Reusable industrial composition built from the original page.
+                  </p>
+<a class="btn btn__primary btn__link" href="#">
+<span>Explore</span>
+<i class="icon-arrow-right2"></i>
+</a>
+</div><!-- /.slider-panel -->
+</div><!-- /.col-xl-5 -->
+</div><!-- /.row -->
+</div><!-- /.container -->
+</div></div><div class="owl-item animated owl-animated-in fadeIn active" style="width: 1920px;"><div class="slide-item align-v-h bg-overlay bg-img" style='background-image: url("assets/33b158d65185fb3a_2.jpg"); background-size: cover; background-position: center center;'>
+<div class="container">
+<div class="row">
+<div class="col-sm-12 col-md-12 col-lg-8 col-xl-5">
+<div class="slide__content">
+<h2 class="slide__title">Design System</h2>
+<p class="slide__desc">A living library for the LF PAK interface, preserving the original components, motion, spacing, color, and industrial layout language.</p>
+<a class="btn btn__white mr-40" href="#">Components</a>
+<a class="btn btn__video popup-video" href="https://www.youtube.com/watch?v=nrJtHemSPW4">
+<div class="video__player">
+<span class="video__player-animation"></span>
+<span class="video__player-animation video__player-animation-2"></span>
+<span class="video__player-animation video__player-animation-3"></span>
+<i class="fa fa-play"></i>
+</div>Motion!
+                  </a>
+</div><!-- /.slide-content -->
+</div><!-- /.col-xl-5 -->
+<div class="col-sm-12 col-md-12 col-lg-4 col-xl-3 offset-xl-4">
+<div class="slider__panel d-none d-lg-block">
+<div class="slider__panel-icon">
+<i class="icon-wheel"></i>
+</div>
+<h3 class="slider__panel-title">Patterns</h3>
+<p class="slider__panel-desc">Canonical typography, surfaces, icons, cards, forms, and buttons.
+                  </p>
+<a class="btn btn__primary btn__link" href="#">
+<span>Explore</span>
+<i class="icon-arrow-right2"></i>
+</a>
+</div><!-- /.slider-panel -->
+</div><!-- /.col-xl-5 -->
+</div><!-- /.row -->
+</div><!-- /.container -->
+</div></div><div class="owl-item" style="width: 1920px;"><div class="slide-item align-v-h bg-overlay bg-img" style='background-image: url("assets/37aedfb164027ebc_3.jpg"); background-size: cover; background-position: center center;'>
+<div class="container">
+<div class="row">
+<div class="col-sm-12 col-md-12 col-lg-8 col-xl-5">
+<div class="slide__content">
+<h2 class="slide__title">Visual Rules</h2>
+<p class="slide__desc">Reference examples document the exact HTML classes, effects, buttons, media treatments, and layout structures used by the template.</p>
+<a class="btn btn__primary mr-40" href="#">Colors</a>
+<a class="btn btn__video popup-video" href="https://www.youtube.com/watch?v=nrJtHemSPW4">
+<div class="video__player">
+<span class="video__player-animation"></span>
+<span class="video__player-animation video__player-animation-2"></span>
+<span class="video__player-animation video__player-animation-3"></span>
+<i class="fa fa-play"></i>
+</div>Motion!
+                  </a>
+</div><!-- /.slide-content -->
+</div><!-- /.col-xl-5 -->
+<div class="col-sm-12 col-md-12 col-lg-4 col-xl-3 offset-xl-4">
+<div class="slider__panel d-none d-lg-block">
+<div class="slider__panel-icon">
+<i class="icon-container"></i>
+</div>
+<h3 class="slider__panel-title">Assets</h3>
+<p class="slider__panel-desc">Original logos, images, icon fonts, plugin behavior, and transitions.</p>
+<a class="btn btn__primary btn__link" href="#">
+<span>Explore</span>
+<i class="icon-arrow-right2"></i>
+</a>
+</div><!-- /.slider-panel -->
+</div><!-- /.col-xl-5 -->
+</div><!-- /.row -->
+</div><!-- /.container -->
+</div></div><div class="owl-item cloned" style="width: 1920px;"><div class="slide-item align-v-h bg-overlay bg-img" style='background-image: url("assets/07dff85617721cab_1.jpg"); background-size: cover; background-position: center center;'>
+<div class="container">
+<div class="row">
+<div class="col-sm-12 col-md-12 col-lg-8 col-xl-5">
+<div class="slide__content">
+<h2 class="slide__title">Pattern Library</h2>
+<p class="slide__desc">A practical showcase of section headings, service cards, quote forms, project tiles, overlays, and industrial UI treatments.</p>
+<a class="btn btn__white mr-40" href="#">Layouts</a>
+<a class="btn btn__video popup-video" href="https://www.youtube.com/watch?v=nrJtHemSPW4">
+<div class="video__player">
+<span class="video__player-animation"></span>
+<span class="video__player-animation video__player-animation-2"></span>
+<span class="video__player-animation video__player-animation-3"></span>
+<i class="fa fa-play"></i>
+</div>Motion!
+                  </a>
+</div><!-- /.slide-content -->
+</div><!-- /.col-xl-5 -->
+<div class="col-sm-12 col-md-12 col-lg-4 col-xl-3 offset-xl-4">
+<div class="slider__panel d-none d-lg-block">
+<div class="slider__panel-icon">
+<i class="icon-manufacturing-plant"></i>
+</div>
+<h3 class="slider__panel-title">System</h3>
+<p class="slider__panel-desc">Reusable industrial composition built from the original page.
+                  </p>
+<a class="btn btn__primary btn__link" href="#">
+<span>Explore</span>
+<i class="icon-arrow-right2"></i>
+</a>
+</div><!-- /.slider-panel -->
+</div><!-- /.col-xl-5 -->
+</div><!-- /.row -->
+</div><!-- /.container -->
+</div></div><div class="owl-item cloned" style="width: 1920px;"><div class="slide-item align-v-h bg-overlay bg-img" style='background-image: url("assets/33b158d65185fb3a_2.jpg"); background-size: cover; background-position: center center;'>
+<div class="container">
+<div class="row">
+<div class="col-sm-12 col-md-12 col-lg-8 col-xl-5">
+<div class="slide__content">
+<h2 class="slide__title">Design System</h2>
+<p class="slide__desc">A living library for the LF PAK interface, preserving the original components, motion, spacing, color, and industrial layout language.</p>
+<a class="btn btn__white mr-40" href="#">Components</a>
+<a class="btn btn__video popup-video" href="https://www.youtube.com/watch?v=nrJtHemSPW4">
+<div class="video__player">
+<span class="video__player-animation"></span>
+<span class="video__player-animation video__player-animation-2"></span>
+<span class="video__player-animation video__player-animation-3"></span>
+<i class="fa fa-play"></i>
+</div>Motion!
+                  </a>
+</div><!-- /.slide-content -->
+</div><!-- /.col-xl-5 -->
+<div class="col-sm-12 col-md-12 col-lg-4 col-xl-3 offset-xl-4">
+<div class="slider__panel d-none d-lg-block">
+<div class="slider__panel-icon">
+<i class="icon-wheel"></i>
+</div>
+<h3 class="slider__panel-title">Patterns</h3>
+<p class="slider__panel-desc">Canonical typography, surfaces, icons, cards, forms, and buttons.
+                  </p>
+<a class="btn btn__primary btn__link" href="#">
+<span>Explore</span>
+<i class="icon-arrow-right2"></i>
+</a>
+</div><!-- /.slider-panel -->
+</div><!-- /.col-xl-5 -->
+</div><!-- /.row -->
+</div><!-- /.container -->
+</div></div></div></div><div class="owl-nav"><button class="owl-prev" role="presentation" type="button"><span aria-label="Previous">‹</span></button><button class="owl-next" role="presentation" type="button"><span aria-label="Next">›</span></button></div><div class="owl-dots disabled"></div><div class="owl-thumbs"></div></div><!-- /.carousel -->
+</section><!-- /.slider -->
+<section class="ds-section" id="typography">
+<div class="container">
+<div class="row">
+<div class="col-sm-12 col-md-12 col-lg-8">
+<div class="heading mb-50">
+<span class="heading__subtitle">Typography</span>
+<h2 class="heading__title">Type hierarchy and rhythm</h2>
+<p class="heading__desc">Live specimens use the exact elements and classes from the reference page.</p>
+</div>
+</div>
+</div>
+<div class="ds-spec-row"><div class="ds-spec-name">Heading 1</div><div class="ds-spec-preview"><h1>Industrial heading one</h1></div><div class="ds-spec-size">52px / 57px</div></div>
+<div class="ds-spec-row"><div class="ds-spec-name">Heading 2</div><div class="ds-spec-preview"><h2>Manufacturing company</h2></div><div class="ds-spec-size">42px / 46px</div></div>
+<div class="ds-spec-row"><div class="ds-spec-name">Heading 3</div><div class="ds-spec-preview"><h3 class="heading__title color-white bg-heading p-4">Providing innovative solutions</h3></div><div class="ds-spec-size">38px / 42px</div></div>
+<div class="ds-spec-row"><div class="ds-spec-name">Heading 4</div><div class="ds-spec-preview"><h4 class="feature__title">Environmental Sensitivity</h4></div><div class="ds-spec-size">32px / 35px</div></div>
+<div class="ds-spec-row"><div class="ds-spec-name">Bold L</div><div class="ds-spec-preview"><h5 class="request__panel-title">Dedicated Customer Teams</h5></div><div class="ds-spec-size">24px / normal</div></div>
+<div class="ds-spec-row"><div class="ds-spec-name">Bold M</div><div class="ds-spec-preview"><h6 class="footer__widget-title bg-heading p-4 color-white">Newsletter</h6></div><div class="ds-spec-size">18px / normal</div></div>
+<div class="ds-spec-row"><div class="ds-spec-name">Bold S</div><div class="ds-spec-preview"><span class="heading__subtitle">The Best Industry Services</span></div><div class="ds-spec-size">14px / 14px</div></div>
+<div class="ds-spec-row"><div class="ds-spec-name">Paragraph</div><div class="ds-spec-preview"><p class="heading__desc">LF PAK Equipamentos Industriais builds industrial equipment with engineering focus, practical quality, and reliable manufacturing workflows.</p></div><div class="ds-spec-size">16px / 25px</div></div>
+<div class="ds-spec-row"><div class="ds-spec-name">Regular L</div><div class="ds-spec-preview"><p class="slide__desc bg-heading p-4 color-white">Corporate strengths and core values define the page's larger descriptive copy.</p></div><div class="ds-spec-size">17px / 27px</div></div>
+<div class="ds-spec-row"><div class="ds-spec-name">Regular M</div><div class="ds-spec-preview"><p>Default body copy for sections and cards.</p></div><div class="ds-spec-size">15px / 25px</div></div>
+<div class="ds-spec-row"><div class="ds-spec-name">Regular S</div><div class="ds-spec-preview"><p class="service__desc">Compact card description text.</p></div><div class="ds-spec-size">14px / 24px</div></div>
+</div>
+</section>
+<section class="ds-section bg-gray" id="colors">
+<div class="container">
+<div class="heading text-center mb-50">
+<span class="heading__subtitle">Colors &amp; Surfaces</span>
+<h2 class="heading__title">Backgrounds, borders, overlays and gradients</h2>
+</div>
+<div class="row">
+<div class="col-sm-6 col-md-4 col-lg-3"><div class="ds-swatch ds-swatch-theme"><h4 class="color-white">Primary Blue</h4><p class="color-white">#005B9F</p></div></div>
+<div class="col-sm-6 col-md-4 col-lg-3"><div class="ds-swatch ds-swatch-secondary"><h4 class="color-white">Secondary Blue</h4><p class="color-white">#0077C3</p></div></div>
+<div class="col-sm-6 col-md-4 col-lg-3"><div class="ds-swatch ds-swatch-accent"><h4 class="color-white">Accent Blue</h4><p class="color-white">#0090E6</p></div></div>
+<div class="col-sm-6 col-md-4 col-lg-3"><div class="ds-swatch ds-swatch-white"><h4>White</h4><p>#FFFFFF</p></div></div>
+<div class="col-sm-6 col-md-4 col-lg-3"><div class="ds-swatch ds-swatch-gray"><h4>Background</h4><p>#F7F8FA</p></div></div>
+<div class="col-sm-6 col-md-4 col-lg-3"><div class="ds-swatch ds-swatch-dark"><h4 class="color-white">Gray Dark</h4><p class="color-white">#666666</p></div></div>
+<div class="col-sm-6 col-md-4 col-lg-3"><div class="ds-swatch ds-swatch-light-gray"><h4>Gray Light</h4><p>#D9D9D9</p></div></div>
+<div class="col-sm-6 col-md-4 col-lg-3"><div class="ds-swatch ds-swatch-overlay"><h4 class="color-white">Overlay</h4><p class="color-white">rgba(0,91,159,.72)</p></div></div>
+</div>
+</div>
+</section>
+<section class="ds-section" id="components">
+<div class="container">
+<div class="heading mb-50">
+<span class="heading__subtitle">UI Components</span>
+<h2 class="heading__title">Buttons, cards, forms and panels</h2>
+</div>
+<div class="row ds-component-row">
+<div class="col-md-3"><div class="ds-state-label">default</div><a class="btn btn__primary" href="#">Primary</a></div>
+<div class="col-md-3"><div class="ds-state-label">hover target</div><a class="btn btn__secondary" href="#">Secondary</a></div>
+<div class="col-md-3"><div class="ds-state-label">light</div><div class="ds-state-box bg-heading"><a class="btn btn__white" href="#">White</a></div></div>
+<div class="col-md-3"><div class="ds-state-label">video</div><div class="ds-state-box bg-heading"><a class="btn btn__video popup-video" href="#"><div class="video__player"><span class="video__player-animation"></span><span class="video__player-animation video__player-animation-2"></span><span class="video__player-animation video__player-animation-3"></span><i class="fa fa-play"></i></div>Our Video!</a></div></div>
+</div>
+<div class="row ds-component-row">
+<div class="col-md-4">
+<div class="service-item">
+<div class="service__content">
+<div class="service__icon"><i class="icon-tank-1"></i></div>
+<h4 class="service__title">Petroleum &amp; Gas Energy</h4>
+<p class="service__desc">Petroleum and natural gas are nonrenewable sources of energy.</p>
+<a class="btn btn__secondary btn__link" href="#"><span>Read More</span><i class="icon-arrow-right2"></i></a>
+</div>
+<div class="service__img"><img alt="service" class="img-fluid" src="assets/53d8e803e87e6fb3_1.jpg"/><div class="service__overlay"><a class="zoom__icon" href="#"></a></div></div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="service-item ds-active-service">
+<div class="service__content">
+<div class="service__icon"><i class="icon-gears"></i></div>
+<h4 class="service__title">Mechanical Engineering</h4>
+<p class="service__desc">Active overlay and link-icon state shown without changing component markup.</p>
+<a class="btn btn__secondary btn__link" href="#"><span>Read More</span><i class="icon-arrow-right2"></i></a>
+</div>
+<div class="service__img"><img alt="service" class="img-fluid" src="assets/ea5760b2fe0ab79b_3.jpg"/><div class="service__overlay"><a class="zoom__icon" href="#"></a></div></div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="request__form mb-0">
+<div class="request__form-body">
+<h4 class="request__form-title">Request A Quote</h4>
+<div class="form-group"><input class="form-control" placeholder="Name" type="text"/></div>
+<div class="form-group"><input class="form-control" placeholder="Email" type="email"/></div>
+<div class="form-group form-group-select"><select class="form-control"><option>Select Your Industry</option><option>Industry 1</option></select></div>
+<button class="btn btn__secondary">Submit Request</button>
+</div>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-sm-12 col-md-6 col-lg-3 feature-item"><div class="feature__content"><h4 class="feature__title">Environmental Sensitivity</h4><p class="feature__desc">A compact homepage feature card.</p><a class="feature__link" href="#"><i class="icon-arrow-right2"></i></a></div></div>
+<div class="col-sm-12 col-md-6 col-lg-3 feature-item ds-active-feature"><div class="feature__content"><h4 class="feature__title">Active Link</h4><p class="feature__desc">Forced active state for the feature arrow.</p><a class="feature__link" href="#"><i class="icon-arrow-right2"></i></a></div></div>
+<div class="col-sm-12 col-md-6 col-lg-3"><div class="slider__panel"><div class="slider__panel-icon"><i class="icon-wheel"></i></div><h3 class="slider__panel-title">Our Vision</h3><p class="slider__panel-desc">Slider panel component.</p><a class="btn btn__primary btn__link" href="#"><span>Explore</span><i class="icon-arrow-right2"></i></a></div></div>
+<div class="col-sm-12 col-md-6 col-lg-3"><div class="ds-logo-cell"><img alt="logo" src="../lfpack_logo_horizontal.png"/></div></div>
+</div>
+</div>
+</section>
+<section class="ds-section bg-gray" id="layout">
+<div class="container">
+<div class="heading text-center mb-50">
+<span class="heading__subtitle">Layout &amp; Spacing</span>
+<h2 class="heading__title">Real page composition patterns</h2>
+</div>
+<div class="row mb-50">
+<div class="col-sm-12 col-md-12 col-lg-4"><div class="about__text mt-30"><p>Split copy column from the About section.</p><p>The system uses Bootstrap columns, section padding utilities, and image offsets.</p></div></div>
+<div class="col-sm-12 col-md-8 col-lg-5"><div class="about__img animated-img"><img alt="about" class="img-fluid" src="assets/51ce8970c66f4bda_3.jpg"/><a class="btn btn__primary popup-video" href="#"><i class="fa fa-play"></i><span>Watch Video!</span></a></div></div>
+<div class="col-sm-12 col-md-12 col-lg-3"><div class="features-list features-list-layout1 mt-30"><div class="feature-item feature-list-item"><div class="feature__content"><h4 class="feature__title">Quality</h4><p class="feature__desc">Side list item rhythm.</p></div></div><div class="feature-item feature-list-item"><div class="feature__content"><h4 class="feature__title">Reliability</h4><p class="feature__desc">Stacked feature list.</p></div></div></div></div>
+</div>
+<div class="container col-padding-0">
+<div class="row service-items-wrap">
+<div class="col-sm-6 col-md-6 col-lg-3"><div class="service-item"><div class="service__content"><div class="service__icon"><i class="icon-factory-1"></i></div><h4 class="service__title">Grid Card</h4><p class="service__desc">Four column service layout.</p></div><div class="service__img"><img alt="service" class="img-fluid" src="assets/263e83773780d5f9_2.jpg"/><div class="service__overlay"><a class="zoom__icon" href="#"></a></div></div></div></div>
+<div class="col-sm-6 col-md-6 col-lg-3"><div class="service-item"><div class="service__content"><div class="service__icon"><i class="icon-eco"></i></div><h4 class="service__title">Grid Card</h4><p class="service__desc">Shared spacing.</p></div><div class="service__img"><img alt="service" class="img-fluid" src="assets/fe585840278def57_4.jpg"/><div class="service__overlay"><a class="zoom__icon" href="#"></a></div></div></div></div>
+<div class="col-sm-6 col-md-6 col-lg-3"><div class="service-item"><div class="service__content"><div class="service__icon"><i class="icon-gears"></i></div><h4 class="service__title">Grid Card</h4><p class="service__desc">Image overlay.</p></div><div class="service__img"><img alt="service" class="img-fluid" src="assets/ea5760b2fe0ab79b_3.jpg"/><div class="service__overlay"><a class="zoom__icon" href="#"></a></div></div></div></div>
+<div class="col-sm-6 col-md-6 col-lg-3"><div class="service-item"><div class="service__content"><div class="service__icon"><i class="icon-tank-1"></i></div><h4 class="service__title">Grid Card</h4><p class="service__desc">Icon and copy.</p></div><div class="service__img"><img alt="service" class="img-fluid" src="assets/53d8e803e87e6fb3_1.jpg"/><div class="service__overlay"><a class="zoom__icon" href="#"></a></div></div></div></div>
+</div>
+</div>
+</div>
+</section>
+<section class="ds-section" id="motion">
+<div class="container">
+<div class="heading mb-50">
+<span class="heading__subtitle">Motion &amp; Interaction</span>
+<h2 class="heading__title">Entrance, hover, carousel and pulse behavior</h2>
+</div>
+<div class="row">
+<div class="col-md-3"><div class="ds-motion-box animated fadeIn">fadeIn</div></div>
+<div class="col-md-3"><div class="ds-motion-box animated fadeOut">fadeOut</div></div>
+<div class="col-md-3"><div class="about__img animated-img"><img alt="about" src="assets/2f39e711638e9cef_1.jpg"/></div></div>
+<div class="col-md-3"><a class="btn btn__video popup-video bg-heading" href="#"><div class="video__player"><span class="video__player-animation"></span><span class="video__player-animation video__player-animation-2"></span><span class="video__player-animation video__player-animation-3"></span><i class="fa fa-play"></i></div>Pulse</a></div>
+</div>
+</div>
+</section>
+<section class="ds-section bg-gray" id="icons">
+<div class="container">
+<div class="heading mb-50">
+<span class="heading__subtitle">Icons</span>
+<h2 class="heading__title">Icomoon industrial icons and Font Awesome actions</h2>
+</div>
+<div class="ds-icon-grid">
+<i class="icon-wheel"></i>
+<i class="icon-container"></i>
+<i class="icon-manufacturing-plant"></i>
+<i class="icon-tank-1"></i>
+<i class="icon-factory-1"></i>
+<i class="icon-gears"></i>
+<i class="icon-eco"></i>
+<i class="icon-waste"></i>
+<i class="icon-management"></i>
+<i class="fa fa-search"></i>
+<i class="fa fa-play"></i>
+<i class="fa fa-long-arrow-up"></i>
+</div>
+</div>
+</section>
+<footer class="footer footer-1" id="footer">
+<div class="footer-top">
+<div class="container">
+<div class="row">
+<div class="col-sm-12 col-md-12 col-lg-4 footer__widget footer__widget-about mb-30">
+<div class="footer__widget-content">
+<img alt="logo" src="../lfpack_logo_horizontal.png"/>
+<p>Living design system for the LF PAK Equipamentos Industriais reference interface.</p>
+<p>Mail: <a href="mailto:contato@lfpak.com.br">contato@lfpak.com.br</a></p>
+</div>
+</div>
+<div class="col-6 col-sm-6 col-md-3 col-lg-2 footer__widget footer__widget-nav">
+<h6 class="footer__widget-title">Sections</h6>
+<div class="footer__widget-content"><nav><ul class="list-unstyled"><li><a href="#typography">Typography</a></li><li><a href="#colors">Colors</a></li><li><a href="#components">Components</a></li></ul></nav></div>
+</div>
+<div class="col-12 col-sm-12 col-md-6 col-lg-4 footer__widget footer__widget-newsletter">
+<div class="footer__widget-content">
+<h6 class="footer__widget-title">Newsletter</h6>
+<p>Footer form sample from the original template.</p>
+<form class="widget__newsletter-form"><div class="form-group mb-0"><input class="form-control" placeholder="Your Email Address " type="text"/><button class="btn btn__primary btn__hover2" type="submit">Subscribe</button></div></form>
+</div>
+</div>
+</div>
+</div>
+</div>
+</footer>
+<button class="" id="scrollTopBtn"><i class="fa fa-long-arrow-up"></i></button>
+<div class="module__search-container">
+<i class="fa fa-times close-search"></i>
+<form class="module__search-form">
+<input class="search__input" placeholder="Type Words Then Enter" type="text"/>
+<button class="module__search-btn"><i class="fa fa-search"></i></button>
+</form>
+</div>
+</div>
+<script src="assets/160a426ff2894252_jquery-3.3.1.min.js"></script>
+<script src="assets/93c65e9608f9fb9d_plugins.js"></script>
+<script src="assets/729c1ec7a5e7e5f0_main.js"></script>
+</body>
+</html>

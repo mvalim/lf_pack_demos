@@ -1,0 +1,1733 @@
+<!DOCTYPE html>
+<html class="js flexbox canvas canvastext webgl no-touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths" dir="ltr" lang="en"><head><script data-offline-resolve="1">(function(){
+var ASSET_MAP = {"https://themeearth.com/tf/html/phactorize/?storefront=envato-elements": "assets/97d1610cb7ea9435_file.html", "https://fonts.googleapis.com/css?family=Poppins:400,500,600,700": "assets/baa32f37b62e0937_css.css", "https://fonts.googleapis.com/css?family=Rubik:400,500,700&display=swap": "assets/cba80548b13c66a9_css.css", "https://themeearth.com/tf/html/phactorize/css/magnific-popup.css": "assets/7e0c410dc376b653_magnific-popup.css", "https://themeearth.com/tf/html/phactorize/css/main.css": "assets/c5f0cbb7a2d7c8cf_main.css", "https://themeearth.com/tf/html/phactorize/css/meanmenu.min.css": "assets/46123c238c9b5ed2_meanmenu.min.css", "https://themeearth.com/tf/html/phactorize/css/slick.css": "assets/de1e399b07289f3b_slick.css", "https://themeearth.com/tf/html/phactorize/css/owl.carousel.min.css": "assets/3b794f3708960b08_owl.carousel.min.css", "https://themeearth.com/tf/html/phactorize/css/animate.css": "assets/0db128b7e942fcaa_animate.css", "https://themeearth.com/tf/html/phactorize/css/bootstrap.min.css": "assets/f75e846cc83bd114_bootstrap.min.css", "https://themeearth.com/tf/html/phactorize/style.css": "assets/8acbede73b879e57_style.css", "https://themeearth.com/tf/html/phactorize/css/font-awesome.min.css": "assets/936ffccdc35bc552_font-awesome.min.css", "https://themeearth.com/tf/html/phactorize/js/jquery-2.2.4.min.js": "assets/05b85d96f41fff14_jquery-2.2.4.min.js", "https://themeearth.com/tf/html/phactorize/img/logo.png": "assets/ce84720f3e290867_logo.png", "https://themeearth.com/tf/html/phactorize/img/why-us-2.jpg": "assets/64b4b7b7d84e4372_why-us-2.jpg", "https://themeearth.com/tf/html/phactorize/img/why-us-1.jpg": "assets/602a27416a914ec8_why-us-1.jpg", "https://themeearth.com/tf/html/phactorize/css/responsive.css": "assets/234594a9e3960b0a_responsive.css", "https://themeearth.com/tf/html/phactorize/img/s1.jpg": "assets/a1f6b1809de1f0ca_s1.jpg", "https://themeearth.com/tf/html/phactorize/img/icon/secure.png": "assets/e1208a2311a09126_secure.png", "https://themeearth.com/tf/html/phactorize/img/icon/award.png": "assets/3e7d58316ab27c12_award.png", "https://themeearth.com/tf/html/phactorize/img/client2.png": "assets/481f70e1d1b58205_client2.png", "https://themeearth.com/tf/html/phactorize/img/client3.png": "assets/1da514295f368675_client3.png", "https://themeearth.com/tf/html/phactorize/img/client1.png": "assets/5359578e5ff4bba7_client1.png", "https://fonts.gstatic.com/s/poppins/v24/pxiByp8kv8JHgFVrLCz7Z1xlFd2JQEk.woff2": "assets/197a3cbd7290c242_pxiByp8kv8JHgFVrLCz7Z1xlFd2JQE.woff2", "https://fonts.gstatic.com/s/poppins/v24/pxiEyp8kv8JHgFVrJJfecnFHGPc.woff2": "assets/3dc5d0c52428fe16_pxiEyp8kv8JHgFVrJJfecnFHGPc.woff2", "https://fonts.gstatic.com/s/poppins/v24/pxiByp8kv8JHgFVrLEj6Z1xlFd2JQEk.woff2": "assets/872e862918591a9e_pxiByp8kv8JHgFVrLEj6Z1xlFd2JQE.woff2", "https://fonts.gstatic.com/s/rubik/v31/iJWKBXyIfDnIV7nBrXyw023e.woff2": "assets/99ec7ccb40cf143f_iJWKBXyIfDnIV7nBrXyw023e.woff2", "https://themeearth.com/tf/html/phactorize/js/bootstrap.min.js": "assets/53964478a7c634e8_bootstrap.min.js", "https://themeearth.com/tf/html/phactorize/js/isotope.pkgd.min.js": "assets/6d5f973ee0c0f066_isotope.pkgd.min.js", "https://themeearth.com/tf/html/phactorize/js/slick.min.js": "assets/0c7178cc6ca34fb1_slick.min.js", "https://themeearth.com/tf/html/phactorize/js/jquery.magnific-popup.min.js": "assets/3fddc6d28aba3c13_jquery.magnific-popup.min.js", "https://themeearth.com/tf/html/phactorize/js/owl.animate.js": "assets/11817a3961478f7a_owl.animate.js", "https://themeearth.com/tf/html/phactorize/js/jquery.scrollUp.min.js": "assets/b7662ba99a132eaf_jquery.scrollUp.min.js", "https://themeearth.com/tf/html/phactorize/js/jquery.counterup.min.js": "assets/26d40f8ffdf1b9bf_jquery.counterup.min.js", "https://themeearth.com/tf/html/phactorize/js/owl.carousel.min.js": "assets/83553d22ccd56e55_owl.carousel.min.js", "https://themeearth.com/tf/html/phactorize/js/modernizr.min.js": "assets/cf25ec18f223f4c5_modernizr.min.js", "https://themeearth.com/tf/html/phactorize/js/waypoints.min.js": "assets/a0fded691aed767f_waypoints.min.js", "https://themeearth.com/tf/html/phactorize/js/jquery.meanmenu.min.js": "assets/eaf2ccc92a9f8026_jquery.meanmenu.min.js", "https://themeearth.com/tf/html/phactorize/js/imagesloaded.pkgd.min.js": "assets/5a65b0ca177f1c04_imagesloaded.pkgd.min.js", "https://themeearth.com/tf/html/phactorize/js/custom.js": "assets/a87e4c0614892397_custom.js", "https://themeearth.com/tf/html/phactorize/img/footer-logo.png": "assets/d5399ae9a6554f7e_footer-logo.png", "https://themeearth.com/tf/html/phactorize/img/icon/footer-map-marker.png": "assets/f2be4fa836166477_footer-map-marker.png", "https://themeearth.com/tf/html/phactorize/img/icon/footer-envelop.png": "assets/f9fcc5b552e47030_footer-envelop.png", "https://themeearth.com/tf/html/phactorize/img/icon/footer-phone.png": "assets/b00c83fe171e99ed_footer-phone.png", "https://themeearth.com/tf/html/phactorize/img/s2.jpg": "assets/cd21fa83410bfde4_s2.jpg", "https://themeearth.com/tf/html/phactorize/img/s3.jpg": "assets/ab7eff9984aac658_s3.jpg", "https://themeearth.com/tf/html/phactorize/img/s4.jpg": "assets/6df18fc73d204e52_s4.jpg", "https://themeearth.com/tf/html/phactorize/img/s5.jpg": "assets/20a50c01eb8c34b0_s5.jpg", "https://themeearth.com/tf/html/phactorize/img/s6.jpg": "assets/a81cf68520d016fe_s6.jpg", "https://themeearth.com/tf/html/phactorize/img/team-1.jpg": "assets/ad398bdf71fa630d_team-1.jpg", "https://themeearth.com/tf/html/phactorize/img/team-3.jpg": "assets/2d19cebe8b6fb0b2_team-3.jpg", "https://themeearth.com/tf/html/phactorize/img/team-2.jpg": "assets/f2560b4aa10f3835_team-2.jpg", "https://themeearth.com/tf/html/phactorize/img/p1.jpg": "assets/855594eba39d7e4d_p1.jpg", "https://themeearth.com/tf/html/phactorize/img/p2.jpg": "assets/4d8b865b23d6d0c6_p2.jpg", "https://themeearth.com/tf/html/phactorize/img/p3.jpg": "assets/e6438ccff0de78f3_p3.jpg", "https://themeearth.com/tf/html/phactorize/img/video-thumb.jpg": "assets/b7926c1b2e37ccab_video-thumb.jpg", "https://themeearth.com/tf/html/phactorize/img/b1.jpg": "assets/169de7b3e369dbed_b1.jpg", "https://themeearth.com/tf/html/phactorize/img/b2.jpg": "assets/803217130f10765c_b2.jpg", "https://themeearth.com/tf/html/phactorize/img/b3.jpg": "assets/46cb5461083194d9_b3.jpg", "https://themeearth.com/tf/html/phactorize/img/preloader.gif": "assets/4e5b931d81fdb6c2_preloader.gif", "https://themeearth.com/tf/html/phactorize/img/icon/play_button.png": "assets/fe2b4052ed4ee7d9_play_button.png", "https://themeearth.com/tf/html/phactorize/img/why-us-img.png": "assets/65d06196b073185d_why-us-img.png", "https://themeearth.com/tf/html/phactorize/img/call-to-action.jpg": "assets/5850e5f0d51e3074_call-to-action.jpg", "https://themeearth.com/tf/html/phactorize/img/slider_2.jpg": "assets/1a014367ecfad89f_slider_2.jpg", "https://themeearth.com/tf/html/phactorize/img/slider_1.jpg": "assets/ced7545d94110e72_slider_1.jpg", "https://themeearth.com/tf/html/phactorize/img/testimonial-bg.jpg": "assets/0ab372f6076d66ad_testimonial-bg.jpg", "https://themeearth.com/tf/html/phactorize/fonts/fontawesome-webfont.woff2?v=4.4.0": "assets/ff82aeed6b9bb670_fontawesome-webfont.woff2", "https://themeearth.com/tf/html/phactorize/img/footer-bg.jpg": "assets/0edc776267e28c6d_footer-bg.jpg", "https://themeearth.com/tf/html/phactorize/img/service_bg.jpg": "assets/c3d1d7592a6954e3_service_bg.jpg", "https://themeearth.com/tf/html/phactorize/blog-3-column.html": "assets/cb170c83015d6bec_blog-3-column.html", "https://themeearth.com/tf/html/phactorize/contact.html": "assets/a1e023fb6055c296_contact.html", "https://themeearth.com/tf/html/phactorize/img/apple-touch-icon-57x57.png": "assets/21f23c8daf6455cc_apple-touch-icon-57x57.png", "https://themeearth.com/tf/html/phactorize/blog.html": "assets/6db7802543530ff4_blog.html", "https://themeearth.com/tf/html/phactorize/img/apple-touch-icon-180x180.png": "assets/831c913f8faa4e80_apple-touch-icon-180x180.png", "https://themeearth.com/tf/html/phactorize/about.html": "assets/fa696e6d93ff336f_about.html", "https://themeearth.com/tf/html/phactorize/blog-2-column.html": "assets/858c417f5b2e6fc1_blog-2-column.html", "https://themeearth.com/tf/html/phactorize/img/apple-touch-icon-72x72.png": "assets/aaf11af448a24240_apple-touch-icon-72x72.png", "https://themeearth.com/tf/html/phactorize/img/favicon.png": "assets/48a8b41d962f6b9e_favicon.png", "https://themeearth.com/tf/html/phactorize/img/apple-touch-icon-120x120.png": "assets/f3f06a578ec40e8f_apple-touch-icon-120x120.png", "https://themeearth.com/tf/html/phactorize/index-2.html": "assets/6389f32393bf97d6_index-2.html", "https://themeearth.com/tf/html/phactorize/blog-list.html": "assets/f7af0dd1838faf5c_blog-list.html", "https://themeearth.com/tf/html/phactorize/img/apple-touch-icon-152x152.png": "assets/e328b2a573de7a03_apple-touch-icon-152x152.png", "https://themeearth.com/tf/html/phactorize/blog-details.html": "assets/98cd4deb7263a60a_blog-details.html", "https://themeearth.com/tf/html/phactorize/img/apple-touch-icon-76x76.png": "assets/291c3aab011a6a1c_apple-touch-icon-76x76.png", "https://themeearth.com/tf/html/phactorize/solutions-details.html": "assets/297b1af08a8fc580_solutions-details.html", "https://themeearth.com/tf/html/phactorize/project.html": "assets/0a9b6a7f27841546_project.html", "https://themeearth.com/tf/html/phactorize/img/apple-touch-icon-114x114.png": "assets/7d8bb0c7cdc53a7b_apple-touch-icon-114x114.png", "https://www.youtube.com/watch?v=YzDz8g1z83U": "assets/ece0b9c22e51c89c_watch.html", "https://themeearth.com/tf/html/phactorize/blog-left-sidebar.html": "assets/435efbd4f9a8f66e_blog-left-sidebar.html", "https://themeearth.com/tf/html/phactorize/img/apple-touch-icon-144x144.png": "assets/854ae802edc2b372_apple-touch-icon-144x144.png", "https://themeearth.com/tf/html/phactorize/project-details.html": "assets/4659aa338a8b62c6_project-details.html", "https://themeearth.com/tf/html/phactorize/img/apple-touch-icon.png": "assets/21f23c8daf6455cc_apple-touch-icon-57x57.png", "https://themeearth.com/tf/html/phactorize/solutions.html": "assets/71e6db3df67f8294_solutions.html", "https://themeearth.com/tf/html/phactorize/index.html": "assets/97d1610cb7ea9435_file.html"};
+// Pre-populate path+query keys: when opened via file://, JS
+// resolves '/foo.js' against file://… so we lose the original
+// origin. Indexing by pathname+search lets the lookup succeed.
+var _add = {};
+for (var _k in ASSET_MAP) {
+  try { var _u = new URL(_k); _add[_u.pathname + _u.search] = ASSET_MAP[_k]; }
+  catch(e){}
+}
+for (var _k in _add) if (!ASSET_MAP[_k]) ASSET_MAP[_k] = _add[_k];
+function resolveLocal(u){
+  if (!u || typeof u !== 'string') return null;
+  if (u.indexOf('data:') === 0 || u.indexOf('blob:') === 0) return null;
+  if (ASSET_MAP[u]) return ASSET_MAP[u];
+  try {
+    var url = new URL(u, location.href);
+    var pq = url.pathname + url.search;
+    if (ASSET_MAP[pq]) return ASSET_MAP[pq];
+    // Next.js image optimization wrapper — peel the inner CDN URL
+    if (/_next\/image$/.test(url.pathname)) {
+      var t = url.searchParams.get('url');
+      if (t) {
+        var dec = decodeURIComponent(t);
+        if (ASSET_MAP[dec]) return ASSET_MAP[dec];
+        var bare = dec.split('?')[0];
+        for (var k in ASSET_MAP) {
+          if (k.split('?')[0] === bare) return ASSET_MAP[k];
+        }
+      }
+    }
+  } catch(e){}
+  return null;
+}
+function rewriteSrcset(s){
+  if (!s || typeof s !== 'string') return s;
+  return s.split(',').map(function(it){
+    var p = it.trim().split(/\s+/);
+    var loc = resolveLocal(p[0]);
+    if (loc) p[0] = loc;
+    return p.join(' ');
+  }).join(', ');
+}
+// Patch property setters: el.src = '...' / el.href = '...'
+// IMPORTANT: skip rewrite when the element has crossOrigin set.
+// WebGL textures (UnicornStudio, Three.js, etc.) are loaded via
+//   img.crossOrigin = 'anonymous'; img.src = 'https://cdn/...'
+// and consumed via gl.texImage2D. file:// resources have no CORS
+// headers, so rewriting to local makes WebGL reject the texture
+// (Access blocked by CORS policy → black/missing 3D scene).
+// Better to keep the original URL: works online, fails offline,
+// matches non-patched behaviour.
+function patchSetter(klass, prop, transform){
+  if (!klass || !klass.prototype) return;
+  var desc = Object.getOwnPropertyDescriptor(klass.prototype, prop);
+  if (!desc || !desc.set) return;
+  Object.defineProperty(klass.prototype, prop, {
+    configurable: true,
+    get: desc.get,
+    set: function(v){
+      try {
+        if (this.crossOrigin) {
+          /* preserve cross-origin URL — see comment above */
+        } else if (transform === 'srcset') {
+          v = rewriteSrcset(v);
+        } else {
+          var loc = resolveLocal(v); if (loc) v = loc;
+        }
+      } catch(e){}
+      desc.set.call(this, v);
+    }
+  });
+}
+patchSetter(window.HTMLScriptElement, 'src');
+patchSetter(window.HTMLLinkElement, 'href');
+patchSetter(window.HTMLImageElement, 'src');
+patchSetter(window.HTMLImageElement, 'srcset', 'srcset');
+patchSetter(window.HTMLSourceElement, 'src');
+patchSetter(window.HTMLSourceElement, 'srcset', 'srcset');
+patchSetter(window.HTMLMediaElement, 'src');
+patchSetter(window.HTMLIFrameElement, 'src');
+// Patch setAttribute too — some libs use it instead of property set
+var _setAttr = Element.prototype.setAttribute;
+Element.prototype.setAttribute = function(name, value){
+  try {
+    if (typeof value === 'string' && !this.crossOrigin) {
+      if (name === 'src' || name === 'href') {
+        var loc = resolveLocal(value);
+        if (loc) value = loc;
+      } else if (name === 'srcset') {
+        value = rewriteSrcset(value);
+      }
+    }
+  } catch(e){}
+  return _setAttr.call(this, name, value);
+};
+// Expose for the late-init script in body
+window.__resolveLocal = resolveLocal;
+window.__rewriteSrcset = rewriteSrcset;
+})();</script>
+<!-- Meta Tags -->
+<meta content="width=device-width,initial-scale=1.0" name="viewport"/>
+<meta charset="utf-8"/>
+<meta content="Induspro || Industrial,Engineering,Factorial HTML5 Template" name="description"/>
+<meta content="chemicals, contractor, energy, engineering, factory, gas, heavy industries, industry, machinery, manufacturing, oil, plant, production, products, resources" name="keywords"/>
+<meta content="Theme Earth" name="author"/>
+<!-- Title -->
+<title>Phactorize | Factory &amp; Industrial HTML5 Template</title>
+<!-- Favicon Icon -->
+<link href="assets/48a8b41d962f6b9e_favicon.png" rel="icon" type="image/png"/>
+<!-- Apple Touch Icons -->
+<link href="assets/21f23c8daf6455cc_apple-touch-icon-57x57.png" rel="apple-touch-icon"/>
+<link href="assets/21f23c8daf6455cc_apple-touch-icon-57x57.png" rel="apple-touch-icon" sizes="57x57"/>
+<link href="assets/aaf11af448a24240_apple-touch-icon-72x72.png" rel="apple-touch-icon" sizes="72x72"/>
+<link href="assets/291c3aab011a6a1c_apple-touch-icon-76x76.png" rel="apple-touch-icon" sizes="76x76"/>
+<link href="assets/7d8bb0c7cdc53a7b_apple-touch-icon-114x114.png" rel="apple-touch-icon" sizes="114x114"/>
+<link href="assets/f3f06a578ec40e8f_apple-touch-icon-120x120.png" rel="apple-touch-icon" sizes="120x120"/>
+<link href="assets/854ae802edc2b372_apple-touch-icon-144x144.png" rel="apple-touch-icon" sizes="144x144"/>
+<link href="assets/e328b2a573de7a03_apple-touch-icon-152x152.png" rel="apple-touch-icon" sizes="152x152"/>
+<link href="assets/831c913f8faa4e80_apple-touch-icon-180x180.png" rel="apple-touch-icon" sizes="180x180"/>
+<!-- Stylesheets Start -->
+<link href="assets/baa32f37b62e0937_css.css" rel="stylesheet"/>
+<link href="assets/cba80548b13c66a9_css.css" rel="stylesheet"/>
+<link href="assets/f75e846cc83bd114_bootstrap.min.css" rel="stylesheet"/>
+<link href="assets/936ffccdc35bc552_font-awesome.min.css" rel="stylesheet"/>
+<link href="assets/7e0c410dc376b653_magnific-popup.css" rel="stylesheet"/>
+<link href="assets/de1e399b07289f3b_slick.css" rel="stylesheet"/>
+<link href="assets/3b794f3708960b08_owl.carousel.min.css" rel="stylesheet"/>
+<link href="assets/0db128b7e942fcaa_animate.css" rel="stylesheet"/>
+<link href="assets/c5f0cbb7a2d7c8cf_main.css" rel="stylesheet"/>
+<link href="assets/8acbede73b879e57_style.css" rel="stylesheet"/>
+<link href="assets/46123c238c9b5ed2_meanmenu.min.css" rel="stylesheet"/>
+<link href="assets/234594a9e3960b0a_responsive.css" rel="stylesheet"/>
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+	  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+<style data-offline="1">/* offline: ensure content is visible regardless of JS init state */
+html,body{opacity:1!important;visibility:visible!important}
+.page-loader,.site-loader,[class*='loading-screen'],[id*='loading-screen']{display:none!important}
+</style></head>
+<body class="home-v1" style="overflow-x: hidden;">
+<!-- Live Chat Start -->
+<script async="" src="//code.tidio.co/rdu58dqsiymikhfizchesvzwvkx6zp4f.js"></script>
+<!-- Live Chat End -->
+<!-- Preloader Start -->
+<div id="preloader" style="display: none;">
+<div id="preloader-status" style="display: none;"></div>
+</div>
+<!-- Preloader End -->
+<!-- Header Start -->
+<header>
+<!-- Header Topbar Start -->
+<div class="header-top-one">
+<div class="container">
+<div class="row">
+<div class="col-md-9 col-sm-8">
+<div class="header-left">
+<ul>
+<li><i class="fa fa-phone"></i>+00 0123456789</li>
+<li><i class="fa fa-envelope"></i>info@endustriz.com</li>
+</ul>
+</div>
+</div>
+<div class="col-md-3 col-sm-4">
+<div class="header-right-div">
+<div class="soical-profile">
+<ul>
+<li><a href=""><i class="fa fa-facebook"></i></a></li>
+<li><a href=""><i class="fa fa-rss"></i></a></li>
+<li><a href=""><i class="fa fa-google-plus"></i></a></li>
+<li><a href=""><i class="fa fa-dribbble"></i></a></li>
+<li><a href=""><i class="fa fa-twitter"></i></a></li>
+<li><a href=""><i class="fa fa-pinterest"></i></a></li>
+<li><a href=""><i class="fa fa-linkedin"></i></a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Header Topbar End -->
+<!-- Main Bar Start -->
+<div class="hd-sec" style="margin-top: 0px;">
+<div class="container">
+<div class="row">
+<div class="col-xs-8 phone-layout-logo">
+<a href="index.html"><img alt="" src="assets/ce84720f3e290867_logo.png"/></a>
+</div>
+<div class="col-md-3 col-sm-12 col-xs-8 logo-area">
+<div class="logo">
+<a href="index.html"><img alt="" src="assets/ce84720f3e290867_logo.png"/></a>
+</div>
+</div>
+<!-- Main Menu Start -->
+<div class="mobile-nav-menu"></div>
+<div class="col-md-7 col-sm-10 menu-left">
+<div class="menu">
+<nav class="main-menu" id="main-menu" style="display: block;">
+<ul>
+<li class="active"><a href="index.html">Home</a>
+<ul>
+<li><a href="index.html">Home Version 1</a></li>
+<li><a href="index-2.html">Home Version 2</a></li>
+</ul>
+</li>
+<li><a href="about.html">about us </a></li>
+<li><a href="solutions.html">solution </a>
+<ul>
+<li><a href="solutions.html">solution Page</a></li>
+<li><a href="solutions-details.html">solutions details</a></li>
+</ul>
+</li>
+<li><a href="project.html">project </a>
+<ul>
+<li><a href="project.html">project Page</a></li>
+<li><a href="project-details.html">project details</a></li>
+</ul>
+</li>
+<li><a href="#">Page</a>
+<ul>
+<li><a href="about.html">about us</a></li>
+<li><a href="solutions.html">solution Page</a></li>
+<li><a href="solutions-details.html">solutions details</a></li>
+<li><a href="project.html">project Page</a></li>
+<li><a href="project-details.html">project details</a></li>
+<li><a href="#">Level 3 Menu<i class="fa fa-angle-right"></i></a>
+<ul>
+<li><a href="#">Level 3 SubMenu</a></li>
+<li><a href="#">Level 3 SubMenu</a></li>
+<li><a href="#">Level 3 SubMenu</a></li>
+<li><a href="#">Level 3 SubMenu</a></li>
+<li><a href="#">Level 3 SubMenu</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="blog.html">blog</a>
+<ul>
+<li><a href="blog.html">blog</a></li>
+<li><a href="blog-2-column.html">blog 2 Column</a></li>
+<li><a href="blog-3-column.html">blog 3 Column</a></li>
+<li><a href="blog-left-sidebar.html">blog Left Sidebar</a></li>
+<li><a href="blog-list.html">blog List</a></li>
+<li><a href="blog-details.html">blog Details</a></li>
+</ul>
+</li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+<!-- Menu Search Bar Start -->
+<div class="search-bar-icon">
+<div class="site-search">
+<span data-toggle="dropdown"><i class="fa fa-search"></i></span>
+<div class="search-forum dropdown-menu animation slideUpIn">
+<form action="#">
+<input placeholder="Search For Site" type="text"/>
+<input type="submit" value="Go"/>
+</form>
+</div>
+</div>
+</div>
+<!-- Menu Search Bar End -->
+</div>
+</div>
+<!-- Main Menu End -->
+<!-- Main Apply Button Start -->
+<div class="col-md-2 col-sm-2 download-button-area">
+<div class="download-button">
+<a href="#">Get Support</a>
+</div>
+</div>
+<!-- Main Apply Button End -->
+</div>
+</div>
+</div>
+<!-- Main Bar End -->
+</header>
+<!-- Header End -->
+<!-- Slider Section Start -->
+<div class="slider">
+<div class="all-slide owl-item owl-carousel owl-theme owl-loaded owl-text-select-on">
+<!-- Slider Single Item Start -->
+<!-- Slider Single Item End -->
+<!-- Slider Single Item Start -->
+<!-- Slider Single Item End -->
+<div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(-5760px, 0px, 0px); transition: 0.25s; width: 11520px;"><div class="owl-item cloned" style="width: 1920px; margin-right: 0px;"><div class="single-slide" style='background-image:url("assets/ced7545d94110e72_slider_1.jpg");'>
+<div class="slider-overlay"></div>
+<div class="slider-wrapper">
+<div class="slider-text">
+<div class="slider-caption">
+<h1 class="animated fadeInUp" style="opacity: 1;">better solution for grow up your <span>industry featuare</span></h1>
+<p class="animated fadeInDown" style="opacity: 1;">Hendrerit vero dapibusultricesfaucibusmauris dolor in curabitur amet ultricies justo necduis ornare tortor suspendisse sed.</p>
+<ul class="animated fadeInDown" style="opacity: 1;">
+<li><a href="service.html">get service</a></li>
+<li><a href="contact.html">contact now</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div></div><div class="owl-item cloned" style="width: 1920px; margin-right: 0px;"><div class="single-slide" style='background-image:url("assets/1a014367ecfad89f_slider_2.jpg");'>
+<div class="slider-overlay"></div>
+<div class="slider-wrapper">
+<div class="slider-text">
+<div class="slider-caption">
+<h1 class="animated fadeInUp" style="opacity: 1;">We provide best <span>industry</span> Service in the world </h1>
+<p class="animated fadeInDown" style="opacity: 1;">Hendrerit vero dapibusultricesfaucibusmauris dolor in curabitur amet ultricies justo necduis ornare tortor suspendisse sed.</p>
+<ul class="animated fadeInDown" style="opacity: 1;">
+<li><a href="service.html">get service</a></li>
+<li><a href="contact.html">contact now</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div></div><div class="owl-item" style="width: 1920px; margin-right: 0px;"><div class="single-slide" style='background-image:url("assets/ced7545d94110e72_slider_1.jpg");'>
+<div class="slider-overlay"></div>
+<div class="slider-wrapper">
+<div class="slider-text">
+<div class="slider-caption">
+<h1 class="animated fadeInUp" style="opacity: 1;">better solution for grow up your <span>industry featuare</span></h1>
+<p class="animated fadeInDown" style="opacity: 1;">Hendrerit vero dapibusultricesfaucibusmauris dolor in curabitur amet ultricies justo necduis ornare tortor suspendisse sed.</p>
+<ul class="animated fadeInDown" style="opacity: 1;">
+<li><a href="service.html">get service</a></li>
+<li><a href="contact.html">contact now</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div></div><div class="owl-item active" style="width: 1920px; margin-right: 0px;"><div class="single-slide" style='background-image:url("assets/1a014367ecfad89f_slider_2.jpg");'>
+<div class="slider-overlay"></div>
+<div class="slider-wrapper">
+<div class="slider-text">
+<div class="slider-caption">
+<h1 class="animated fadeInUp" style="opacity: 1;">We provide best <span>industry</span> Service in the world </h1>
+<p class="animated fadeInDown" style="opacity: 1;">Hendrerit vero dapibusultricesfaucibusmauris dolor in curabitur amet ultricies justo necduis ornare tortor suspendisse sed.</p>
+<ul class="animated fadeInDown" style="opacity: 1;">
+<li><a href="service.html">get service</a></li>
+<li><a href="contact.html">contact now</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div></div><div class="owl-item cloned" style="width: 1920px; margin-right: 0px;"><div class="single-slide" style='background-image:url("assets/ced7545d94110e72_slider_1.jpg");'>
+<div class="slider-overlay"></div>
+<div class="slider-wrapper">
+<div class="slider-text">
+<div class="slider-caption">
+<h1 class="animated fadeInUp" style="opacity: 1;">better solution for grow up your <span>industry featuare</span></h1>
+<p class="animated fadeInDown" style="opacity: 1;">Hendrerit vero dapibusultricesfaucibusmauris dolor in curabitur amet ultricies justo necduis ornare tortor suspendisse sed.</p>
+<ul class="animated fadeInDown" style="opacity: 1;">
+<li><a href="service.html">get service</a></li>
+<li><a href="contact.html">contact now</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div></div><div class="owl-item cloned" style="width: 1920px; margin-right: 0px;"><div class="single-slide" style='background-image:url("assets/1a014367ecfad89f_slider_2.jpg");'>
+<div class="slider-overlay"></div>
+<div class="slider-wrapper">
+<div class="slider-text">
+<div class="slider-caption">
+<h1 class="animated fadeInUp" style="opacity: 1;">We provide best <span>industry</span> Service in the world </h1>
+<p class="animated fadeInDown" style="opacity: 1;">Hendrerit vero dapibusultricesfaucibusmauris dolor in curabitur amet ultricies justo necduis ornare tortor suspendisse sed.</p>
+<ul class="animated fadeInDown" style="opacity: 1;">
+<li><a href="service.html">get service</a></li>
+<li><a href="contact.html">contact now</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div></div></div></div><div class="owl-controls"><div class="owl-nav"><div class="owl-prev" style=""><i class="fa fa-angle-left"></i></div><div class="owl-next" style=""><i class="fa fa-angle-right"></i></div></div><div class="owl-dots" style=""><div class="owl-dot"><span></span></div><div class="owl-dot active"><span></span></div></div></div></div>
+</div>
+<!-- Slider Section End -->
+<!-- Why Us Section Start -->
+<div class="why-us-sec pt-100 pb-70">
+<div class="container">
+<div class="row">
+<div class="col-md-6">
+<div class="why-us-box">
+<span class="why-us-subtitle">About Us Our Company</span>
+<h1>indrusty is a biggest  company for help to new growing industral</h1>
+<p>Pellentesquequamvestibulum sed est suspendisse. Vestibulum eros nunc nec suspendisse nec justo. Mauris nulla adipiscing dapibus amet, vitae nulla dolorum eget, fermentum mauris suscipit interdum, non nibh montes turpis suscipit nonummy. Dapibus a luctus, amet lectus arcu dui velit augue massa lobortis turpis.Putant suscipit te vis, et dicat aperiri virtute eum. Cum ei tollit indoctum accommodare, has no fugit nostrud, duo id feugiat omittam probatus. </p>
+<div class="why-us-box-list">
+<div class="row">
+<div class="col-md-6">
+<div class="why-us-box-item">
+<div class="media">
+<div class="media-left">
+<div class="why-us-box-icon">
+<i aria-hidden="true" class="fa fa-check-circle"></i>
+</div>
+</div>
+<div class="media-body">
+<div class="why-us-box-text">Mechanical Industry</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-6">
+<div class="why-us-box-item">
+<div class="media">
+<div class="media-left">
+<div class="why-us-box-icon">
+<i aria-hidden="true" class="fa fa-check-circle"></i>
+</div>
+</div>
+<div class="media-body">
+<div class="why-us-box-text">chemical research</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-6">
+<div class="why-us-box-item">
+<div class="media">
+<div class="media-left">
+<div class="why-us-box-icon">
+<i aria-hidden="true" class="fa fa-check-circle"></i>
+</div>
+</div>
+<div class="media-body">
+<div class="why-us-box-text">civil engineering</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-6">
+<div class="why-us-box-item">
+<div class="media">
+<div class="media-left">
+<div class="why-us-box-icon">
+<i aria-hidden="true" class="fa fa-check-circle"></i>
+</div>
+</div>
+<div class="media-body">
+<div class="why-us-box-text">power &amp; gas</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-6">
+<div class="row">
+<!-- Why Us Single Inner  Start -->
+<div class="col-md-6 col-sm-6">
+<div class="why-us-item">
+<div class="why-us-item-img">
+<img alt="" src="assets/602a27416a914ec8_why-us-1.jpg"/>
+</div>
+<div class="why-us-item-desc">
+<h2><a href="#">our commitment</a></h2>
+<p>Lorem ipsum dolor  ametvulputate a non, laoreet tellus iaculis, molestie morbi eu augue turpis.   </p>
+<a class="why-us-readmore" href="#">Read More</a>
+</div>
+</div>
+</div>
+<!-- Why Us Single Inner  Start -->
+<!-- Why Us Single Inner  Start -->
+<div class="col-md-6 col-sm-6">
+<div class="why-us-item">
+<div class="why-us-item-img">
+<img alt="" src="assets/64b4b7b7d84e4372_why-us-2.jpg"/>
+</div>
+<div class="why-us-item-desc">
+<h2><a href="#">histry of company</a></h2>
+<p>Lorem ipsum dolor  ametvulputate a non, laoreet tellus iaculis, molestie morbi eu augue turpis.   </p>
+<a class="why-us-readmore" href="#">Read More</a>
+</div>
+</div>
+</div>
+<!-- Why Us Single Inner  Start -->
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Why Us Section End -->
+<!-- Service Section Start -->
+<div class="service-sec pt-100 pb-70">
+<div class="service-sec-overlay"></div>
+<div class="container">
+<!-- Section Title Start -->
+<div class="row">
+<div class="col-md-12">
+<div class="sec-title white-color">
+<h1>our awsome service</h1>
+<div class="border-bottom"></div>
+<p>we are  provided world best industry services in here so you can trust on us for grow industry</p>
+</div>
+</div>
+</div>
+<!-- Section Title End -->
+<div class="row">
+<!-- Single Service Inner Start -->
+<div class="col-md-4 col-sm-6 col-xs-12 inner">
+<div class="single-service-inner">
+<div class="service-thumb">
+<img alt="" src="assets/a1f6b1809de1f0ca_s1.jpg"/>
+<div class="service-thumb-shape"></div>
+<div class="service-thumb-shape-left"></div>
+<div class="readmore-button">
+<a href="#">Read More</a>
+</div>
+</div>
+<div class="service-title-inner">
+<div class="service-title">
+<h2><a href="#">Mechanical Industry</a></h2>
+<span>industry services</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Single Service Inner End -->
+<!-- Single Service Inner Start -->
+<div class="col-md-4 col-sm-6 col-xs-12 inner">
+<div class="single-service-inner">
+<div class="service-thumb">
+<img alt="" src="assets/cd21fa83410bfde4_s2.jpg"/>
+<div class="service-thumb-shape"></div>
+<div class="service-thumb-shape-left"></div>
+<div class="readmore-button">
+<a href="#">Read More</a>
+</div>
+</div>
+<div class="service-title-inner">
+<div class="service-title">
+<h2><a href="#">Chemical Research</a></h2>
+<span>research &amp; development</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Single Service Inner End -->
+<!-- Single Service Inner Start -->
+<div class="col-md-4 col-sm-6 col-xs-12 inner">
+<div class="single-service-inner">
+<div class="service-thumb">
+<img alt="" src="assets/ab7eff9984aac658_s3.jpg"/>
+<div class="service-thumb-shape"></div>
+<div class="service-thumb-shape-left"></div>
+<div class="readmore-button">
+<a href="#">Read More</a>
+</div>
+</div>
+<div class="service-title-inner">
+<div class="service-title">
+<h2><a href="#">civil engineering</a></h2>
+<span>construction  services</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Single Service Inner End -->
+<!-- Single Service Inner Start -->
+<div class="col-md-4 col-sm-6 col-xs-12 inner">
+<div class="single-service-inner">
+<div class="service-thumb">
+<img alt="" src="assets/6df18fc73d204e52_s4.jpg"/>
+<div class="service-thumb-shape"></div>
+<div class="service-thumb-shape-left"></div>
+<div class="readmore-button">
+<a href="#">Read More</a>
+</div>
+</div>
+<div class="service-title-inner">
+<div class="service-title">
+<h2><a href="#">oil &amp; gas services</a></h2>
+<span>mining &amp; provided</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Single Service Inner End -->
+<!-- Single Service Inner Start -->
+<div class="col-md-4 col-sm-6 col-xs-12 inner">
+<div class="single-service-inner">
+<div class="service-thumb">
+<img alt="" src="assets/20a50c01eb8c34b0_s5.jpg"/>
+<div class="service-thumb-shape"></div>
+<div class="service-thumb-shape-left"></div>
+<div class="readmore-button">
+<a href="#">Read More</a>
+</div>
+</div>
+<div class="service-title-inner">
+<div class="service-title">
+<h2><a href="#">agricultuaral processing</a></h2>
+<span>fresh &amp; good food</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Single Service Inner End -->
+<!-- Single Service Inner Start -->
+<div class="col-md-4 col-sm-6 col-xs-12 inner">
+<div class="single-service-inner">
+<div class="service-thumb">
+<img alt="" src="assets/a81cf68520d016fe_s6.jpg"/>
+<div class="service-thumb-shape"></div>
+<div class="service-thumb-shape-left"></div>
+<div class="readmore-button">
+<a href="#">Read More</a>
+</div>
+</div>
+<div class="service-title-inner">
+<div class="service-title">
+<h2><a href="#">power and engery</a></h2>
+<span>save engery &amp; power</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Single Service Inner End -->
+</div>
+</div>
+</div>
+<!-- Service Section End -->
+<!-- Team Section Start -->
+<div class="team-sec pt-100 pb-100">
+<div class="container">
+<!-- Section Title Start -->
+<div class="row">
+<div class="col-md-12">
+<div class="sec-title">
+<h1>our exprience employees</h1>
+<div class="border-bottom"></div>
+<p>we are  provided world best industry services in here so you can trust on us for grow industry</p>
+</div>
+</div>
+</div>
+<!-- Section Title End -->
+<div class="row">
+<div class="navbarsort">
+<button aria-expanded="false" class="navbar-toggle collapsed" data-target="#navbarfiltr" data-toggle="collapse" type="button">
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+<div class="shorttitle">
+<h2>Team Member</h2>
+</div>
+</div>
+<div class="collapse navbar-collapse latest--project" id="navbarfiltr">
+<ul class="team-tab">
+<li class="">
+<a aria-expanded="true" data-toggle="tab" href="#tab_1">
+<span class="team-tab-title">Engineering</span>
+</a>
+</li>
+<li class="active">
+<a aria-expanded="false" data-toggle="tab" href="#tab_2">
+<span class="team-tab-title">Plumber</span>
+</a>
+</li>
+<li class="">
+<a aria-expanded="false" data-toggle="tab" href="#tab_3">
+<span class="team-tab-title">Mechanical</span>
+</a>
+</li>
+</ul>
+</div>
+<div class="tab-content">
+<div class="tab-pane" id="tab_1">
+<div class="col-md-4 col-sm-4 col-xs-12 single-team-inner">
+<div class="single-team">
+<div class="plus-icon">
+<i aria-hidden="true" class="fa fa-plus"></i>
+<i aria-hidden="true" class="fa fa-minus"></i>
+</div>
+<div class="single-team-img">
+<img alt="" src="assets/ad398bdf71fa630d_team-1.jpg"/>
+<div class="team-overlay">
+<div class="team-overlay-text">
+<h2>Mary H. Whipple</h2>
+<span>Plumber, Helper</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4 col-sm-4 col-xs-12 single-team-inner">
+<div class="single-team">
+<div class="plus-icon">
+<i aria-hidden="true" class="fa fa-plus"></i>
+<i aria-hidden="true" class="fa fa-minus"></i>
+</div>
+<div class="single-team-img">
+<img alt="" src="assets/2d19cebe8b6fb0b2_team-3.jpg"/>
+<div class="team-overlay">
+<div class="team-overlay-text">
+<h2>Kenneth P. Chance</h2>
+<span>Plumber, Service</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4 col-sm-4 col-xs-12 single-team-inner">
+<div class="single-team">
+<div class="plus-icon">
+<i aria-hidden="true" class="fa fa-plus"></i>
+<i aria-hidden="true" class="fa fa-minus"></i>
+</div>
+<div class="single-team-img">
+<img alt="" src="assets/f2560b4aa10f3835_team-2.jpg"/>
+<div class="team-overlay">
+<div class="team-overlay-text">
+<h2>Mark S. Phillips</h2>
+<span>Plumber, Manager</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="tab-pane active" id="tab_2">
+<div class="col-md-4 col-sm-4 col-xs-12 single-team-inner">
+<div class="single-team">
+<div class="plus-icon">
+<i aria-hidden="true" class="fa fa-plus"></i>
+<i aria-hidden="true" class="fa fa-minus"></i>
+</div>
+<div class="single-team-img">
+<img alt="" src="assets/2d19cebe8b6fb0b2_team-3.jpg"/>
+<div class="team-overlay">
+<div class="team-overlay-text">
+<h2>Kenneth P. Chance</h2>
+<span>Plumber, Service</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4 col-sm-4 col-xs-12 single-team-inner">
+<div class="single-team">
+<div class="plus-icon">
+<i aria-hidden="true" class="fa fa-plus"></i>
+<i aria-hidden="true" class="fa fa-minus"></i>
+</div>
+<div class="single-team-img">
+<img alt="" src="assets/f2560b4aa10f3835_team-2.jpg"/>
+<div class="team-overlay">
+<div class="team-overlay-text">
+<h2>Mark S. Phillips</h2>
+<span>Plumber, Manager</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4 col-sm-4 col-xs-12 single-team-inner">
+<div class="single-team">
+<div class="plus-icon">
+<i aria-hidden="true" class="fa fa-plus"></i>
+<i aria-hidden="true" class="fa fa-minus"></i>
+</div>
+<div class="single-team-img">
+<img alt="" src="assets/ad398bdf71fa630d_team-1.jpg"/>
+<div class="team-overlay">
+<div class="team-overlay-text">
+<h2>Mary H. Whipple</h2>
+<span>Plumber, Helper</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="tab-pane" id="tab_3">
+<div class="col-md-4 col-sm-4 col-xs-12 single-team-inner">
+<div class="single-team">
+<div class="plus-icon">
+<i aria-hidden="true" class="fa fa-plus"></i>
+<i aria-hidden="true" class="fa fa-minus"></i>
+</div>
+<div class="single-team-img">
+<img alt="" src="assets/2d19cebe8b6fb0b2_team-3.jpg"/>
+<div class="team-overlay">
+<div class="team-overlay-text">
+<h2>Kenneth P. Chance</h2>
+<span>Plumber, Service</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4 col-sm-4 col-xs-12 single-team-inner">
+<div class="single-team">
+<div class="plus-icon">
+<i aria-hidden="true" class="fa fa-plus"></i>
+<i aria-hidden="true" class="fa fa-minus"></i>
+</div>
+<div class="single-team-img">
+<img alt="" src="assets/ad398bdf71fa630d_team-1.jpg"/>
+<div class="team-overlay">
+<div class="team-overlay-text">
+<h2>Mary H. Whipple</h2>
+<span>Plumber, Helper</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4 col-sm-4 col-xs-12 single-team-inner">
+<div class="single-team">
+<div class="plus-icon">
+<i aria-hidden="true" class="fa fa-plus"></i>
+<i aria-hidden="true" class="fa fa-minus"></i>
+</div>
+<div class="single-team-img">
+<img alt="" src="assets/f2560b4aa10f3835_team-2.jpg"/>
+<div class="team-overlay">
+<div class="team-overlay-text">
+<h2>Mark S. Phillips</h2>
+<span>Plumber, Manager</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-12">
+<div class="all-team-button">
+<a class="readmore-btn" href="#"><i class="fa fa-plus"></i> View All Employee</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Team Section End -->
+<!-- Message Section Start -->
+<div class="message-sec pt-100 pb-70">
+<div class="message-shape"></div>
+<div class="message-overlay"></div>
+<div class="container">
+<!-- Message Text Start -->
+<div class="row">
+<div class="col-md-12">
+<div class="message-desc">
+<h1 class="message-title">we contral a high quality service in all over the world with trust scien 1986 </h1>
+<h2 class="message-subtitle">150 over countries we provieding awsome services if you like our service  call us  <span>(364) 106-7572</span></h2>
+</div>
+</div>
+</div>
+<!-- Message Text Start -->
+</div>
+</div>
+<!-- Message Section End -->
+<!-- Why Choose Us Section Start -->
+<div class="why-choose-us-sec pt-100 pb-100">
+<div class="container">
+<div class="row">
+<div class="col-md-6">
+<div class="why-choose-v1">
+<div class="why-choose-v1-title">
+<span class="why-us-subtitle">Why Choose Us</span>
+<h1>100% Client Satisfaction is the main object for us</h1>
+<h2>Get Fast Response From Us</h2>
+</div>
+<div class="why-choose-v1-single">
+<div class="media">
+<div class="media-left">
+<div class="icon">
+<img alt="" src="assets/e1208a2311a09126_secure.png"/>
+</div>
+</div>
+<div class="media-body">
+<h2>Guarantee 100% Secure justice</h2>
+<p>Iudico oblique nec ut, eos ex choro timeam definiebas. Meliore partiendo omittantur an quo.</p>
+</div>
+</div>
+</div>
+<div class="why-choose-v1-single">
+<div class="media">
+<div class="media-left">
+<div class="icon">
+<img alt="" src="assets/3e7d58316ab27c12_award.png"/>
+</div>
+</div>
+<div class="media-body">
+<h2>Certified industry Specialists</h2>
+<p>Iudico oblique nec ut, eos ex choro timeam definiebas. Meliore partiendo omittantur an quo.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-6 why-us-area">
+<div class="why-us-img">
+<img alt="" src="assets/65d06196b073185d_why-us-img.png"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Why Choose Us Section End -->
+<!-- Latest Project Section Start -->
+<div class="latest-project-sec">
+<div class="latest-project-overlay"></div>
+<div class="container">
+<!-- Section Title Start -->
+<div class="row">
+<div class="col-md-12">
+<div class="sec-title">
+<h1>latest project</h1>
+<div class="border-bottom"></div>
+</div>
+</div>
+</div>
+<!-- Section Title End -->
+<div class="row">
+<div class="col-md-12">
+<div class="all-project slick-initialized slick-slider"><button class="slick-prev pull-left slick-arrow" style="display: block;" type="button"><i aria-hidden="true" class="fa fa-angle-left"></i></button>
+<div class="slick-list draggable" style="padding: 0px;"><div class="slick-track" style="opacity: 1; width: 6080px; transform: translate3d(-3040px, 0px, 0px); transition: transform 500ms;"><div aria-hidden="true" class="single-project-item slick-slide slick-cloned" data-slick-index="-4" style="width: 380px;" tabindex="-1">
+<div class="single-project">
+<img alt="" src="assets/e6438ccff0de78f3_p3.jpg"/>
+<div class="project-overlay">
+<div class="project-desc">
+<h2><a href="#" tabindex="-1">civil engineering</a></h2>
+<span>construction services</span>
+</div>
+</div>
+</div>
+</div><div aria-hidden="true" class="single-project-item slick-slide slick-cloned" data-slick-index="-3" style="width: 380px;" tabindex="-1">
+<div class="single-project">
+<img alt="" src="assets/855594eba39d7e4d_p1.jpg"/>
+<div class="project-overlay">
+<div class="project-desc">
+<h2><a href="#" tabindex="-1">oil &amp; gas services</a></h2>
+<span>mining &amp; provided</span>
+</div>
+</div>
+</div>
+</div><div aria-hidden="true" class="single-project-item slick-slide slick-cloned" data-slick-index="-2" style="width: 380px;" tabindex="-1">
+<div class="single-project">
+<img alt="" src="assets/4d8b865b23d6d0c6_p2.jpg"/>
+<div class="project-overlay">
+<div class="project-desc">
+<h2><a href="#" tabindex="-1">agricultuaral processing</a></h2>
+<span>fresh &amp; good food</span>
+</div>
+</div>
+</div>
+</div><div aria-hidden="true" class="single-project-item slick-slide slick-cloned slick-center" data-slick-index="-1" style="width: 380px;" tabindex="-1">
+<div class="single-project">
+<img alt="" src="assets/e6438ccff0de78f3_p3.jpg"/>
+<div class="project-overlay">
+<div class="project-desc">
+<h2><a href="#" tabindex="-1">power and engery</a></h2>
+<span>save engery &amp; power</span>
+</div>
+</div>
+</div>
+</div><div aria-hidden="true" class="single-project-item slick-slide" data-slick-index="0" style="width: 380px;" tabindex="-1">
+<div class="single-project">
+<img alt="" src="assets/855594eba39d7e4d_p1.jpg"/>
+<div class="project-overlay">
+<div class="project-desc">
+<h2><a href="#" tabindex="-1">Mechanical Industry</a></h2>
+<span>North Audreanneville</span>
+</div>
+</div>
+</div>
+</div><div aria-hidden="true" class="single-project-item slick-slide" data-slick-index="1" style="width: 380px;" tabindex="-1">
+<div class="single-project">
+<img alt="" src="assets/4d8b865b23d6d0c6_p2.jpg"/>
+<div class="project-overlay">
+<div class="project-desc">
+<h2><a href="#" tabindex="-1">Chemical Research</a></h2>
+<span>research &amp; development</span>
+</div>
+</div>
+</div>
+</div><div aria-hidden="true" class="single-project-item slick-slide" data-slick-index="2" style="width: 380px;" tabindex="-1">
+<div class="single-project">
+<img alt="" src="assets/e6438ccff0de78f3_p3.jpg"/>
+<div class="project-overlay">
+<div class="project-desc">
+<h2><a href="#" tabindex="-1">civil engineering</a></h2>
+<span>construction services</span>
+</div>
+</div>
+</div>
+</div><div aria-hidden="true" class="single-project-item slick-slide" data-slick-index="3" style="width: 380px;" tabindex="-1">
+<div class="single-project">
+<img alt="" src="assets/855594eba39d7e4d_p1.jpg"/>
+<div class="project-overlay">
+<div class="project-desc">
+<h2><a href="#" tabindex="0">oil &amp; gas services</a></h2>
+<span>mining &amp; provided</span>
+</div>
+</div>
+</div>
+</div><div aria-hidden="false" class="single-project-item slick-slide slick-active" data-slick-index="4" style="width: 380px;" tabindex="0">
+<div class="single-project">
+<img alt="" src="assets/4d8b865b23d6d0c6_p2.jpg"/>
+<div class="project-overlay">
+<div class="project-desc">
+<h2><a href="#" tabindex="0">agricultuaral processing</a></h2>
+<span>fresh &amp; good food</span>
+</div>
+</div>
+</div>
+</div><div aria-hidden="false" class="single-project-item slick-slide slick-current slick-active slick-center" data-slick-index="5" style="width: 380px;" tabindex="0">
+<div class="single-project">
+<img alt="" src="assets/e6438ccff0de78f3_p3.jpg"/>
+<div class="project-overlay">
+<div class="project-desc">
+<h2><a href="#" tabindex="0">power and engery</a></h2>
+<span>save engery &amp; power</span>
+</div>
+</div>
+</div>
+</div><div aria-hidden="false" class="single-project-item slick-slide slick-cloned slick-active" data-slick-index="6" style="width: 380px;" tabindex="-1">
+<div class="single-project">
+<img alt="" src="assets/855594eba39d7e4d_p1.jpg"/>
+<div class="project-overlay">
+<div class="project-desc">
+<h2><a href="#" tabindex="-1">Mechanical Industry</a></h2>
+<span>North Audreanneville</span>
+</div>
+</div>
+</div>
+</div><div aria-hidden="true" class="single-project-item slick-slide slick-cloned" data-slick-index="7" style="width: 380px;" tabindex="-1">
+<div class="single-project">
+<img alt="" src="assets/4d8b865b23d6d0c6_p2.jpg"/>
+<div class="project-overlay">
+<div class="project-desc">
+<h2><a href="#" tabindex="-1">Chemical Research</a></h2>
+<span>research &amp; development</span>
+</div>
+</div>
+</div>
+</div><div aria-hidden="true" class="single-project-item slick-slide slick-cloned" data-slick-index="8" style="width: 380px;" tabindex="-1">
+<div class="single-project">
+<img alt="" src="assets/e6438ccff0de78f3_p3.jpg"/>
+<div class="project-overlay">
+<div class="project-desc">
+<h2><a href="#" tabindex="-1">civil engineering</a></h2>
+<span>construction services</span>
+</div>
+</div>
+</div>
+</div><div aria-hidden="true" class="single-project-item slick-slide slick-cloned" data-slick-index="9" style="width: 380px;" tabindex="-1">
+<div class="single-project">
+<img alt="" src="assets/855594eba39d7e4d_p1.jpg"/>
+<div class="project-overlay">
+<div class="project-desc">
+<h2><a href="#" tabindex="-1">oil &amp; gas services</a></h2>
+<span>mining &amp; provided</span>
+</div>
+</div>
+</div>
+</div><div aria-hidden="true" class="single-project-item slick-slide slick-cloned" data-slick-index="10" style="width: 380px;" tabindex="-1">
+<div class="single-project">
+<img alt="" src="assets/4d8b865b23d6d0c6_p2.jpg"/>
+<div class="project-overlay">
+<div class="project-desc">
+<h2><a href="#" tabindex="-1">agricultuaral processing</a></h2>
+<span>fresh &amp; good food</span>
+</div>
+</div>
+</div>
+</div><div aria-hidden="true" class="single-project-item slick-slide slick-cloned" data-slick-index="11" style="width: 380px;" tabindex="-1">
+<div class="single-project">
+<img alt="" src="assets/e6438ccff0de78f3_p3.jpg"/>
+<div class="project-overlay">
+<div class="project-desc">
+<h2><a href="#" tabindex="-1">power and engery</a></h2>
+<span>save engery &amp; power</span>
+</div>
+</div>
+</div>
+</div></div></div>
+<button class="slick-next pull-right slick-arrow" style="display: block;" type="button"><i aria-hidden="true" class="fa fa-angle-right"></i></button></div>
+</div>
+</div>
+</div>
+</div>
+<!-- Latest Project Section End -->
+<!-- FAQ Section Start -->
+<div class="faq-sec pt-100 pb-70">
+<div class="container">
+<div class="row">
+<div class="col-md-6 col-sm-6">
+<div class="faq-sec">
+<span class="faq-subtitle">what`s you want to   know</span>
+<h1 class="faq-title">some common quation about company</h1>
+<div class="panel-group" id="accordion" role="tablist">
+<div class="panel">
+<div class="panel-heading" id="titleOne" role="tab">
+<h4 class="panel-title">
+<a aria-controls="collapseOne" aria-expanded="true" class="" data-parent="#accordion" data-toggle="collapse" href="#collapseOne">
+										why people choose us?</a>
+</h4>
+</div>
+<div aria-expanded="true" aria-labelledby="titleOne" class="panel-collapse collapse in" id="collapseOne" role="tabpanel" style="">
+<div class="panel-content">
+<p>Lorem ipsum dolor sit amet, consectetuer elit dictumst accumsan  erat massa, quis a ut netus ac etiam. Orci ullamcorper metus lacinia malesuada adipiscing nam, praesentium egestas tristique etiam felis.</p>
+</div>
+</div>
+</div>
+<div class="panel">
+<div class="panel-heading" id="titleTwo" role="tab">
+<h4 class="panel-title">
+<a aria-controls="collapseTwo" aria-expanded="false" class="collapsed" data-parent="#accordion" data-toggle="collapse" href="#collapseTwo">
+									  our working methoed</a>
+</h4>
+</div>
+<div aria-expanded="false" aria-labelledby="titleTwo" class="panel-collapse collapse" id="collapseTwo" role="tabpanel">
+<div class="panel-content">
+<p>Lorem ipsum dolor sit amet, consectetuer elit dictumst accumsan  erat massa, quis a ut netus ac etiam. Orci ullamcorper metus lacinia malesuada adipiscing nam, praesentium egestas tristique etiam felis.</p>
+</div>
+</div>
+</div>
+<div class="panel">
+<div class="panel-heading" id="titleThree" role="tab">
+<h4 class="panel-title">
+<a aria-controls="collapseThree" aria-expanded="false" class="collapsed" data-parent="#accordion" data-toggle="collapse" href="#collapseThree">
+								   how can i get support?</a>
+</h4>
+</div>
+<div aria-expanded="false" aria-labelledby="titleThree" class="panel-collapse collapse" id="collapseThree" role="tabpanel">
+<div class="panel-content">
+<p>Lorem ipsum dolor sit amet, consectetuer elit dictumst accumsan  erat massa, quis a ut netus ac etiam. Orci ullamcorper metus lacinia malesuada adipiscing nam, praesentium egestas tristique etiam felis.</p>
+</div>
+</div>
+</div>
+<div class="panel">
+<div class="panel-heading" id="titleFour" role="tab">
+<h4 class="panel-title">
+<a aria-controls="collapseFour" aria-expanded="false" class="collapsed" data-parent="#accordion" data-toggle="collapse" href="#collapseFour">
+								  our mission 2030</a>
+</h4>
+</div>
+<div aria-expanded="false" aria-labelledby="titleFour" class="panel-collapse collapse" id="collapseFour" role="tabpanel">
+<div class="panel-content">
+<p>Lorem ipsum dolor sit amet, consectetuer elit dictumst accumsan  erat massa, quis a ut netus ac etiam. Orci ullamcorper metus lacinia malesuada adipiscing nam, praesentium egestas tristique etiam felis.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-6 col-sm-6">
+<div class="company-video-intro">
+<div class="vedio-inner">
+<img alt="" src="assets/b7926c1b2e37ccab_video-thumb.jpg"/>
+<div class="vedio-inner-shape"></div>
+<div class="vedio-overly">
+<div class="vedio-button">
+<a class="mfp-iframe vedio-play" href="https://www.youtube.com/watch?v=YzDz8g1z83U"></a>
+</div>
+</div>
+</div>
+<h2>Economic activity concerned with the processing of raw materials and manufacture of goods in factories.</h2>
+<p>we have 30 years exprience to development of industral econmic with trust people.</p>
+<div class="call-us">call us -  <span>(364) 106-7572</span></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- FAQ Section End -->
+<!-- Testimonial Section Start -->
+<div class="testimonial-v1-sec">
+<div class="message-overlay"></div>
+<div class="container">
+<div class="row">
+<div class="col-md-12">
+<div class="sec-title">
+<h1>Customer Feedback</h1>
+<div class="border-bottom"></div>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-12">
+<div class="testimonial-v1-all owl-carousel owl-theme owl-loaded">
+<div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(-1170px, 0px, 0px); transition: 0.25s; width: 2340px;"><div class="owl-item" style="width: 360px; margin-right: 30px;"><div class="single-testimonial-v1">
+<div class="testimonial-v1-img">
+<img alt="" src="assets/481f70e1d1b58205_client2.png"/>
+</div>
+<div class="details">
+<h2><a href="#">Abigail</a></h2>
+<span>engineer</span>
+</div>
+<div class="rating">
+<p>Atomorum principes eu mea, at nec insolens dissentiet, no vis nulla lucilius. Nam veritus pericula id. Utinam fastidii consetetur eam at.</p>
+<i aria-hidden="true" class="fa fa-star"></i>
+<i aria-hidden="true" class="fa fa-star"></i>
+<i aria-hidden="true" class="fa fa-star"></i>
+<i aria-hidden="true" class="fa fa-star"></i>
+<i aria-hidden="true" class="fa fa-star-half-o"></i>
+</div>
+</div></div><div class="owl-item" style="width: 360px; margin-right: 30px;"><div class="single-testimonial-v1">
+<div class="testimonial-v1-img">
+<img alt="" src="assets/1da514295f368675_client3.png"/>
+</div>
+<div class="details">
+<h2><a href="#">Elizabeth</a></h2>
+<span>architecture</span>
+</div>
+<div class="rating">
+<p>Atomorum principes eu mea, at nec insolens dissentiet, no vis nulla lucilius. Nam veritus pericula id. Utinam fastidii consetetur eam at.</p>
+<i aria-hidden="true" class="fa fa-star"></i>
+<i aria-hidden="true" class="fa fa-star"></i>
+<i aria-hidden="true" class="fa fa-star"></i>
+<i aria-hidden="true" class="fa fa-star"></i>
+<i aria-hidden="true" class="fa fa-star-half-o"></i>
+</div>
+</div></div><div class="owl-item" style="width: 360px; margin-right: 30px;"><div class="single-testimonial-v1">
+<div class="testimonial-v1-img">
+<img alt="" src="assets/5359578e5ff4bba7_client1.png"/>
+</div>
+<div class="details">
+<h2><a href="#">Anthony</a></h2>
+<span>Industrial</span>
+</div>
+<div class="rating">
+<p>Atomorum principes eu mea, at nec insolens dissentiet, no vis nulla lucilius. Nam veritus pericula id. Utinam fastidii consetetur eam at.</p>
+<i aria-hidden="true" class="fa fa-star"></i>
+<i aria-hidden="true" class="fa fa-star"></i>
+<i aria-hidden="true" class="fa fa-star"></i>
+<i aria-hidden="true" class="fa fa-star"></i>
+<i aria-hidden="true" class="fa fa-star-half-o"></i>
+</div>
+</div></div><div class="owl-item active" style="width: 360px; margin-right: 30px;"><div class="single-testimonial-v1">
+<div class="testimonial-v1-img">
+<img alt="" src="assets/481f70e1d1b58205_client2.png"/>
+</div>
+<div class="details">
+<h2><a href="#">Abigail</a></h2>
+<span>engineer</span>
+</div>
+<div class="rating">
+<p>Atomorum principes eu mea, at nec insolens dissentiet, no vis nulla lucilius. Nam veritus pericula id. Utinam fastidii consetetur eam at.</p>
+<i aria-hidden="true" class="fa fa-star"></i>
+<i aria-hidden="true" class="fa fa-star"></i>
+<i aria-hidden="true" class="fa fa-star"></i>
+<i aria-hidden="true" class="fa fa-star"></i>
+<i aria-hidden="true" class="fa fa-star-half-o"></i>
+</div>
+</div></div><div class="owl-item active" style="width: 360px; margin-right: 30px;"><div class="single-testimonial-v1">
+<div class="testimonial-v1-img">
+<img alt="" src="assets/1da514295f368675_client3.png"/>
+</div>
+<div class="details">
+<h2><a href="#">Elizabeth</a></h2>
+<span>architecture</span>
+</div>
+<div class="rating">
+<p>Atomorum principes eu mea, at nec insolens dissentiet, no vis nulla lucilius. Nam veritus pericula id. Utinam fastidii consetetur eam at.</p>
+<i aria-hidden="true" class="fa fa-star"></i>
+<i aria-hidden="true" class="fa fa-star"></i>
+<i aria-hidden="true" class="fa fa-star"></i>
+<i aria-hidden="true" class="fa fa-star"></i>
+<i aria-hidden="true" class="fa fa-star-half-o"></i>
+</div>
+</div></div><div class="owl-item active" style="width: 360px; margin-right: 30px;"><div class="single-testimonial-v1">
+<div class="testimonial-v1-img">
+<img alt="" src="assets/5359578e5ff4bba7_client1.png"/>
+</div>
+<div class="details">
+<h2><a href="#">Anthony</a></h2>
+<span>Industrial</span>
+</div>
+<div class="rating">
+<p>Atomorum principes eu mea, at nec insolens dissentiet, no vis nulla lucilius. Nam veritus pericula id. Utinam fastidii consetetur eam at.</p>
+<i aria-hidden="true" class="fa fa-star"></i>
+<i aria-hidden="true" class="fa fa-star"></i>
+<i aria-hidden="true" class="fa fa-star"></i>
+<i aria-hidden="true" class="fa fa-star"></i>
+<i aria-hidden="true" class="fa fa-star-half-o"></i>
+</div>
+</div></div></div></div><div class="owl-controls"><div class="owl-nav"><div class="owl-prev" style="display: none;"><i class="fa fa-angle-left"></i></div><div class="owl-next" style="display: none;"><i class="fa fa-angle-right"></i></div></div><div class="owl-dots" style=""><div class="owl-dot"><span></span></div><div class="owl-dot active"><span></span></div></div></div></div>
+</div>
+</div>
+</div>
+</div>
+<!-- Testimonial Section End -->
+<!-- Blog Section Start -->
+<div class="blog-sec pt-100 pb-70" id="news">
+<div class="container">
+<!-- Section Title Start -->
+<div class="row">
+<div class="col-md-12">
+<div class="sec-title">
+<h1>our latest news</h1>
+<div class="border-bottom"></div>
+</div>
+</div>
+</div>
+<!-- Section Title End -->
+<div class="row">
+<!-- Single Blog Item Start -->
+<div class="col-md-4 col-sm-6">
+<div class="single-post">
+<div class="single-post-thumb">
+<img alt="" src="assets/169de7b3e369dbed_b1.jpg"/>
+<div class="single-post-thumb-overlay">
+<div class="post-meta">
+<span class="post-date">25</span>
+<span class="post-month">may</span>
+</div>
+</div>
+</div>
+<div class="single-post-text">
+<div class="post-meta-info">
+<h2><a href="blog-details.html">news title in here</a></h2>
+<div class="post-meta-data">
+<ul>
+<li><a href="#"><i class="fa fa-user"></i>rahman</a></li>
+<li><a href="#"><i class="fa fa-tag"></i>industry</a></li>
+</ul>
+</div>
+</div>
+<p>Lorem ipsum dolor sit amet tristique duis risus massa tincidunt et non volutpat. </p>
+</div>
+</div>
+</div>
+<!-- Single Blog Item End -->
+<!-- Single Blog Item Start -->
+<div class="col-md-4 col-sm-6">
+<div class="single-post">
+<div class="single-post-thumb">
+<img alt="" src="assets/803217130f10765c_b2.jpg"/>
+<div class="single-post-thumb-overlay">
+<div class="post-meta">
+<span class="post-date">25</span>
+<span class="post-month">Jun</span>
+</div>
+</div>
+</div>
+<div class="single-post-text">
+<div class="post-meta-info">
+<h2><a href="blog-details.html">news title in here</a></h2>
+<div class="post-meta-data">
+<ul>
+<li><a href="#"><i class="fa fa-user"></i>rahman</a></li>
+<li><a href="#"><i class="fa fa-tag"></i>industry</a></li>
+</ul>
+</div>
+</div>
+<p>Lorem ipsum dolor sit amet tristique duis risus massa tincidunt et non volutpat. </p>
+</div>
+</div>
+</div>
+<!-- Single Blog Item End -->
+<!-- Single Blog Item Start -->
+<div class="col-md-4 col-sm-6">
+<div class="single-post">
+<div class="single-post-thumb">
+<img alt="" src="assets/46cb5461083194d9_b3.jpg"/>
+<div class="single-post-thumb-overlay">
+<div class="post-meta">
+<span class="post-date">25</span>
+<span class="post-month">July</span>
+</div>
+</div>
+</div>
+<div class="single-post-text">
+<div class="post-meta-info">
+<h2><a href="blog-details.html">news title in here</a></h2>
+<div class="post-meta-data">
+<ul>
+<li><a href="#"><i class="fa fa-user"></i>rahman</a></li>
+<li><a href="#"><i class="fa fa-tag"></i>industry</a></li>
+</ul>
+</div>
+</div>
+<p>Lorem ipsum dolor sit amet tristique duis risus massa tincidunt et non volutpat. </p>
+</div>
+</div>
+</div>
+<!-- Single Blog Item End -->
+</div>
+</div>
+</div>
+<!-- Blog Section End -->
+<!-- Footer Section Start -->
+<footer class="footer">
+<div class="footer-shape"></div>
+<div class="footer-overlay"></div>
+<!-- Footer Top Start -->
+<div class="footer-sec">
+<div class="container">
+<div class="row">
+<!-- Single Footer Widget Start -->
+<div class="col-md-4 col-sm-6">
+<div class="footer-wedget-one">
+<a class="footer-logo" href="index.html"><img alt="" src="assets/d5399ae9a6554f7e_footer-logo.png"/></a>
+<p>Lorem ipsum dolor sit amet, condime  llentesque magna. Dictumst quisque condimentum felis, craslibero hymenaeos suspendisse. Urna neque craslibero hymenaeos suspendisse. Urna neque </p>
+<div class="footer-social">
+<ul>
+<li><a href=""><i class="fa fa-facebook"></i></a></li>
+<li><a href=""><i class="fa fa-rss"></i></a></li>
+<li><a href=""><i class="fa fa-google-plus"></i></a></li>
+<li><a href=""><i class="fa fa-twitter"></i></a></li>
+</ul>
+</div>
+</div>
+</div>
+<!-- Single Footer Widget End -->
+<!-- Single Footer Widget Start -->
+<div class="col-md-3 col-sm-6">
+<div class="footer-widget-menu">
+<h2>our solutions</h2>
+<ul>
+<li><a href="#">Mechanical Industry</a></li>
+<li><a href="#">Chemical Research</a></li>
+<li><a href="#">agricultuaral processing</a></li>
+<li><a href="#">civil engineering</a></li>
+<li><a href="#">oil &amp; gas services</a></li>
+<li><a href="#">agricutuaral processing</a></li>
+<li><a href="#">power &amp; engery</a></li>
+</ul>
+</div>
+</div>
+<!-- Single Footer Widget End -->
+<!-- Single Footer Widget Start -->
+<div class="col-md-2 col-sm-6">
+<div class="footer-widget-menu">
+<h2>useful link</h2>
+<ul>
+<li><a href="#">about us</a></li>
+<li><a href="#">latest  project</a></li>
+<li><a href="#">faq</a></li>
+<li><a href="#">news</a></li>
+<li><a href="#">site map</a></li>
+<li><a href="#">trust client</a></li>
+<li><a href="#">contact </a></li>
+</ul>
+</div>
+</div>
+<!-- Single Footer Widget End -->
+<!-- Single Footer Widget Start -->
+<div class="col-md-3 col-sm-6">
+<div class="footer-wedget-four">
+<h2>contact form </h2>
+<div class="footer-contact-form">
+<form action="#" method="#">
+<input placeholder="Full Name" type="text"/>
+<input placeholder="Email Address" type="email"/>
+<textarea placeholder="Message"></textarea>
+<input type="submit" value="send now"/>
+</form>
+</div>
+</div>
+</div>
+<!-- Single Footer Widget End -->
+</div>
+<div class="row">
+<div class="col-md-4 footer-contact-inner">
+<div class="footer-contact-info">
+<div class="footer-contact-info-icon">
+<img alt="" src="assets/f2be4fa836166477_footer-map-marker.png"/>
+</div>
+<div class="footer-contact-info-text">
+<span>728 Dooley Branch, Beckershire,</span>
+<span>LA 63598-2909</span>
+</div>
+</div>
+</div>
+<div class="col-md-4 footer-contact-inner">
+<div class="footer-contact-info">
+<div class="footer-contact-info-icon">
+<img alt="" src="assets/f9fcc5b552e47030_footer-envelop.png"/>
+</div>
+<div class="footer-contact-info-text">
+<span>info@hotmail.com</span>
+<span>yourmail@gmail.com</span>
+</div>
+</div>
+</div>
+<div class="col-md-4 footer-contact-inner">
+<div class="footer-contact-info">
+<div class="footer-contact-info-icon">
+<img alt="" src="assets/b00c83fe171e99ed_footer-phone.png"/>
+</div>
+<div class="footer-contact-info-text">
+<span>(364) 106-7572-2587</span>
+<span>(052) 611-5711-1458</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Footer Top End -->
+<!-- Footer Bottom Start -->
+<div class="footer-bottom-sec">
+<div class="container">
+<div class="row">
+<div class="col-md-8 col-sm-12">
+<div class="copy-right">
+<span>Copyright 2019 © 2019 Endustriz. all right reserved </span>
+</div>
+</div>
+<div class="col-md-4 col-sm-12">
+<div class="site-developer">
+<span>Design by <a href="#">Theme Earth</a></span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Footer Bottom End -->
+</footer>
+<!-- Footer Section End -->
+<!-- Scripts Js Start -->
+<script src="assets/05b85d96f41fff14_jquery-2.2.4.min.js"></script>
+<script src="assets/53964478a7c634e8_bootstrap.min.js"></script>
+<script src="assets/6d5f973ee0c0f066_isotope.pkgd.min.js"></script>
+<script src="assets/0c7178cc6ca34fb1_slick.min.js"></script>
+<script src="assets/3fddc6d28aba3c13_jquery.magnific-popup.min.js"></script>
+<script src="assets/83553d22ccd56e55_owl.carousel.min.js"></script>
+<script src="assets/11817a3961478f7a_owl.animate.js"></script>
+<script src="assets/b7662ba99a132eaf_jquery.scrollUp.min.js"></script>
+<script src="assets/26d40f8ffdf1b9bf_jquery.counterup.min.js"></script>
+<script src="assets/cf25ec18f223f4c5_modernizr.min.js"></script>
+<script src="assets/a0fded691aed767f_waypoints.min.js"></script>
+<script src="assets/eaf2ccc92a9f8026_jquery.meanmenu.min.js"></script>
+<script src="assets/5a65b0ca177f1c04_imagesloaded.pkgd.min.js"></script>
+<script src="assets/a87e4c0614892397_custom.js"></script>
+<!-- Scripts Js End -->
+<a href="#top" id="scrollUp" style="position: fixed; z-index: 2147483647; display: none;"><i class="fa fa-long-arrow-up"></i></a><script data-offline-fix="1">(function(){
+var IS_CSR = false;
+var resolveLocal = window.__resolveLocal || function(){return null;};
+var rewriteSrcset = window.__rewriteSrcset || function(s){return s;};
+function fixImg(el){
+  if (!el || el.tagName !== 'IMG') return;
+  var src = el.getAttribute('src');
+  var loc = resolveLocal(src);
+  if (loc && src !== loc) el.setAttribute('src', loc);
+  var ss = el.getAttribute('srcset');
+  if (ss) {
+    var nss = rewriteSrcset(ss);
+    if (nss !== ss) el.setAttribute('srcset', nss);
+  }
+}
+function fixAll(){ document.querySelectorAll('img').forEach(fixImg); }
+function hasSlideOffset(t){
+  // True if a transform indicates a 'parked off-screen' starting
+  // state: translation in px (>= 30) or % (>= 5), or a matrix
+  // with non-zero translation. Returns false for crossfade-only
+  // companions like scale(0.9) or pure centering translateX(-50%).
+  if (!t || t === 'none') return false;
+  // matrix(a,b,c,d,tx,ty) — parse tx/ty; matrix3d & friends → assume slide.
+  var matMatch = t.match(/matrix\(([^)]+)\)/);
+  if (matMatch) {
+    var parts = matMatch[1].split(',').map(function(x){return parseFloat(x.trim());});
+    if (parts.length === 6) {
+      if (Math.abs(parts[4]) >= 30 || Math.abs(parts[5]) >= 30) return true;
+    } else { return true; }
+  }
+  if (/matrix3d/i.test(t)) return true;
+  var px = t.match(/(-?\d+\.?\d*)px/g) || [];
+  for (var i = 0; i < px.length; i++) {
+    if (Math.abs(parseFloat(px[i])) >= 30) return true;
+  }
+  var pct = t.match(/(-?\d+\.?\d*)%/g) || [];
+  for (var j = 0; j < pct.length; j++) {
+    if (Math.abs(parseFloat(pct[j])) >= 5) return true;
+  }
+  return false;
+}
+function isHiddenStart(s){
+  // True if the element's inline style is parked at a 'before'
+  // animation state. opacity:0 alone is ambiguous (could be a
+  // crossfade companion); pair it with a slide transform OR an
+  // explicit visibility:hidden (GSAP/SplitType signature) to be
+  // confident it's a scroll-reveal waiting to fire.
+  if (s.opacity !== '0' && s.visibility !== 'hidden') return false;
+  if (s.visibility === 'hidden') return true;
+  return hasSlideOffset(s.transform) || hasSlideOffset(s.translate);
+}
+function revealEl(el){
+  var s = el.style;
+  s.opacity = '1';
+  if (s.visibility === 'hidden') s.visibility = 'visible';
+  if (s.transform) s.transform = 'none';
+  if (s.translate) s.translate = 'none';
+  if (s.rotate)    s.rotate = 'none';
+  if (s.scale)     s.scale = 'none';
+  if (s.pointerEvents === 'none') s.pointerEvents = '';
+}
+function snapReveal(){
+  // Safety net: any 'before-state' element still hidden gets
+  // forced visible. Used as a deadline pass for non-CSR mode
+  // (after GSAP/etc had a chance to play) and as a final guard.
+  // Skip pinned-chain elements — same reason as findScrollAnchor.
+  var n = 0;
+  document.querySelectorAll('[style]').forEach(function(el){
+    if (!isHiddenStart(el.style)) return;
+    if (isInsideFixed(el)) return;
+    revealEl(el); n++;
+  });
+  if (window.console && n) console.log('[offline-fix] snap-revealed', n);
+}
+function isInsideFixed(el){
+  var p = el;
+  while (p && p !== document.documentElement) {
+    if (getComputedStyle(p).position === 'fixed') return true;
+    p = p.parentElement;
+  }
+  return false;
+}
+function findScrollAnchor(el){
+  // Pinned-narrative sections (one position:fixed ancestor wrapping
+  // many sequenced headings the live JS reveals one-by-one across
+  // scroll progress) can't be orchestrated offline — revealing all
+  // of them at once produces an overlapping mess. Skip them: leave
+  // the parked state intact, matching the live site at scroll=0.
+  // For sticky chains, observe the sticky container itself (fires
+  // when the user has scrolled past its stuck threshold).
+  if (isInsideFixed(el)) return null;
+  var p = el;
+  while (p && p !== document.documentElement) {
+    if (getComputedStyle(p).position === 'sticky') return p;
+    p = p.parentElement;
+  }
+  return el;
+}
+function progressiveReveal(){
+  // CSR mode: scripts stripped → no GSAP/IO is going to fire.
+  // Mimic a scroll-driven reveal: each parked element gets a
+  // CSS transition + IntersectionObserver. As it enters viewport
+  // we transition to the 'after' state, with a small stagger by
+  // document order so SplitType chars still feel letter-by-letter.
+  var targets = [];
+  document.querySelectorAll('[style]').forEach(function(el){
+    if (isHiddenStart(el.style)) targets.push(el);
+  });
+  if (!targets.length) return;
+  var EASE = 'cubic-bezier(.16,1,.3,1)';
+  targets.forEach(function(el){
+    el.style.transition =
+      'opacity .6s ' + EASE + ', transform .6s ' + EASE + ', ' +
+      'translate .6s ' + EASE + ', scale .6s ' + EASE + ', ' +
+      'visibility 0s linear';
+  });
+  if (typeof IntersectionObserver === 'undefined') {
+    targets.forEach(revealEl);
+    return;
+  }
+  // Group targets by their scroll anchor. Anchors in sticky
+  // sections share one observation point — when that anchor
+  // intersects, we reveal all its parked descendants.
+  // Targets with null anchor (inside position:fixed) are skipped.
+  var groups = new Map();
+  targets.forEach(function(el){
+    var anchor = findScrollAnchor(el);
+    if (!anchor) return;
+    if (!groups.has(anchor)) groups.set(anchor, []);
+    groups.get(anchor).push(el);
+  });
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(entry){
+      if (!entry.isIntersecting) return;
+      var children = groups.get(entry.target) || [entry.target];
+      children.sort(function(a, b){
+        var pos = a.compareDocumentPosition(b);
+        return (pos & Node.DOCUMENT_POSITION_FOLLOWING) ? -1 : 1;
+      });
+      children.forEach(function(child, i){
+        var delay = Math.min(i * 18, 700);
+        setTimeout(function(){ revealEl(child); }, delay);
+      });
+      io.unobserve(entry.target);
+    });
+  }, { threshold: 0.05, rootMargin: '0px 0px -8% 0px' });
+  groups.forEach(function(_, anchor){ io.observe(anchor); });
+  // Deadline guard: anything that never intersects still gets revealed.
+  setTimeout(snapReveal, 8000);
+}
+function initUnicornStudio(){
+  // Captured page already has the loaded UMD script + the inline
+  // loader that says `if(!window.UnicornStudio)…`. The loader bails
+  // because UnicornStudio is already defined, so init() never runs.
+  if (window.UnicornStudio && typeof window.UnicornStudio.init === 'function'
+      && !window.UnicornStudio.isInitialized) {
+    try { window.UnicornStudio.init(); window.UnicornStudio.isInitialized = true; }
+    catch(e){ if(window.console) console.warn('[offline-fix] UnicornStudio init failed:', e); }
+  }
+}
+// Initial img sweep + observer for hydration-time updates
+fixAll();
+var obs = new MutationObserver(function(muts){
+  for (var i = 0; i < muts.length; i++) {
+    var m = muts[i];
+    if (m.type === 'attributes' && m.target.tagName === 'IMG') fixImg(m.target);
+    for (var j = 0; j < m.addedNodes.length; j++) {
+      var n = m.addedNodes[j];
+      if (n && n.nodeType === 1) {
+        if (n.tagName === 'IMG') fixImg(n);
+        if (n.querySelectorAll) n.querySelectorAll('img').forEach(fixImg);
+      }
+    }
+  }
+});
+obs.observe(document, {childList:true, subtree:true,
+  attributes:true, attributeFilter:['src','srcset']});
+setTimeout(fixAll, 1000);
+setTimeout(fixAll, 3000);
+var go = function(){
+  // CSR: scripts stripped, so 'before-state' elements stay parked
+  // forever unless we do something. Use IntersectionObserver to
+  // reveal them progressively as the user scrolls — preserves the
+  // scroll-triggered animation feel for SplitType chars, etc.
+  // Non-CSR: GSAP/Framer may still play; let them, then catch any
+  // leftovers with a snap pass at 5 s.
+  if (IS_CSR) progressiveReveal();
+  else setTimeout(snapReveal, 5000);
+  initUnicornStudio();
+  setTimeout(initUnicornStudio, 500);
+  setTimeout(initUnicornStudio, 2000);
+};
+if (document.readyState === 'complete') go();
+else window.addEventListener('load', go);
+})();</script></body></html>
