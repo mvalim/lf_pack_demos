@@ -27,6 +27,7 @@ p{color:var(--brand-gray-dark)}
 .theme-bg{background:var(--brand-primary)!important}
 .grey-bg{background:var(--brand-background)!important}
 .sub__title,.sub__title__one,.section__title__one span,.blog__meta a,.case__single__box .icon{color:var(--brand-primary)!important}
+.hero-lfpack .sub__title{color:var(--brand-white)!important;text-shadow:0 2px 10px rgba(0,0,0,.9),0 0 2px rgba(0,91,159,.9)}
 .ht_btn,.preloader span,#scrollUp{background:var(--brand-primary)}
 .ht_btn::before,.ht_btn.hover-bg::before,.single__box::before,.single__box .icon::before,.single__services__box .services__icon,.case__single__box .icon:hover,.working__step:hover .step{background:var(--brand-secondary)!important}
 .ht_btn:hover,.case__btn:hover{color:var(--brand-primary)!important}
@@ -46,8 +47,16 @@ p{color:var(--brand-gray-dark)}
 .site-nav a{color:var(--brand-white);font-size:15px;font-weight:800;position:relative}
 .site-nav a::after{background:var(--brand-accent);bottom:-10px;content:"";height:3px;left:0;opacity:0;position:absolute;right:0;transform:scaleX(.4);transition:all .3s ease}
 .site-nav a:hover::after,.site-nav a:focus::after{opacity:1;transform:scaleX(1)}
-.menu-toggle{align-items:center;background:var(--brand-primary);border:0;color:var(--brand-white);display:none;height:48px;justify-content:center;width:48px}
+.menu-toggle{align-items:center;background:var(--brand-primary);border:0;color:var(--brand-white);display:none;height:48px;justify-content:center;position:relative;width:48px}
+.menu-toggle span,.menu-toggle::before,.menu-toggle::after{background:currentColor;border-radius:2px;content:"";height:3px;position:absolute;transition:transform .2s ease,opacity .2s ease;width:22px}
+.menu-toggle::before{transform:translateY(-8px)}
+.menu-toggle::after{transform:translateY(8px)}
+.menu-toggle[aria-expanded="true"] span{opacity:0}
+.menu-toggle[aria-expanded="true"]::before{transform:rotate(45deg)}
+.menu-toggle[aria-expanded="true"]::after{transform:rotate(-45deg)}
 .hero-lfpack{min-height:720px;overflow:hidden}
+.hero-lfpack .hero-copy{position:relative;z-index:2}
+.theme__main__banner .shapes.shapes__1{mix-blend-mode:lighten;opacity:.9;pointer-events:none}
 .hero-lfpack .main__title{font-size:78px;line-height:1.05;max-width:890px}
 .hero-lfpack .hero-copy{max-width:720px}
 .hero-lfpack .hero-copy p{color:rgba(255,255,255,.86);font-size:20px;line-height:32px;margin-bottom:34px}
@@ -63,10 +72,21 @@ p{color:var(--brand-gray-dark)}
 .section-pad{padding:110px 0}
 .section-pad-sm{padding:90px 0}
 .lf-grid-gap{row-gap:30px}
-.single__box{height:calc(100% - 30px)}
-.single__box p{margin-bottom:0}
-.single__services__box{height:calc(100% - 60px)}
+.lf-grid-gap>[class*="col-"]{display:flex}
+.single__box{height:calc(100% - 30px);min-height:332px;width:100%}
+.single__box .icon .front-icon{display:inline-block!important;filter:brightness(0) saturate(100%) invert(17%) sepia(99%) saturate(4019%) hue-rotate(342deg) brightness(96%) contrast(96%);transform:scale(1)!important}
+.single__box .icon .back-icon{display:none!important}
+.single__box:hover .icon .front-icon{filter:brightness(0) invert(1)}
+.single__box p{margin-bottom:0;transition:color .3s ease}
+.single__box:hover .single__box__title,.single__box:hover .single__box__title a,.single__box:hover p{color:var(--brand-white)!important}
+.single__services__box{background:var(--brand-white);display:flex;flex-direction:column;height:calc(100% - 60px)}
+.single__services__box .services__thumb{height:150px}
+.single__services__box .services__thumb img{height:100%;object-fit:cover;width:100%}
+.single__services__box .services__content{bottom:auto;box-shadow:5px 15px 40px 0 rgba(24,24,24,.05);flex:1;position:relative;right:auto;width:100%;padding:64px 20px 28px}
 .single__services__box .services__content p{font-size:16px;line-height:25px;margin-bottom:0}
+.single__services__box .services__icon{align-items:center;display:flex!important;height:72px;justify-content:center;left:20px!important;padding:0;top:-36px;width:72px}
+.single__services__box .services__icon img{filter:brightness(0) invert(1)!important;max-height:46px;max-width:46px}
+.single__services__box:hover .single__service__title,.single__services__box:hover .single__service__title a,.single__services__box:hover .services__content p{color:var(--brand-white)!important}
 .services__content{min-height:232px}
 .application-card{background:var(--brand-white);border:1px solid var(--brand-gray-light);box-shadow:5px 15px 40px 0 rgba(0,91,159,.08);height:100%;padding:28px;transition:all .3s ease}
 .application-card:hover{border-color:var(--brand-primary);transform:translateY(-5px)}
@@ -91,7 +111,7 @@ p{color:var(--brand-gray-dark)}
 .reveal{opacity:0;transform:translateY(18px);transition:opacity .55s ease,transform .55s ease}
 .reveal.is-visible{opacity:1;transform:translateY(0)}
 @media(max-width:1199px){.hero-lfpack .main__title{font-size:62px}.site-nav{gap:18px}}
-@media(max-width:991px){.site-header .header-row{min-height:78px}.menu-toggle{display:inline-flex}.site-nav{background:var(--brand-text);border-top:1px solid rgba(255,255,255,.12);display:none;left:0;margin:0;padding:18px 24px 26px;position:absolute;right:0;top:78px}.site-nav.is-open{display:block}.site-nav a{display:block;padding:12px 0}.site-nav a::after{display:none}.site-header .header-cta{display:none}.hero-lfpack{min-height:auto}.hero-lfpack .main__title{font-size:48px}.hero-panel{margin-top:40px}.about-media{margin-bottom:80px}}
+@media(max-width:991px){.site-header .header-row{min-height:78px}.menu-toggle{display:inline-flex}.site-nav{background:var(--brand-text);border-top:1px solid rgba(255,255,255,.12);display:none;left:0;margin:0;padding:18px 24px 26px;position:absolute;right:0;top:78px}.site-nav.is-open{display:block}.site-nav a{display:block;padding:12px 0}.site-nav a::after{display:none}.site-header .header-cta{display:none}.hero-lfpack{min-height:auto;padding-top:118px!important}.hero-lfpack .main__title{font-size:48px}.hero-panel{margin-top:40px}.about-media{margin-bottom:80px}}
 @media(max-width:767px){.section-pad{padding:72px 0}.section-pad-sm{padding:62px 0}.hero-lfpack .main__title{font-size:38px}.hero-lfpack .hero-copy p{font-size:17px;line-height:28px}.hero-actions{align-items:stretch;flex-direction:column}.hero-actions .ht_btn{justify-content:center;width:100%}.section__title__one{font-size:34px}.about-media .floating-img{display:none}}
 </style>
 </head>
@@ -111,7 +131,7 @@ p{color:var(--brand-gray-dark)}
 <a href="#contato">Contato</a>
 </nav>
 <a class="ht_btn header-cta" href="#contato"><span>Solicitar orçamento <img alt="" src="factry/assets/0e3ae9df74ef936f_arrow1.svg"/></span></a>
-<button class="menu-toggle" type="button" aria-label="Abrir menu" aria-controls="siteNav" aria-expanded="false"><i class="far fa-bars"></i></button>
+<button class="menu-toggle" type="button" aria-label="Abrir menu" aria-controls="siteNav" aria-expanded="false"><span aria-hidden="true"></span></button>
 </div>
 </div>
 </header>
@@ -119,13 +139,9 @@ p{color:var(--brand-gray-dark)}
 <main>
 <section class="theme__main__banner hero-lfpack black-bg pt-160 pb-130 pb-lg-100" id="inicio">
 <div class="shapes__blur"></div>
-<img alt="Peça metálica industrial decorativa" class="shapes shapes__1" src="factry/assets/1e567775552f4cf1_hero-steel-1.png"/>
+<img alt="Sistema de automação industrial com PLC, sensores e robô" class="shapes shapes__1" src="factry/assets/lfpack-industrial-automation-hero.png"/>
 <img alt="Linha técnica decorativa" class="shapes shapes__2" src="factry/assets/494f746ff41cdb49_hero-line-1.svg"/>
 <img alt="Estrela decorativa" class="shapes shapes__3" src="factry/assets/c4f769806fe378c3_star-1.svg"/>
-<div class="circular__box">
-<img alt="Texto circular decorativo" class="circular__text" src="factry/assets/a3f63cfdb2f799c0_circular-text.png"/>
-<img alt="Peças industriais" class="circular__img" src="factry/assets/b3c6509cf967b76b_steel-parts.png"/>
-</div>
 <div class="container">
 <div class="row align-items-center">
 <div class="col-xl-8 col-lg-12">
@@ -171,15 +187,12 @@ p{color:var(--brand-gray-dark)}
 <img alt="Linha decorativa" class="about__shape__2" src="factry/assets/4c6dc68495388841_about-line-3a.svg"/>
 <div class="container">
 <div class="row align-items-center mb-20">
-<div class="col-lg-9 pe-lg-0">
+<div class="col-lg-12">
 <div class="section__title text-lg-start text-center mb-30">
 <h4 class="sub__title__one mb-0">Diferenciais</h4>
 <div class="snake-line mb-15"><img alt="Linha" src="factry/assets/d4bb7b250544b9d1_snake-line-1a.svg"/></div>
 <h2 class="section__title__one">Soluções construídas para controle, confiabilidade e continuidade produtiva.</h2>
 </div>
-</div>
-<div class="col-lg-3 d-flex justify-content-center justify-content-lg-end">
-<div class="about__circular__box mb-30"><img alt="Texto circular decorativo" src="factry/assets/0d3f8720fda15f26_circular-text.png"/><span>PLC</span></div>
 </div>
 </div>
 <div class="row lf-grid-gap">
@@ -210,9 +223,9 @@ p{color:var(--brand-gray-dark)}
 <div class="col-lg-4 col-md-6"><article class="single__services__box mb-60 reveal"><div class="services__thumb"><img alt="Máquina industrial em operação automatizada" class="w-100" src="factry/assets/650833788e258b77_service-1a.jpg"/></div><div class="services__content"><div class="services__icon"><img alt="Ícone de PLC" src="factry/assets/ec3e43db90dda206_icon-5a.svg"/></div><h4 class="single__service__title"><a href="#contato">Programação de PLC / CLP</a></h4><p>Lógicas de controle, sequências, intertravamentos e ajustes para comportamento previsível da máquina.</p></div></article></div>
 <div class="col-lg-4 col-md-6"><article class="single__services__box mb-60 reveal"><div class="services__thumb"><img alt="Equipamento industrial e estrutura fabril" class="w-100" src="factry/assets/29f43fd85e47b14d_service-2a.jpg"/></div><div class="services__content"><div class="services__icon"><img alt="Ícone de painel elétrico" src="factry/assets/abf2490d3d6d6cf7_icon-6a.svg"/></div><h4 class="single__service__title"><a href="#contato">Painéis elétricos</a></h4><p>Desenvolvimento e adequação de painéis para comando, proteção e automação industrial.</p></div></article></div>
 <div class="col-lg-4 col-md-6"><article class="single__services__box mb-60 reveal"><div class="services__thumb"><img alt="Linha industrial com equipamentos de produção" class="w-100" src="factry/assets/668605ea4cb79b7d_service-3a.jpg"/></div><div class="services__content"><div class="services__icon"><img alt="Ícone de máquina industrial" src="factry/assets/996ed8b50bc1322f_icon-7a.svg"/></div><h4 class="single__service__title"><a href="#contato">Automação de máquinas</a></h4><p>Automatização de etapas manuais, ciclos repetitivos e comandos com foco em estabilidade operacional.</p></div></article></div>
-<div class="col-lg-4 col-md-6"><article class="single__services__box mb-60 reveal"><div class="services__thumb"><img alt="Ambiente fabril moderno com máquinas industriais" class="w-100" src="factry/assets/96f9323ad7145f21_case-1a.jpg"/></div><div class="services__content"><div class="services__icon"><img alt="Ícone de retrofit" src="factry/assets/740fc91e6306c4d5_icon-8a.svg"/></div><h4 class="single__service__title"><a href="#contato">Retrofit e modernização</a></h4><p>Atualização de comandos, componentes e lógica para recuperar confiabilidade em equipamentos existentes.</p></div></article></div>
-<div class="col-lg-4 col-md-6"><article class="single__services__box mb-60 reveal"><div class="services__thumb"><img alt="Sistema industrial com estruturas e equipamentos de controle" class="w-100" src="factry/assets/5f3a2535aca94906_case-2a.jpg"/></div><div class="services__content"><div class="services__icon"><img alt="Ícone de integração" src="factry/assets/174f2b93e74849e2_icon-1a.svg"/></div><h4 class="single__service__title"><a href="#contato">Sensores, inversores e IHMs</a></h4><p>Integração de dispositivos para leitura, acionamento, visualização e controle de variáveis produtivas.</p></div></article></div>
-<div class="col-lg-4 col-md-6"><article class="single__services__box mb-60 reveal"><div class="services__thumb"><img alt="Equipamento industrial para diagnóstico técnico" class="w-100" src="factry/assets/2600fe34ec440625_case-3a.jpg"/></div><div class="services__content"><div class="services__icon"><img alt="Ícone de manutenção" src="factry/assets/113ef314c17184cd_icon-2a.svg"/></div><h4 class="single__service__title"><a href="#contato">Diagnóstico e manutenção</a></h4><p>Análise de falhas, correções em sistemas automatizados e apoio técnico para retomada operacional.</p></div></article></div>
+<div class="col-lg-4 col-md-6"><article class="single__services__box mb-60 reveal"><div class="services__thumb"><img alt="Ambiente fabril moderno com máquinas industriais" class="w-100" src="factry/assets/96f9323ad7145f21_case-1a.jpg"/></div><div class="services__content"><div class="services__icon"><img alt="Ícone de retrofit" src="factry/assets/740fc91e6306c4d5_icon-8w-local.svg"/></div><h4 class="single__service__title"><a href="#contato">Retrofit e modernização</a></h4><p>Atualização de comandos, componentes e lógica para recuperar confiabilidade em equipamentos existentes.</p></div></article></div>
+<div class="col-lg-4 col-md-6"><article class="single__services__box mb-60 reveal"><div class="services__thumb"><img alt="Sistema industrial com estruturas e equipamentos de controle" class="w-100" src="factry/assets/5f3a2535aca94906_case-2a.jpg"/></div><div class="services__content"><div class="services__icon"><img alt="Ícone de integração" src="factry/assets/174f2b93e74849e2_icon-1w-local.svg"/></div><h4 class="single__service__title"><a href="#contato">Sensores, inversores e IHMs</a></h4><p>Integração de dispositivos para leitura, acionamento, visualização e controle de variáveis produtivas.</p></div></article></div>
+<div class="col-lg-4 col-md-6"><article class="single__services__box mb-60 reveal"><div class="services__thumb"><img alt="Equipamento industrial para diagnóstico técnico" class="w-100" src="factry/assets/2600fe34ec440625_case-3a.jpg"/></div><div class="services__content"><div class="services__icon"><img alt="Ícone de manutenção" src="factry/assets/113ef314c17184cd_icon-2w-local.svg"/></div><h4 class="single__service__title"><a href="#contato">Diagnóstico e manutenção</a></h4><p>Análise de falhas, correções em sistemas automatizados e apoio técnico para retomada operacional.</p></div></article></div>
 </div>
 </div>
 </section>
