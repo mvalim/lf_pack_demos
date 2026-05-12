@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="LF PAK Equipamentos Industriais living design system and pattern library" name="description"/>
+<title>LF PAK Equipamentos Industriais Design System</title>
+<link href="assets/08a0af9f03516172_themify-icons.css" rel="stylesheet"/>
+<link href="assets/0ae5b2478f9bd2f8_flaticon.css" rel="stylesheet"/>
+<link href="assets/f75e846cc83bd114_bootstrap.min.css" rel="stylesheet"/>
+<link href="assets/9a1a099a4cb205b5_animate.css" rel="stylesheet"/>
+<link href="assets/dd7b97c7ad9d7b3e_owl.carousel.css" rel="stylesheet"/>
+<link href="assets/20ef53019af4cbfa_owl.theme.css" rel="stylesheet"/>
+<link href="assets/d917660c3d6f7aad_slick.css" rel="stylesheet"/>
+<link href="assets/4f8fb0e23ba6eab7_slick-theme.css" rel="stylesheet"/>
+<link href="assets/edd4b5eb5efc4c8d_swiper.min.css" rel="stylesheet"/>
+<link href="assets/46c63e19392696c9_owl.transitions.css" rel="stylesheet"/>
+<link href="assets/a1d38ba94d6881f2_jquery.fancybox.css" rel="stylesheet"/>
+<link href="assets/8119f11580b59b9e_style.css" rel="stylesheet"/>
+<style>
+.ds-brandbar{background:#FFFFFF;border-bottom:1px solid #D9D9D9;padding:14px 0}
+.ds-brandbar img{display:block;max-height:58px;width:auto}
+:root{--brand-primary:#005B9F;--brand-secondary:#0077C3;--brand-accent:#0090E6;--brand-gray-dark:#666666;--brand-gray-medium:#8C8C8C;--brand-gray-light:#D9D9D9;--brand-white:#FFFFFF;--brand-background:#F7F8FA;--brand-text:#333333}
+body{background:var(--brand-white);color:var(--brand-gray-dark)}
+p{color:var(--brand-gray-dark)}
+h1,h2,h3,h4,h5,h6{color:var(--brand-text)}
+.section-title > span,.section-title-s2 > span,.section-title-s3 > span,.section-title-s4 > span,.section-title h2 span,.section-title-s4 h2 span,.hero-slider .slide-title h2 span,.services-section-s2 .service-grids .fi:before,.services-section-s3 .service-grids .fi:before,.latest-projects-section-s2 .inner .cat,.blog-section .blog-grids .more,.ds-icons .theme{color:var(--brand-primary)!important}
+.theme-btn,.theme-btn-s2:hover,.submit-btn,.preloader .lds-ellipsis div,.site-footer .about-widget .social ul li a:hover,.team-section .team-grids ul li a,.latest-projects-section-s2 .owl-theme .owl-controls .owl-nav [class*=owl-]:hover{background-color:var(--brand-primary)!important;border-color:var(--brand-primary)!important}
+.theme-btn:hover,.submit-btn:hover,.team-section .team-grids ul li a:hover{background-color:var(--brand-secondary)!important}
+.theme-btn:after,.theme-btn-s2:hover:after,.submit-btn:after{background:var(--brand-accent)!important}
+.section-title h2:before,.section-title-s4 h2:before,.section-title h2:after,.section-title-s4 h2:after,.site-footer .widget-title h3:before,.site-footer .widget-title h3:after,.latest-projects-section .gallery-filters ul li a:after,.latest-projects-section-s2 .gallery-filters ul li a:after{background:var(--brand-primary)!important}
+.hero-slider .swiper-pagination-bullet-active,.contact-section .left-col .call-back,.contact-section form .submit-area .submit-btn{background:var(--brand-primary)!important}
+.latest-projects-section .inner .details,.latest-projects-section-s2 .inner .details{background:rgba(51,51,51,.92)!important}
+.site-footer,.testimonials-section{background-color:var(--brand-text)!important}
+.site-footer .newsletter-widget form input{background-color:rgba(255,255,255,.08)!important;color:var(--brand-gray-light)!important}
+.cta-section-s2 .cta-details h2{background:-webkit-linear-gradient(var(--brand-primary),var(--brand-white));-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.ds-nav{background:#333333;border-bottom:1px solid rgba(217,217,217,.18);position:sticky;top:0;z-index:9999}
+.ds-nav ul{display:flex;flex-wrap:wrap;justify-content:center;margin:0;padding:0}
+.ds-nav li{list-style:none}
+.ds-nav a{color:#fff;display:block;font-family:"Barlow Condensed",sans-serif;font-size:16px;font-weight:700;letter-spacing:.2px;padding:16px 15px;text-transform:uppercase}
+.ds-nav a:hover,.ds-nav a:focus{background:#005B9F;color:#fff}
+.ds-section{padding:110px 0}
+.ds-spec-row{align-items:center;border-bottom:1px solid #D9D9D9;display:flex;gap:28px;padding:26px 0}
+.ds-spec-name{color:#333333;flex:0 0 190px;font-family:"Barlow Condensed",sans-serif;font-size:18px;font-weight:700;text-transform:uppercase}
+.ds-spec-preview{flex:1}
+.ds-spec-size{color:#8C8C8C;flex:0 0 140px;font-weight:600;text-align:right}
+.ds-dark{background:#333333;padding:30px}
+.ds-swatch{border:1px solid #D9D9D9;min-height:140px;margin-bottom:30px;padding:24px}
+.ds-swatch h4,.ds-swatch p{margin-bottom:6px}
+.ds-page{background:#fff}
+.ds-light{background:#F7F8FA}
+.ds-card{background:#fff;box-shadow:0 10px 30px 0 rgba(0,91,159,.08)}
+.ds-navy{background:#333333}
+.ds-orange{background:#005B9F}
+.ds-secondary{background:#0077C3}
+.ds-accent{background:#0090E6}
+.ds-text{background:#333333}
+.ds-body{background:#666666}
+.ds-overlay{background:rgba(0,91,159,.9)}
+.ds-gradient{background:-webkit-linear-gradient(#005B9F,#FFFFFF);background:linear-gradient(#005B9F,#FFFFFF)}
+.ds-state-label{color:#8C8C8C;font-size:13px;font-weight:700;margin-bottom:12px;text-transform:uppercase}
+.ds-state-box{border:1px solid #D9D9D9;margin-bottom:30px;min-height:120px;padding:24px}
+.ds-active-project .details{opacity:1;visibility:visible}
+.ds-active-project .details .arrow a,.ds-active-project .details .info{opacity:1;top:0}
+.ds-motion-box{background:#005B9F;color:#fff;font-family:"Barlow Condensed",sans-serif;font-size:20px;font-weight:700;margin-bottom:20px;padding:22px;text-align:center;text-transform:uppercase}
+.ds-icons i{color:#333333;font-size:34px;line-height:1;margin:0 26px 26px 0}
+.ds-icons .theme{color:#005B9F}
+.ds-icon-grid .icon-card{align-items:center;border:1px solid #D9D9D9;display:flex;height:94px;justify-content:center;margin-bottom:24px;width:94px}
+.ds-icon-grid .icon-card img{max-height:52px}
+@media(max-width:767px){.ds-spec-row{align-items:flex-start;display:block}.ds-spec-preview{padding:14px 0}.ds-spec-size{text-align:left}.ds-nav a{font-size:13px;padding:12px 9px}}
+</style>
+</head>
+<body>
+<div class="page-wrapper">
+<div class="ds-brandbar">
+<div class="container">
+<img alt="LF PAK Equipamentos Industriais" src="../lfpack_logo_horizontal.png"/>
+</div>
+</div>
+<nav class="ds-nav">
+<ul>
+<li><a href="#hero">Hero</a></li>
+<li><a href="#typography">Typography</a></li>
+<li><a href="#colors">Colors &amp; Surfaces</a></li>
+<li><a href="#components">UI Components</a></li>
+<li><a href="#layout">Layout &amp; Spacing</a></li>
+<li><a href="#motion">Motion</a></li>
+<li><a href="#icons">Icons</a></li>
+</ul>
+</nav>
+<!-- start of hero -->
+<section class="hero-slider hero-style-2" id="hero">
+<div class="swiper-container swiper-container-horizontal">
+<div class="swiper-wrapper" style="transition-duration: 0ms; transform: translate3d(-5760px, 0px, 0px);"><div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active" data-swiper-slide-index="2" style="width: 1920px; transition: all;">
+<div class="slide-inner slide-bg-image" data-background="assets/58b34ff75bed507f_slide-3.jpg" style='transform: translate3d(2880px, 0px, 0px); transition: all; background-image: url("assets/58b34ff75bed507f_slide-3.jpg");'>
+<div class="container">
+<div class="slide-title" data-swiper-parallax="300" style="transition-duration: 0ms; transform: translate3d(300px, 0px, 0px);">
+<h2><span>Design System</span> Core Patterns</h2>
+</div>
+<div class="slide-text" data-swiper-parallax="400" style="transition-duration: 0ms; transform: translate3d(400px, 0px, 0px);">
+<p>Reusable typography, colors, cards, buttons, images, sliders and interaction rules from the LF PAK industrial interface.</p>
+</div>
+<div class="clearfix"></div>
+<div class="slide-btns" data-swiper-parallax="500" style="transition-duration: 0ms; transform: translate3d(500px, 0px, 0px);">
+<a class="theme-btn" href="#components">Components</a>
+<a class="theme-btn-s2" href="#typography">Typography</a>
+</div>
+</div>
+</div> <!-- end slide-inner -->
+</div>
+<div class="swiper-slide swiper-slide-duplicate-next" data-swiper-slide-index="0" style="width: 1920px; transition: all;">
+<div class="slide-inner slide-bg-image" data-background="assets/af526b8a7bc41fc8_slide-1.jpg" style='transform: translate3d(1920px, 0px, 0px); transition: all; background-image: url("assets/af526b8a7bc41fc8_slide-1.jpg");'>
+<div class="container">
+<div class="slide-title" data-swiper-parallax="300" style="transition-duration: 0ms; transform: translate3d(300px, 0px, 0px);">
+<h2><span>Living Library</span> <br/>Exact Styles</h2>
+</div>
+<div class="slide-text" data-swiper-parallax="400" style="transition-duration: 0ms; transform: translate3d(400px, 0px, 0px);">
+<p>Canonical examples document the same HTML classes, media treatment, motion and layout rhythm used by the reference.</p>
+</div>
+<div class="clearfix"></div>
+<div class="slide-btns" data-swiper-parallax="500" style="transition-duration: 0ms; transform: translate3d(500px, 0px, 0px);">
+<a class="theme-btn" href="#components">Components</a>
+<a class="theme-btn-s2" href="#colors">Colors</a>
+</div>
+</div>
+</div> <!-- end slide-inner -->
+</div> <!-- end swiper-slide -->
+<div class="swiper-slide swiper-slide-prev" data-swiper-slide-index="1" style="width: 1920px; transition: all;">
+<div class="slide-inner slide-bg-image" data-background="assets/38602ab9f75d9db7_slide-2.jpg" style='transform: translate3d(960px, 0px, 0px); transition: all; background-image: url("assets/38602ab9f75d9db7_slide-2.jpg");'>
+<div class="container">
+<div class="slide-title" data-swiper-parallax="300" style="transition-duration: 0ms; transform: translate3d(300px, 0px, 0px);">
+<h2><span>Interface Rules</span> Visual System</h2>
+</div>
+<div class="slide-text" data-swiper-parallax="400" style="transition-duration: 0ms; transform: translate3d(400px, 0px, 0px);">
+<p>Buttons, grids, service cards, forms, project overlays and icon systems are shown as live implementation samples.</p>
+</div>
+<div class="clearfix"></div>
+<div class="slide-btns" data-swiper-parallax="500" style="transition-duration: 0ms; transform: translate3d(500px, 0px, 0px);">
+<a class="theme-btn" href="#layout">Layouts</a>
+<a class="theme-btn-s2" href="#motion">Motion</a>
+</div>
+</div>
+</div> <!-- end slide-inner -->
+</div> <!-- end swiper-slide -->
+<div class="swiper-slide swiper-slide-active" data-swiper-slide-index="2" style="width: 1920px; transition: all;">
+<div class="slide-inner slide-bg-image" data-background="assets/58b34ff75bed507f_slide-3.jpg" style='transform: translate3d(0px, 0px, 0px); transition: all; background-image: url("assets/58b34ff75bed507f_slide-3.jpg");'>
+<div class="container">
+<div class="slide-title" data-swiper-parallax="300" style="transition-duration: 0ms; transform: translate3d(0px, 0px, 0px);">
+<h2><span>Design System</span> Core Patterns</h2>
+</div>
+<div class="slide-text" data-swiper-parallax="400" style="transition-duration: 0ms; transform: translate3d(0px, 0px, 0px);">
+<p>Reusable typography, colors, cards, buttons, images, sliders and interaction rules from the LF PAK industrial interface.</p>
+</div>
+<div class="clearfix"></div>
+<div class="slide-btns" data-swiper-parallax="500" style="transition-duration: 0ms; transform: translate3d(0px, 0px, 0px);">
+<a class="theme-btn" href="#components">Components</a>
+<a class="theme-btn-s2" href="#typography">Typography</a>
+</div>
+</div>
+</div> <!-- end slide-inner -->
+</div><!-- end swiper-slide -->
+<div class="swiper-slide swiper-slide-duplicate swiper-slide-next" data-swiper-slide-index="0" style="width: 1920px; transition: all;">
+<div class="slide-inner slide-bg-image" data-background="assets/af526b8a7bc41fc8_slide-1.jpg" style='transform: translate3d(-960px, 0px, 0px); transition: all; background-image: url("assets/af526b8a7bc41fc8_slide-1.jpg");'>
+<div class="container">
+<div class="slide-title" data-swiper-parallax="300" style="transition-duration: 0ms; transform: translate3d(-300px, 0px, 0px);">
+<h2><span>Living Library</span> <br/>Exact Styles</h2>
+</div>
+<div class="slide-text" data-swiper-parallax="400" style="transition-duration: 0ms; transform: translate3d(-400px, 0px, 0px);">
+<p>Canonical examples document the same HTML classes, media treatment, motion and layout rhythm used by the reference.</p>
+</div>
+<div class="clearfix"></div>
+<div class="slide-btns" data-swiper-parallax="500" style="transition-duration: 0ms; transform: translate3d(-500px, 0px, 0px);">
+<a class="theme-btn" href="#components">Components</a>
+<a class="theme-btn-s2" href="#colors">Colors</a>
+</div>
+</div>
+</div> <!-- end slide-inner -->
+</div></div>
+<!-- end swiper-wrapper -->
+<!-- swipper controls -->
+<div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets"><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span></div>
+<div class="swiper-button-next"></div>
+<div class="swiper-button-prev"></div>
+</div>
+</section>
+<!-- end of hero slider -->
+<section class="ds-section" id="typography">
+<div class="container">
+<div class="section-title">
+<span>Typography</span>
+<h2>Hierarchy and <span>type rhythm</span></h2>
+</div>
+<div class="ds-spec-row"><div class="ds-spec-name">Heading 1</div><div class="ds-spec-preview"><h1>Industrial heading one</h1></div><div class="ds-spec-size">45px / 63px</div></div>
+<div class="ds-spec-row"><div class="ds-spec-name">Heading 2</div><div class="ds-spec-preview"><h2>Most Modern Industry</h2></div><div class="ds-spec-size">46px / 55px</div></div>
+<div class="ds-spec-row"><div class="ds-spec-name">Heading 3</div><div class="ds-spec-preview"><h3>Quality Materials</h3></div><div class="ds-spec-size">22px / 31px</div></div>
+<div class="ds-spec-row"><div class="ds-spec-name">Heading 4</div><div class="ds-spec-preview"><h4>Address Location</h4></div><div class="ds-spec-size">18px / 25px</div></div>
+<div class="ds-spec-row"><div class="ds-spec-name">Bold L</div><div class="ds-spec-preview"><div class="slide-title"><h2><span>Industrial Automation</span> Control Systems</h2></div></div><div class="ds-spec-size">80px / 88px</div></div>
+<div class="ds-spec-row"><div class="ds-spec-name">Bold M</div><div class="ds-spec-preview"><div class="cta-details"><h2>Best industrial solution in the world</h2></div></div><div class="ds-spec-size">60px / 72px</div></div>
+<div class="ds-spec-row"><div class="ds-spec-name">Bold S</div><div class="ds-spec-preview"><div class="section-title"><span>Services</span></div></div><div class="ds-spec-size">15px / 22px</div></div>
+<div class="ds-spec-row"><div class="ds-spec-name">Paragraph</div><div class="ds-spec-preview"><p>A collection of textile samples lay spread out on the table and housed in a nice, gilded frame.</p></div><div class="ds-spec-size">15px / 25px</div></div>
+<div class="ds-spec-row"><div class="ds-spec-name">Regular L</div><div class="ds-spec-preview"><div class="slide-text"><p>Raising a heavy fur muff that covered the whole of her lower arm towards the viewer.</p></div></div><div class="ds-spec-size">18px / 31px</div></div>
+<div class="ds-spec-row"><div class="ds-spec-name">Regular M</div><div class="ds-spec-preview"><div class="blog-grids"><div class="grid"><div class="details"><p class="date">Jun 18, 2019</p></div></div></div></div><div class="ds-spec-size">13px / 22px</div></div>
+<div class="ds-spec-row"><div class="ds-spec-name">Regular S</div><div class="ds-spec-preview"><div class="team-section"><div class="team-grids"><div class="grid"><div class="details"><span>Mechanical Engineering</span></div></div></div></div></div><div class="ds-spec-size">13px / 20px</div></div>
+</div>
+</section>
+<section class="ds-section" id="colors">
+<div class="container">
+<div class="section-title-s4">
+<span>Colors &amp; Surfaces</span>
+<h2>Backgrounds, overlays and <span>surface rules</span></h2>
+</div>
+<div class="row">
+<div class="col-md-3 col-sm-6"><div class="ds-swatch ds-page"><h4>Page</h4><p>#ffffff</p></div></div>
+<div class="col-md-3 col-sm-6"><div class="ds-swatch ds-light"><h4>Background</h4><p>#F7F8FA</p></div></div>
+<div class="col-md-3 col-sm-6"><div class="ds-swatch ds-card"><h4>Card</h4><p>white + shadow</p></div></div>
+<div class="col-md-3 col-sm-6"><div class="ds-swatch ds-orange"><h4 class="text-white">Primary Blue</h4><p class="text-white">#005B9F</p></div></div>
+<div class="col-md-3 col-sm-6"><div class="ds-swatch ds-secondary"><h4 class="text-white">Secondary Blue</h4><p class="text-white">#0077C3</p></div></div>
+<div class="col-md-3 col-sm-6"><div class="ds-swatch ds-accent"><h4 class="text-white">Accent Blue</h4><p class="text-white">#0090E6</p></div></div>
+<div class="col-md-3 col-sm-6"><div class="ds-swatch ds-text"><h4 class="text-white">Text</h4><p class="text-white">#333333</p></div></div>
+<div class="col-md-3 col-sm-6"><div class="ds-swatch ds-body"><h4 class="text-white">Gray Dark</h4><p class="text-white">#666666</p></div></div>
+<div class="col-md-3 col-sm-6"><div class="ds-swatch"><h4>Gray Medium</h4><p>#8C8C8C</p></div></div>
+<div class="col-md-3 col-sm-6"><div class="ds-swatch"><h4>Gray Light</h4><p>#D9D9D9</p></div></div>
+<div class="col-md-3 col-sm-6"><div class="ds-swatch ds-overlay"><h4 class="text-white">Project Overlay</h4><p class="text-white">rgba(0,91,159,.9)</p></div></div>
+<div class="col-md-6"><div class="ds-swatch ds-gradient"><h4>Brand Gradient</h4><p>-webkit-linear-gradient(#005B9F, #FFFFFF)</p></div></div>
+<div class="col-md-6"><div class="ds-swatch"><h4>Borders</h4><p>#D9D9D9 and rgba(217,217,217,.18)</p></div></div>
+</div>
+</div>
+</section>
+<section class="ds-section" id="components">
+<div class="container">
+<div class="section-title">
+<span>UI Components</span>
+<h2>Buttons, cards, forms and <span>content blocks</span></h2>
+</div>
+<div class="row">
+<div class="col-md-3 col-sm-6"><div class="ds-state-label">primary</div><a class="theme-btn" href="#">Our industry</a></div>
+<div class="col-md-3 col-sm-6"><div class="ds-state-label">secondary</div><a class="theme-btn-s2" href="#">Contact us</a></div>
+<div class="col-md-3 col-sm-6"><div class="ds-state-label">submit</div><button class="submit-btn" type="button">Submit Now</button></div>
+<div class="col-md-3 col-sm-6"><div class="ds-state-label">search</div><div class="header-search-form"><form><div><input class="form-control" placeholder="Search here..." type="text"/><button type="submit"><i class="ti-search"></i></button></div></form></div></div>
+</div>
+<div class="features-section-s2">
+<div class="feature-grids clearfix">
+<div class="grid"><div class="img-holder"><img alt="" src="assets/03e556624e4dffaa_01.png"/></div><h3>01. Quality Materials</h3><p>Raising a heavy fur muff that covered the whole of her lower arm.</p></div>
+<div class="grid"><div class="img-holder"><img alt="" src="assets/4c7c4820762bd60f_02.png"/></div><h3>02. Expert Team</h3><p>Raising a heavy fur muff that covered the whole of her lower arm.</p></div>
+<div class="grid"><div class="img-holder"><img alt="" src="assets/c32a1a1226367047_03.png"/></div><h3>03. Timely Delivery</h3><p>Raising a heavy fur muff that covered the whole of her lower arm.</p></div>
+<div class="grid"><div class="img-holder"><img alt="" src="assets/9a323ea9251b08c2_04.png"/></div><h3>04. 24/7 Suport</h3><p>Raising a heavy fur muff that covered the whole of her lower arm.</p></div>
+</div>
+</div>
+<div class="services-section-s2">
+<div class="service-grids clearfix">
+<div class="grid"><div class="img-holder"><img alt="" src="assets/7c684ddcb14bb094_img-1.jpg"/></div><div class="details"><i class="fi flaticon-solar-energy"></i><h3><a href="#">Power &amp; Energy</a></h3><p>Recently cut out of an illustrated magine and housed indust</p></div></div>
+<div class="grid"><div class="img-holder"><img alt="" src="assets/18659f707c3ca618_img-2.jpg"/></div><div class="details"><i class="fi flaticon-plug"></i><h3><a href="#">Mechanical Works</a></h3><p>Recently cut out of an illustrated magine and housed indust</p></div></div>
+<div class="grid"><div class="img-holder"><img alt="" src="assets/d1da6cd8781fcfb2_img-3.jpg"/></div><div class="details"><i class="fi flaticon-oil-barrel"></i><h3><a href="#">Petroleum Refinery</a></h3><p>Recently cut out of an illustrated magine and housed indust</p></div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-6">
+<div class="contact-section">
+<div class="contact-form">
+<form class="contact-validation-active" method="post">
+<div><input class="form-control" name="name" placeholder="Name*" type="text"/></div>
+<div><input class="form-control" name="email" placeholder="Email*" type="email"/></div>
+<div><select class="form-control" name="subject"><option disabled="disabled" selected="">Contact subject</option><option>Subject 1</option></select></div>
+<div class="fullwidth"><textarea class="form-control" name="note" placeholder="Case Description..."></textarea></div>
+<div class="submit-area"><button class="submit-btn" type="submit">Submit Now</button><div id="loader"><i class="ti-reload"></i></div></div>
+</form>
+</div>
+</div>
+</div>
+<div class="col-md-6">
+<div class="testimonials-section">
+<div class="testimonial-grids">
+<div class="grid"><div class="client-info"><div class="client-pic"><img alt="" src="assets/cf8287ecc029af83_img-1.jpg"/></div><h4>Jhon Dow</h4><span>Manager of Demok</span></div><div class="client-quote"><p>“collection of textile samples lay spread out on the table Samsa was a travelling salesman.”</p></div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="ds-section" id="layout">
+<div class="container">
+<div class="section-title-s4">
+<span>Layout &amp; Spacing</span>
+<h2>Container, split and <span>grid systems</span></h2>
+</div>
+<div class="about-us-section-s2 section-padding p-t-0">
+<div class="row">
+<div class="col col-md-5"><div class="img-holder about-image"><img alt="" src="assets/74a69da41f8a8d20_about-s2.jpg"/></div></div>
+<div class="col col-md-7"><div class="about-details"><div class="section-title"><span>About us</span><h2>Most Modern &amp; Powerfull <span>Industry in the world</span></h2></div><div class="details"><p>A collection of textile samples lay spread out on the table Samsa was a travelling salesman.</p><ul><li><i class="ti-arrow-circle-right"></i> Ftted out with a fur hat and fur boa </li><li><i class="ti-arrow-circle-right"></i> It showed a lady fitted out with a fur hat </li></ul></div></div></div>
+</div>
+</div>
+<div class="latest-projects-section-s2">
+<div class="content-area">
+<div class="team-grids">
+<div class="grid"><div class="inner"><div class="img-holder"><img alt="" src="assets/88f55dde38e5d2da_img-1.jpg"/></div><div class="details"><div class="arrow"><a href="#"><i class="fi flaticon-next"></i></a></div><div class="info"><h3><a href="#">Asian Industrial Project</a></h3><p class="cat">Industry, Corporate</p></div></div></div></div>
+<div class="grid ds-active-project"><div class="inner"><div class="img-holder"><img alt="" src="assets/066b909ed04227ff_img-2.jpg"/></div><div class="details"><div class="arrow"><a href="#"><i class="fi flaticon-next"></i></a></div><div class="info"><h3><a href="#">Asian Industrial Project</a></h3><p class="cat">Industry, Corporate</p></div></div></div></div>
+<div class="grid"><div class="inner"><div class="img-holder"><img alt="" src="assets/cb898c961e761e5e_img-3.jpg"/></div><div class="details"><div class="arrow"><a href="#"><i class="fi flaticon-next"></i></a></div><div class="info"><h3><a href="#">Asian Industrial Project</a></h3><p class="cat">Industry, Corporate</p></div></div></div></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="ds-section" id="motion">
+<div class="container">
+<div class="section-title">
+<span>Motion &amp; Interaction</span>
+<h2>Transitions, sliders and <span>hover states</span></h2>
+</div>
+<div class="row">
+<div class="col-md-3 col-sm-6"><div class="ds-state-label">animate.css</div><div class="ds-motion-box animated fadeIn">fadeIn</div></div>
+<div class="col-md-3 col-sm-6"><div class="ds-state-label">animate.css</div><div class="ds-motion-box animated fadeInUp">fadeInUp</div></div>
+<div class="col-md-3 col-sm-6"><div class="ds-state-label">preloader</div><div class="preloader"><div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div></div></div>
+<div class="col-md-3 col-sm-6"><div class="ds-state-label">button hover</div><a class="theme-btn" href="#">Hover me</a></div>
+</div>
+<div class="row">
+<div class="col-md-4"><div class="services-section-s2"><div class="service-grids clearfix"><div class="grid"><div class="img-holder"><img alt="" src="assets/4837e3e99945e4e4_img-4.jpg"/></div><div class="details"><i class="fi flaticon-oil-1"></i><h3><a href="#">Oil and Gas</a></h3><p>Hover changes title and icon emphasis.</p></div></div></div></div></div>
+<div class="col-md-4"><div class="team-section"><div class="team-grids"><div class="grid"><div class="img-social"><div class="img-holder"><img alt="" src="assets/88068f46f0f75796_img-1.jpg"/></div><div class="social"><ul><li><a href="#"><i class="ti-facebook"></i></a></li><li><a href="#"><i class="ti-twitter-alt"></i></a></li></ul></div></div><div class="details"><h3>Danial Jain</h3><span>Mechanical Engineering</span></div></div></div></div></div>
+<div class="col-md-4"><div class="latest-projects-section-s2"><div class="team-grids"><div class="grid"><div class="inner"><div class="img-holder"><img alt="" src="assets/b1f3074f26d5e266_img-4.jpg"/></div><div class="details"><div class="arrow"><a href="#"><i class="fi flaticon-next"></i></a></div><div class="info"><h3><a href="#">Project Overlay</a></h3><p class="cat">Hover reveal</p></div></div></div></div></div></div></div>
+</div>
+</div>
+</section>
+<section class="ds-section" id="icons">
+<div class="container">
+<div class="section-title-s4">
+<span>Icons</span>
+<h2>Themify, Flaticon and <span>image icons</span></h2>
+</div>
+<div class="row ds-icon-grid">
+<div class="col-md-2 col-sm-3 col-xs-6"><div class="icon-card"><img alt="" src="assets/03e556624e4dffaa_01.png"/></div></div>
+<div class="col-md-2 col-sm-3 col-xs-6"><div class="icon-card"><img alt="" src="assets/4c7c4820762bd60f_02.png"/></div></div>
+<div class="col-md-2 col-sm-3 col-xs-6"><div class="icon-card"><img alt="" src="assets/c32a1a1226367047_03.png"/></div></div>
+<div class="col-md-2 col-sm-3 col-xs-6"><div class="icon-card"><img alt="" src="assets/9a323ea9251b08c2_04.png"/></div></div>
+</div>
+<div class="ds-icons">
+<i class="ti-mobile"></i>
+<i class="ti-email theme"></i>
+<i class="ti-time"></i>
+<i class="ti-search theme"></i>
+<i class="ti-arrow-circle-right"></i>
+<i class="ti-facebook"></i>
+<i class="fi flaticon-solar-energy theme"></i>
+<i class="fi flaticon-plug"></i>
+<i class="fi flaticon-oil-barrel theme"></i>
+<i class="fi flaticon-truck"></i>
+<i class="fi flaticon-factory theme"></i>
+<i class="fi flaticon-next"></i>
+</div>
+</div>
+</section>
+</div>
+<script src="assets/3ae5d8b5a2806b81_jquery.min.js"></script>
+<script src="assets/53964478a7c634e8_bootstrap.min.js"></script>
+<script src="assets/37d9a68d7ec49421_jquery-plugin-collection.js"></script>
+<script src="assets/745636b22ca080c5_script.js"></script>
+</body>
+</html>

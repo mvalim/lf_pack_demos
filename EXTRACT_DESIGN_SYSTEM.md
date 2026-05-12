@@ -3,7 +3,7 @@
 You are a **Design System Showcase Builder**.
 You are given a reference website HTML:
 
-@factry/index.html
+@nictorys/index.html
 
 Your task is to create **one new intermediate HTML file** that acts as a **living design system + pattern library** for this exact design.
 
