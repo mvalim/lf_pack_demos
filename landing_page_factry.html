@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html class="no-js" lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<meta content="ie=edge" http-equiv="x-ua-compatible"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="Landing page institucional da LF PAK Equipamentos Industriais para automação industrial, PLC, CLP, painéis elétricos e integração de sistemas." name="description"/>
+<title>LF PAK Equipamentos Industriais | Automação Industrial</title>
+<link href="factry/assets/615745286237e80a_bootstrap.min.css" rel="stylesheet"/>
+<link href="factry/assets/8eaaeaacd576364a_font-css.css" rel="stylesheet"/>
+<link href="factry/assets/1cea29d439afdece_animate.min.css" rel="stylesheet"/>
+<link href="factry/assets/0332a1f507b570a0_swiper-bundle.min.css" rel="stylesheet"/>
+<link href="factry/assets/ac943818f5ab1e3f_all.min.css" rel="stylesheet"/>
+<link href="factry/assets/c13280e79f74109c_nice-select.css" rel="stylesheet"/>
+<link href="factry/assets/45d1f5f6cf913746_magnific-popup.css" rel="stylesheet"/>
+<link href="factry/assets/af53cc2fef6b1ea0_metisMenu.css" rel="stylesheet"/>
+<link href="factry/assets/80c1cb95ccb5d554_aos.css" rel="stylesheet"/>
+<link href="factry/assets/ac2565c82dc672dc_spacing.css" rel="stylesheet"/>
+<link href="factry/assets/5fbb6aa75df4b43e_main.css" rel="stylesheet"/>
+<style>
+:root{--brand-primary:#005B9F;--brand-secondary:#0077C3;--brand-accent:#0090E6;--brand-gray-dark:#666666;--brand-gray-medium:#8C8C8C;--brand-gray-light:#D9D9D9;--brand-white:#FFFFFF;--brand-background:#F7F8FA;--brand-text:#333333}
+html{scroll-behavior:smooth}
+body{background:var(--brand-white);color:var(--brand-gray-dark)}
+h1,h2,h3,h4,h5,h6{color:var(--brand-text)}
+p{color:var(--brand-gray-dark)}
+.black-bg,.heding-bg{background:var(--brand-text)!important}
+.theme-bg{background:var(--brand-primary)!important}
+.grey-bg{background:var(--brand-background)!important}
+.sub__title,.sub__title__one,.section__title__one span,.blog__meta a,.case__single__box .icon{color:var(--brand-primary)!important}
+.ht_btn,.preloader span,#scrollUp{background:var(--brand-primary)}
+.ht_btn::before,.ht_btn.hover-bg::before,.single__box::before,.single__box .icon::before,.single__services__box .services__icon,.case__single__box .icon:hover,.working__step:hover .step{background:var(--brand-secondary)!important}
+.ht_btn:hover,.case__btn:hover{color:var(--brand-primary)!important}
+.main__title span,.about__circular__box span{color:var(--brand-accent)!important}
+.about__circular__box{border-color:var(--brand-primary)!important}
+.theme__main__banner .shapes__blur{background:rgba(0,91,159,.16)!important}
+.single__services__box:hover .services__content{background:var(--brand-text)!important}
+.single__services__box:hover .single__service__title{color:var(--brand-white)}
+.case__single__box .case__thumb::before{background:linear-gradient(180deg,rgba(51,51,51,0) 0%,var(--brand-text) 100%)!important}
+.video__wrapper .popup-video{background:var(--brand-primary)!important}
+.footer-area .blur__shape{background:rgba(0,91,159,.16)!important}
+.site-header{background:var(--brand-text);position:sticky;top:0;z-index:1000}
+.site-header .header-row{align-items:center;display:flex;gap:30px;justify-content:space-between;min-height:92px}
+.site-logo{background:var(--brand-white);display:inline-flex;padding:8px 12px}
+.site-logo img{display:block;max-height:54px;width:auto}
+.site-nav{align-items:center;display:flex;gap:28px;margin-left:auto}
+.site-nav a{color:var(--brand-white);font-size:15px;font-weight:800;position:relative}
+.site-nav a::after{background:var(--brand-accent);bottom:-10px;content:"";height:3px;left:0;opacity:0;position:absolute;right:0;transform:scaleX(.4);transition:all .3s ease}
+.site-nav a:hover::after,.site-nav a:focus::after{opacity:1;transform:scaleX(1)}
+.menu-toggle{align-items:center;background:var(--brand-primary);border:0;color:var(--brand-white);display:none;height:48px;justify-content:center;width:48px}
+.hero-lfpack{min-height:720px;overflow:hidden}
+.hero-lfpack .main__title{font-size:78px;line-height:1.05;max-width:890px}
+.hero-lfpack .hero-copy{max-width:720px}
+.hero-lfpack .hero-copy p{color:rgba(255,255,255,.86);font-size:20px;line-height:32px;margin-bottom:34px}
+.hero-actions{display:flex;flex-wrap:wrap;gap:18px}
+.ht_btn.secondary{background:var(--brand-white);color:var(--brand-primary)}
+.ht_btn.secondary::before{background:var(--brand-accent)!important}
+.ht_btn.secondary:hover{color:var(--brand-white)!important}
+.hero-panel{background:var(--brand-white);box-shadow:5px 15px 40px 0 rgba(0,91,159,.12);padding:34px;position:relative;z-index:3}
+.hero-panel h3{font-size:28px;margin-bottom:18px}
+.hero-panel ul{list-style:none;margin:0;padding:0}
+.hero-panel li{align-items:flex-start;color:var(--brand-gray-dark);display:flex;font-weight:700;gap:12px;margin-bottom:13px}
+.hero-panel i{color:var(--brand-primary);margin-top:6px}
+.section-pad{padding:110px 0}
+.section-pad-sm{padding:90px 0}
+.lf-grid-gap{row-gap:30px}
+.single__box{height:calc(100% - 30px)}
+.single__box p{margin-bottom:0}
+.single__services__box{height:calc(100% - 60px)}
+.single__services__box .services__content p{font-size:16px;line-height:25px;margin-bottom:0}
+.services__content{min-height:232px}
+.application-card{background:var(--brand-white);border:1px solid var(--brand-gray-light);box-shadow:5px 15px 40px 0 rgba(0,91,159,.08);height:100%;padding:28px;transition:all .3s ease}
+.application-card:hover{border-color:var(--brand-primary);transform:translateY(-5px)}
+.application-card i{color:var(--brand-primary);font-size:34px;margin-bottom:18px}
+.application-card h3{font-size:24px;margin-bottom:10px}
+.about-media{position:relative}
+.about-media .main-img{display:block;width:100%}
+.about-media .floating-img{border:10px solid var(--brand-white);bottom:-42px;box-shadow:5px 15px 40px 0 rgba(0,91,159,.16);max-width:245px;position:absolute;right:28px}
+.about-list{list-style:none;margin:30px 0 0;padding:0}
+.about-list li{align-items:flex-start;color:var(--brand-gray-dark);display:flex;font-weight:700;gap:12px;margin-bottom:14px}
+.about-list i{color:var(--brand-primary);margin-top:5px}
+.cta-section{background-image:linear-gradient(90deg,rgba(0,91,159,.94),rgba(0,119,195,.84)),url("factry/assets/fa9c2688f718fbb3_video-bg-1a.jpg");background-position:center;background-size:cover}
+.cta-section h2,.cta-section p{color:var(--brand-white)}
+.footer-area .footer-bg-one{background:var(--brand-text)}
+.footer-logo-box{background:var(--brand-white);display:inline-flex;margin-bottom:26px;padding:8px 12px}
+.footer-logo-box img{max-height:56px;width:auto}
+.footer-area p,.footer-area a,.footer-area li{color:rgba(255,255,255,.78)}
+.footer-area a:hover{color:var(--brand-white)}
+.footer-area .widget__title{color:var(--brand-white)}
+.footer-area .widget__query{color:rgba(255,255,255,.86)}
+.copyright__border{border-top:1px solid rgba(255,255,255,.12)}
+.reveal{opacity:0;transform:translateY(18px);transition:opacity .55s ease,transform .55s ease}
+.reveal.is-visible{opacity:1;transform:translateY(0)}
+@media(max-width:1199px){.hero-lfpack .main__title{font-size:62px}.site-nav{gap:18px}}
+@media(max-width:991px){.site-header .header-row{min-height:78px}.menu-toggle{display:inline-flex}.site-nav{background:var(--brand-text);border-top:1px solid rgba(255,255,255,.12);display:none;left:0;margin:0;padding:18px 24px 26px;position:absolute;right:0;top:78px}.site-nav.is-open{display:block}.site-nav a{display:block;padding:12px 0}.site-nav a::after{display:none}.site-header .header-cta{display:none}.hero-lfpack{min-height:auto}.hero-lfpack .main__title{font-size:48px}.hero-panel{margin-top:40px}.about-media{margin-bottom:80px}}
+@media(max-width:767px){.section-pad{padding:72px 0}.section-pad-sm{padding:62px 0}.hero-lfpack .main__title{font-size:38px}.hero-lfpack .hero-copy p{font-size:17px;line-height:28px}.hero-actions{align-items:stretch;flex-direction:column}.hero-actions .ht_btn{justify-content:center;width:100%}.section__title__one{font-size:34px}.about-media .floating-img{display:none}}
+</style>
+</head>
+<body>
+<div class="main-page-wrapper">
+<header class="site-header">
+<div class="container header-custom-container">
+<div class="header-row">
+<a class="site-logo" href="#inicio" aria-label="LF PAK Equipamentos Industriais">
+<img alt="Logo horizontal da LF PAK Equipamentos Industriais" src="lfpack_logo_horizontal.png"/>
+</a>
+<nav class="site-nav" id="siteNav" aria-label="Navegação principal">
+<a href="#inicio">Início</a>
+<a href="#solucoes">Soluções</a>
+<a href="#aplicacoes">Aplicações</a>
+<a href="#sobre">Sobre</a>
+<a href="#contato">Contato</a>
+</nav>
+<a class="ht_btn header-cta" href="#contato"><span>Solicitar orçamento <img alt="" src="factry/assets/0e3ae9df74ef936f_arrow1.svg"/></span></a>
+<button class="menu-toggle" type="button" aria-label="Abrir menu" aria-controls="siteNav" aria-expanded="false"><i class="far fa-bars"></i></button>
+</div>
+</div>
+</header>
+
+<main>
+<section class="theme__main__banner hero-lfpack black-bg pt-160 pb-130 pb-lg-100" id="inicio">
+<div class="shapes__blur"></div>
+<img alt="Peça metálica industrial decorativa" class="shapes shapes__1" src="factry/assets/1e567775552f4cf1_hero-steel-1.png"/>
+<img alt="Linha técnica decorativa" class="shapes shapes__2" src="factry/assets/494f746ff41cdb49_hero-line-1.svg"/>
+<img alt="Estrela decorativa" class="shapes shapes__3" src="factry/assets/c4f769806fe378c3_star-1.svg"/>
+<div class="circular__box">
+<img alt="Texto circular decorativo" class="circular__text" src="factry/assets/a3f63cfdb2f799c0_circular-text.png"/>
+<img alt="Peças industriais" class="circular__img" src="factry/assets/b3c6509cf967b76b_steel-parts.png"/>
+</div>
+<div class="container">
+<div class="row align-items-center">
+<div class="col-xl-8 col-lg-12">
+<div class="theme__content hero-copy text-xl-start text-center mb-5 mb-lg-0 reveal">
+<h4 class="sub__title mb-25">Automação industrial, PLC e integração</h4>
+<h1 class="main__title mb-35">Automação industrial para processos mais eficientes, seguros e produtivos</h1>
+<p>A LF PAK desenvolve soluções em PLC, integração de sistemas e modernização de máquinas para empresas que precisam de controle, confiabilidade e performance na produção.</p>
+<div class="hero-actions justify-content-xl-start justify-content-center">
+<a class="ht_btn" href="#contato"><span>Solicitar orçamento <img alt="" src="factry/assets/0e3ae9df74ef936f_arrow1.svg"/></span></a>
+<a class="ht_btn secondary" href="#solucoes"><span>Conhecer soluções <img alt="" src="factry/assets/0e3ae9df74ef936f_arrow1.svg"/></span></a>
+</div>
+</div>
+</div>
+<div class="col-xl-4 col-lg-8 mx-auto">
+<aside class="hero-panel reveal" aria-label="Principais necessidades atendidas">
+<h3>Controle técnico para operações industriais críticas</h3>
+<ul>
+<li><i class="bi bi-check-circle-fill"></i><span>Redução de paradas e falhas de comando.</span></li>
+<li><i class="bi bi-check-circle-fill"></i><span>Modernização de máquinas e painéis elétricos.</span></li>
+<li><i class="bi bi-check-circle-fill"></i><span>Integração de sensores, inversores, IHMs e PLCs.</span></li>
+</ul>
+</aside>
+</div>
+</div>
+</div>
+<div class="swiper hero__slider">
+<div class="swiper-wrapper">
+<div class="swiper-slide"><img alt="Ambiente industrial com máquinas e estrutura produtiva" src="factry/assets/9dba3e82ca968723_hero-main-1a.jpg"/></div>
+<div class="swiper-slide"><img alt="Linha industrial moderna com equipamentos produtivos" src="factry/assets/1238c07774cd0cf0_hero-main-2a.jpg"/></div>
+<div class="swiper-slide"><img alt="Operação industrial com equipamentos e estrutura metálica" src="factry/assets/f96fb718edc36ae3_hero-main-4a.jpg"/></div>
+<div class="swiper-slide"><img alt="Área fabril com máquinas industriais" src="factry/assets/5b697539235aa9e4_hero-main-3a.jpg"/></div>
+</div>
+<div class="swiper-pagination"></div>
+<div class="swiper-button-prev"><img alt="Anterior" src="factry/assets/f438ce31cc6043ca_chevron-arrow-left.svg"/></div>
+<div class="swiper-button-next"><img alt="Próximo" src="factry/assets/32a888f86a277ae4_chevron-arrow-right.svg"/></div>
+</div>
+</section>
+
+<section class="about__area section-pad" id="diferenciais">
+<div class="grey-bg about__section__wrapper pt-110 pb-80 pt-lg-80 pb-lg-50">
+<div class="big-style-text" data-text="Diferenciais">Técnica</div>
+<img alt="Linha decorativa" class="about__shape__1" src="factry/assets/3a2319ad71c59400_about-line-2a.svg"/>
+<img alt="Linha decorativa" class="about__shape__2" src="factry/assets/4c6dc68495388841_about-line-3a.svg"/>
+<div class="container">
+<div class="row align-items-center mb-20">
+<div class="col-lg-9 pe-lg-0">
+<div class="section__title text-lg-start text-center mb-30">
+<h4 class="sub__title__one mb-0">Diferenciais</h4>
+<div class="snake-line mb-15"><img alt="Linha" src="factry/assets/d4bb7b250544b9d1_snake-line-1a.svg"/></div>
+<h2 class="section__title__one">Soluções construídas para controle, confiabilidade e continuidade produtiva.</h2>
+</div>
+</div>
+<div class="col-lg-3 d-flex justify-content-center justify-content-lg-end">
+<div class="about__circular__box mb-30"><img alt="Texto circular decorativo" src="factry/assets/0d3f8720fda15f26_circular-text.png"/><span>PLC</span></div>
+</div>
+</div>
+<div class="row lf-grid-gap">
+<div class="col-lg-4 col-md-6"><div class="single__box mb-30 reveal"><div class="icon mb-35"><img alt="Ícone de automação" class="front-icon" src="factry/assets/174f2b93e74849e2_icon-1a.svg"/><img alt="Ícone de automação" class="back-icon" src="factry/assets/2dfd4b2f2875be9d_icon-1w.svg"/></div><h3 class="single__box__title"><a href="#contato">Projetos sob medida</a></h3><p>Arquitetura de automação alinhada à máquina, ao processo e às necessidades reais da operação.</p></div></div>
+<div class="col-lg-4 col-md-6"><div class="single__box mb-30 reveal"><div class="icon mb-35"><img alt="Ícone de sistemas" class="front-icon" src="factry/assets/113ef314c17184cd_icon-2a.svg"/><img alt="Ícone de sistemas" class="back-icon" src="factry/assets/102b2c981100834a_icon-2w.svg"/></div><h3 class="single__box__title"><a href="#contato">Especialistas em PLC / CLP</a></h3><p>Programação, ajustes de lógica, intertravamentos e validações para operação industrial estável.</p></div></div>
+<div class="col-lg-4 col-md-6"><div class="single__box mb-30 reveal"><div class="icon mb-35"><img alt="Ícone de eficiência" class="front-icon" src="factry/assets/a76bc0eaf3828051_icon-3a.svg"/><img alt="Ícone de eficiência" class="back-icon" src="factry/assets/89d3f73725eab8b3_icon-3w.svg"/></div><h3 class="single__box__title"><a href="#contato">Modernização de máquinas</a></h3><p>Retrofit para ampliar vida útil, reduzir falhas e facilitar manutenção de equipamentos existentes.</p></div></div>
+<div class="col-lg-4 col-md-6"><div class="single__box mb-30 reveal"><div class="icon mb-35"><img alt="Ícone de integração" class="front-icon" src="factry/assets/0c05f8af5ef10b86_icon-4a.svg"/><img alt="Ícone de integração" class="back-icon" src="factry/assets/15b31599c9ceaa06_icon-4w.svg"/></div><h3 class="single__box__title"><a href="#contato">Integração industrial</a></h3><p>Comunicação entre sensores, inversores, IHMs, painéis e sistemas de controle.</p></div></div>
+<div class="col-lg-4 col-md-6"><div class="single__box mb-30 reveal"><div class="icon mb-35"><img alt="Ícone de suporte" class="front-icon" src="factry/assets/ec3e43db90dda206_icon-5a.svg"/><img alt="Ícone de suporte" class="back-icon" src="factry/assets/2dfd4b2f2875be9d_icon-1w.svg"/></div><h3 class="single__box__title"><a href="#contato">Suporte técnico</a></h3><p>Diagnóstico, correções e apoio para equipes que precisam manter a produção em funcionamento.</p></div></div>
+<div class="col-lg-4 col-md-6"><div class="single__box mb-30 reveal"><div class="icon mb-35"><img alt="Ícone de segurança" class="front-icon" src="factry/assets/abf2490d3d6d6cf7_icon-6a.svg"/><img alt="Ícone de segurança" class="back-icon" src="factry/assets/102b2c981100834a_icon-2w.svg"/></div><h3 class="single__box__title"><a href="#contato">Produtividade e segurança</a></h3><p>Automação para reduzir intervenções manuais, estabilizar ciclos e melhorar o controle do processo.</p></div></div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="services__area section-pad-sm" id="solucoes">
+<div class="big-style-text">Soluções</div>
+<div class="container">
+<div class="row justify-content-center">
+<div class="col-xl-7 col-lg-8">
+<div class="section__title text-center mb-60">
+<h4 class="sub__title__one mb-0">Soluções</h4>
+<div class="snake-line mb-15"><img alt="Linha" src="factry/assets/d4bb7b250544b9d1_snake-line-1a.svg"/></div>
+<h2 class="section__title__one">Automação aplicada a máquinas, painéis e processos industriais</h2>
+</div>
+</div>
+</div>
+<div class="row lf-grid-gap">
+<div class="col-lg-4 col-md-6"><article class="single__services__box mb-60 reveal"><div class="services__thumb"><img alt="Máquina industrial em operação automatizada" class="w-100" src="factry/assets/650833788e258b77_service-1a.jpg"/></div><div class="services__content"><div class="services__icon"><img alt="Ícone de PLC" src="factry/assets/ec3e43db90dda206_icon-5a.svg"/></div><h4 class="single__service__title"><a href="#contato">Programação de PLC / CLP</a></h4><p>Lógicas de controle, sequências, intertravamentos e ajustes para comportamento previsível da máquina.</p></div></article></div>
+<div class="col-lg-4 col-md-6"><article class="single__services__box mb-60 reveal"><div class="services__thumb"><img alt="Equipamento industrial e estrutura fabril" class="w-100" src="factry/assets/29f43fd85e47b14d_service-2a.jpg"/></div><div class="services__content"><div class="services__icon"><img alt="Ícone de painel elétrico" src="factry/assets/abf2490d3d6d6cf7_icon-6a.svg"/></div><h4 class="single__service__title"><a href="#contato">Painéis elétricos</a></h4><p>Desenvolvimento e adequação de painéis para comando, proteção e automação industrial.</p></div></article></div>
+<div class="col-lg-4 col-md-6"><article class="single__services__box mb-60 reveal"><div class="services__thumb"><img alt="Linha industrial com equipamentos de produção" class="w-100" src="factry/assets/668605ea4cb79b7d_service-3a.jpg"/></div><div class="services__content"><div class="services__icon"><img alt="Ícone de máquina industrial" src="factry/assets/996ed8b50bc1322f_icon-7a.svg"/></div><h4 class="single__service__title"><a href="#contato">Automação de máquinas</a></h4><p>Automatização de etapas manuais, ciclos repetitivos e comandos com foco em estabilidade operacional.</p></div></article></div>
+<div class="col-lg-4 col-md-6"><article class="single__services__box mb-60 reveal"><div class="services__thumb"><img alt="Ambiente fabril moderno com máquinas industriais" class="w-100" src="factry/assets/96f9323ad7145f21_case-1a.jpg"/></div><div class="services__content"><div class="services__icon"><img alt="Ícone de retrofit" src="factry/assets/740fc91e6306c4d5_icon-8a.svg"/></div><h4 class="single__service__title"><a href="#contato">Retrofit e modernização</a></h4><p>Atualização de comandos, componentes e lógica para recuperar confiabilidade em equipamentos existentes.</p></div></article></div>
+<div class="col-lg-4 col-md-6"><article class="single__services__box mb-60 reveal"><div class="services__thumb"><img alt="Sistema industrial com estruturas e equipamentos de controle" class="w-100" src="factry/assets/5f3a2535aca94906_case-2a.jpg"/></div><div class="services__content"><div class="services__icon"><img alt="Ícone de integração" src="factry/assets/174f2b93e74849e2_icon-1a.svg"/></div><h4 class="single__service__title"><a href="#contato">Sensores, inversores e IHMs</a></h4><p>Integração de dispositivos para leitura, acionamento, visualização e controle de variáveis produtivas.</p></div></article></div>
+<div class="col-lg-4 col-md-6"><article class="single__services__box mb-60 reveal"><div class="services__thumb"><img alt="Equipamento industrial para diagnóstico técnico" class="w-100" src="factry/assets/2600fe34ec440625_case-3a.jpg"/></div><div class="services__content"><div class="services__icon"><img alt="Ícone de manutenção" src="factry/assets/113ef314c17184cd_icon-2a.svg"/></div><h4 class="single__service__title"><a href="#contato">Diagnóstico e manutenção</a></h4><p>Análise de falhas, correções em sistemas automatizados e apoio técnico para retomada operacional.</p></div></article></div>
+</div>
+</div>
+</section>
+
+<section class="case__study__area section-pad-sm grey-bg" id="aplicacoes">
+<div class="big-style-text">Aplicações</div>
+<div class="container">
+<div class="row justify-content-center">
+<div class="col-xl-8 col-lg-9">
+<div class="section__title text-center mb-60">
+<h4 class="sub__title__one mb-0">Aplicações industriais</h4>
+<div class="snake-line mb-15"><img alt="Linha" src="factry/assets/d4bb7b250544b9d1_snake-line-1a.svg"/></div>
+<h2 class="section__title__one">Onde a automação pode gerar controle e previsibilidade</h2>
+</div>
+</div>
+</div>
+<div class="row lf-grid-gap">
+<div class="col-lg-3 col-md-6"><div class="application-card reveal"><i class="bi bi-diagram-3"></i><h3>Linhas de produção</h3><p>Controle de etapas sequenciais e repetibilidade operacional.</p></div></div>
+<div class="col-lg-3 col-md-6"><div class="application-card reveal"><i class="bi bi-box-seam"></i><h3>Máquinas de embalagem</h3><p>Sincronismo de ciclos, sensores e comandos de acionamento.</p></div></div>
+<div class="col-lg-3 col-md-6"><div class="application-card reveal"><i class="bi bi-arrow-left-right"></i><h3>Esteiras transportadoras</h3><p>Automação de movimentação, segurança e fluxo de materiais.</p></div></div>
+<div class="col-lg-3 col-md-6"><div class="application-card reveal"><i class="bi bi-droplet-half"></i><h3>Sistemas de envase</h3><p>Controle de dosagem, sequência e monitoramento de processo.</p></div></div>
+<div class="col-lg-3 col-md-6"><div class="application-card reveal"><i class="bi bi-cpu"></i><h3>Controle de motores</h3><p>Integração com inversores, partidas e comandos elétricos.</p></div></div>
+<div class="col-lg-3 col-md-6"><div class="application-card reveal"><i class="bi bi-repeat"></i><h3>Processos repetitivos</h3><p>Redução de intervenção manual e padronização de ciclos.</p></div></div>
+<div class="col-lg-3 col-md-6"><div class="application-card reveal"><i class="bi bi-grid-3x3-gap"></i><h3>Células industriais</h3><p>Integração entre equipamentos, sensores e dispositivos de comando.</p></div></div>
+<div class="col-lg-3 col-md-6"><div class="application-card reveal"><i class="bi bi-display"></i><h3>Monitoramento</h3><p>Visualização de estados, alarmes e dados de equipamentos.</p></div></div>
+</div>
+</div>
+</section>
+
+<section class="working__process__area section-pad-sm" id="processo">
+<div class="container">
+<div class="row justify-content-center">
+<div class="col-lg-8">
+<div class="section__title text-center mb-70 px-3">
+<h4 class="sub__title__one mb-0">Como trabalhamos</h4>
+<div class="snake-line mb-15"><img alt="Linha" src="factry/assets/d4bb7b250544b9d1_snake-line-1a.svg"/></div>
+<h2 class="section__title__one">Um processo técnico para reduzir risco antes da implantação</h2>
+</div>
+</div>
+</div>
+<ul class="row working__process__list1">
+<li class="col-xxl-3 col-md-6"><div class="working__step step-1 mb-30 reveal"><span class="step mb-20">Etapa 01</span><h3 class="single__box__title mb-15">Diagnóstico técnico</h3><p>Análise da máquina, painel, sinais, lógica atual e pontos críticos da operação.</p></div></li>
+<li class="col-xxl-3 col-md-6"><div class="working__step step-2 mb-30 reveal"><span class="step mb-20">Etapa 02</span><h3 class="single__box__title mb-15">Planejamento</h3><p>Definição da arquitetura, componentes, interligações e estratégia de controle.</p></div></li>
+<li class="col-xxl-3 col-md-6"><div class="working__step step-3 mb-30 reveal"><span class="step mb-20">Etapa 03</span><h3 class="single__box__title mb-15">Implementação e testes</h3><p>Execução, parametrização, validação funcional e ajustes em ambiente industrial.</p></div></li>
+<li class="col-xxl-3 col-md-6"><div class="working__step step-4 mb-30 reveal"><span class="step mb-20">Etapa 04</span><h3 class="single__box__title mb-15">Entrega e suporte</h3><p>Orientação de uso, treinamento operacional e apoio técnico após a entrega.</p></div></li>
+</ul>
+</div>
+</section>
+
+<section class="faq__area" id="sobre">
+<div class="grey-bg faq__section__wrapper pt-120 pb-110 pt-lg-70 pb-lg-70">
+<div class="big-style-text">Sobre</div>
+<img alt="Linha decorativa" class="shapes__1" src="factry/assets/9cca92922925b1b2_faq-line-4a.svg"/>
+<img alt="Linha decorativa" class="shapes__2" src="factry/assets/bce950d1bc3c5c0f_faq-line-5a.svg"/>
+<div class="container">
+<div class="row align-items-center">
+<div class="col-lg-6">
+<div class="about-media reveal">
+<img alt="Técnico acompanhando equipamento industrial em ambiente fabril" class="main-img" src="factry/assets/da9d3b6bdf04812f_faq-img-1a.jpg"/>
+<img alt="Close de componentes industriais e automação" class="floating-img" src="factry/assets/8f022d07967245b1_faq-img-2a.jpg"/>
+</div>
+</div>
+<div class="col-lg-6">
+<div class="faq__que__list mb-30 ps-xl-5 ms-xl-4">
+<div class="section__title mb-35">
+<h4 class="sub__title__one mb-0">Sobre a LF PAK</h4>
+<div class="snake-line mb-15"><img alt="Linha" src="factry/assets/d4bb7b250544b9d1_snake-line-1a.svg"/></div>
+<h2 class="section__title__one">Conhecimento técnico aplicado à automação de processos industriais</h2>
+</div>
+<p>A LF PAK Equipamentos Industriais atua no desenvolvimento de soluções para automação industrial, combinando conhecimento técnico, precisão na execução e foco nas necessidades reais da operação. Nosso objetivo é entregar sistemas confiáveis, seguros e preparados para aumentar a eficiência da produção.</p>
+<ul class="about-list">
+<li><i class="bi bi-check-circle-fill"></i><span>Projetos voltados a controle, produtividade e manutenção mais eficiente.</span></li>
+<li><i class="bi bi-check-circle-fill"></i><span>Atuação em PLC, painéis elétricos, máquinas, sensores, inversores e IHMs.</span></li>
+<li><i class="bi bi-check-circle-fill"></i><span>Comunicação objetiva com equipes técnicas e gestores industriais.</span></li>
+</ul>
+<div class="mt-45"><a class="ht_btn hover-bg" href="#contato"><span>Falar com especialista <img alt="" src="factry/assets/0e3ae9df74ef936f_arrow1.svg"/></span></a></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="cta-section section-pad-sm">
+<div class="container">
+<div class="row align-items-center">
+<div class="col-lg-8">
+<div class="section__title mb-30 mb-lg-0">
+<h4 class="sub__title mb-20 text-white">Contato técnico</h4>
+<h2 class="section__title__one">Pronto para modernizar sua operação industrial?</h2>
+<p class="mb-0">Fale com a LF PAK e descubra como a automação pode reduzir falhas, melhorar o controle do processo e aumentar a produtividade da sua empresa.</p>
+</div>
+</div>
+<div class="col-lg-4 text-lg-end">
+<a class="ht_btn secondary" href="#contato"><span>Solicitar contato técnico <img alt="" src="factry/assets/0e3ae9df74ef936f_arrow1.svg"/></span></a>
+</div>
+</div>
+</div>
+</section>
+</main>
+
+<footer class="footer-area heding-bg" id="contato">
+<div class="footer-bg-one pt-100 pb-70">
+<img alt="" class="shapes__1" src="factry/assets/e41089c27686472a_star-5b.svg"/>
+<img alt="" class="shapes__2" src="factry/assets/0b3278d6e67d37f6_line-7a.svg"/>
+<img alt="" class="shapes__4" src="factry/assets/5faca893a36495a4_footer-parts-1a.png"/>
+<div class="blur__shape"></div>
+<div class="big-style-text">Contato</div>
+<div class="container">
+<div class="row pb-45">
+<div class="col-lg-5 col-md-12">
+<div class="footer__widget mb-30">
+<a class="footer-logo-box" href="#inicio"><img alt="Logo horizontal da LF PAK Equipamentos Industriais" src="lfpack_logo_horizontal.png"/></a>
+<p>Automação industrial, painéis elétricos, integração de sistemas e suporte técnico para empresas que buscam mais controle, produtividade e confiabilidade no processo produtivo.</p>
+</div>
+</div>
+<div class="col-lg-3 col-md-6">
+<div class="footer__widget mb-30">
+<div class="footer__contact__one">
+<h4 class="widget__title mb-25">Links rápidos</h4>
+<ul class="fot-list">
+<li><a href="#inicio">Início</a></li>
+<li><a href="#solucoes">Soluções</a></li>
+<li><a href="#aplicacoes">Aplicações</a></li>
+<li><a href="#sobre">Sobre</a></li>
+<li><a href="#contato">Contato</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="col-lg-4 col-md-6">
+<div class="footer__widget mb-30">
+<div class="footer__contact__one">
+<h4 class="widget__title mb-25">Contato</h4>
+<ul class="fot-list">
+<li>Telefone: (00) 0000-0000</li>
+<li>WhatsApp: (00) 00000-0000</li>
+<li>E-mail: contato@lfpak.com.br</li>
+<li>Cidade/Estado: informar localização</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="copyright__border pt-35">
+<div class="row align-items-center">
+<div class="col-lg-12 text-center">
+<div class="copyright__text mb-0">
+<p>© 2026 LF PAK Equipamentos Industriais. Todos os direitos reservados.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</footer>
+</div>
+
+<script src="factry/assets/05b85d96f41fff14_jquery-2.2.4.min.js"></script>
+<script src="factry/assets/5a07c69f9061eb12_popper.min.js"></script>
+<script src="factry/assets/0ce9de398de7e7ec_bootstrap.min.js"></script>
+<script src="factry/assets/53d98eec825130ed_swiper-bundle.min.js"></script>
+<script src="factry/assets/3fddc6d28aba3c13_jquery.magnific-popup.min.js"></script>
+<script src="factry/assets/3647eed4ec2acc9d_aos.js"></script>
+<script>
+(function(){
+  var toggle=document.querySelector(".menu-toggle");
+  var nav=document.querySelector("#siteNav");
+  if(toggle&&nav){
+    toggle.addEventListener("click",function(){
+      var open=nav.classList.toggle("is-open");
+      toggle.setAttribute("aria-expanded",String(open));
+    });
+    nav.querySelectorAll("a").forEach(function(link){
+      link.addEventListener("click",function(){
+        nav.classList.remove("is-open");
+        toggle.setAttribute("aria-expanded","false");
+      });
+    });
+  }
+  if(window.Swiper){
+    new Swiper(".hero__slider",{slidesPerView:1,loop:true,speed:900,autoplay:{delay:3600,disableOnInteraction:false},pagination:{el:".swiper-pagination",type:"fraction"},navigation:{nextEl:".swiper-button-next",prevEl:".swiper-button-prev"}});
+  }
+  if(window.AOS){AOS.init({duration:650,once:true});}
+  var items=document.querySelectorAll(".reveal");
+  if("IntersectionObserver" in window){
+    var io=new IntersectionObserver(function(entries){
+      entries.forEach(function(entry){
+        if(entry.isIntersecting){entry.target.classList.add("is-visible");io.unobserve(entry.target);}
+      });
+    },{threshold:.14});
+    items.forEach(function(item){io.observe(item);});
+  }else{
+    items.forEach(function(item){item.classList.add("is-visible");});
+  }
+})();
+</script>
+</body>
+</html>

@@ -20,11 +20,11 @@ O objetivo é criar uma **landing page de exemplo**, visualmente profissional, m
 
 Utilize fielmente o design system abaixo:
 
-`industic`
+`factry`
 
 Referência visual / arquivo / documentação:
 
-`@industic/design-system-lfpack.html`
+`@factry/design-system-lfpack.html`
 
 Siga rigorosamente:
 
