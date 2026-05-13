@@ -51,13 +51,17 @@ h1,h2,h3,h4,h5,h6{color:var(--brand-text)}
 .services-section-s2 .service-grids .grid{min-height:515px}
 .services-section-s2 .service-grids .details{min-height:210px}
 .services-section-s2 .service-grids .details p{margin-bottom:0}
-.application-card{background:#fff;border:1px solid var(--brand-gray-light);box-shadow:0 10px 30px 0 rgba(0,91,159,.08);height:100%;padding:30px;transition:all .3s}
+.applications-grid,.process-grid{display:flex;flex-wrap:wrap}
+.applications-grid>[class*=col-],.process-grid>[class*=col-]{display:flex;margin-bottom:30px}
+.application-card{background:#fff;border:1px solid var(--brand-gray-light);box-shadow:0 10px 30px 0 rgba(0,91,159,.08);display:flex;flex-direction:column;height:100%;min-height:214px;padding:30px;transition:all .3s;width:100%}
 .application-card:hover{border-color:var(--brand-primary);transform:translateY(-5px)}
 .application-card i{color:var(--brand-primary);display:block;font-size:40px;margin-bottom:20px}
 .application-card h3{font-size:24px;margin-bottom:10px}
-.process-grid .grid{background:#fff;border:1px solid var(--brand-gray-light);box-shadow:0 10px 30px 0 rgba(0,91,159,.08);height:100%;padding:30px;position:relative}
+.application-card p{margin-bottom:0}
+.process-grid .grid{background:#fff;border:1px solid var(--brand-gray-light);box-shadow:0 10px 30px 0 rgba(0,91,159,.08);display:flex;flex-direction:column;height:100%;min-height:250px;padding:30px;position:relative;width:100%}
 .process-grid .grid .num{color:rgba(0,91,159,.12);font-family:"Barlow Condensed",sans-serif;font-size:70px;font-weight:700;line-height:1;position:absolute;right:20px;top:18px}
 .process-grid .grid i{color:var(--brand-primary);font-size:42px;margin-bottom:24px}
+.process-grid .grid p{margin-bottom:0}
 .about-us-section-s2 .details ul li i{color:var(--brand-primary)}
 .cta-section-s2{background-image:linear-gradient(rgba(0,91,159,.78),rgba(51,51,51,.78)),url("nictorys/assets/78eaa4237e71e100_cta-s2-bg.jpg");background-position:center;background-size:cover}
 .footer-logo-box{background:#fff;display:inline-block;margin-bottom:22px;padding:8px 12px}
@@ -270,7 +274,7 @@ h1,h2,h3,h4,h5,h6{color:var(--brand-text)}
 </div>
 </div>
 </div>
-<div class="row">
+<div class="row applications-grid">
 <div class="col-md-3 col-sm-6"><div class="application-card reveal"><i class="ti-layout-grid3"></i><h3>Linhas de produção</h3><p>Controle de etapas sequenciais e repetibilidade operacional.</p></div></div>
 <div class="col-md-3 col-sm-6"><div class="application-card reveal"><i class="ti-package"></i><h3>Máquinas de embalagem</h3><p>Sincronismo de ciclos, sensores e comandos de acionamento.</p></div></div>
 <div class="col-md-3 col-sm-6"><div class="application-card reveal"><i class="ti-exchange-vertical"></i><h3>Esteiras transportadoras</h3><p>Movimentação, segurança e fluxo de materiais automatizados.</p></div></div>
