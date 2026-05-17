@@ -4,17 +4,18 @@
 
 Criar um novo projeto institucional e comercial para a LF PAK Equipamentos Industriais usando Laravel, Inertia.js com Vue, Tailwind CSS, Laravel Boost e PostgreSQL.
 
-O projeto deve partir do template aprovado `phactorize`, preservando a identidade visual da LF PAK, os assets gerados, a estrutura de conteudo ja validada e o design system presente em `phactorize/design-system-branded.html`.
+O projeto deve partir do template aprovado `phactorize`, preservando a identidade visual da LF PAK, os assets gerados, a estrutura de conteudo validada e o design system presente em `phactorize/design-system-branded.html`.
 
-O foco principal da empresa deve ficar claro em toda a experiencia: automacao industrial aplicada a envasadoras, equipamentos de final de linha, PLC / CLP, paineis eletricos, retrofit, integracao de sistemas e suporte tecnico.
+O foco principal da empresa deve ficar claro em toda a experiencia: automacao industrial aplicada a envasadoras, equipamentos de inicio e final de linha, PLC / CLP, paineis eletricos, retrofit, integracao de sistemas, manutencao industrial e suporte tecnico.
 
 ## 2. Objetivos do produto
 
 - Apresentar a LF PAK como fornecedora tecnica de automacao industrial para processos mais eficientes, seguros e produtivos.
 - Gerar contatos comerciais via telefone, WhatsApp e e-mail.
 - Transformar o HTML estatico aprovado em uma base moderna, componentizada e facil de evoluir.
-- Permitir que conteudos futuros, como missao, visao, valores e "quem somos", sejam inseridos sem recriar a pagina.
-- Manter fidelidade visual ao template `phactorize` e ao design system branded.
+- Preservar o design aprovado no template `phactorize`, mantendo consistencia com o design system branded.
+- Organizar o conteudo institucional da empresa em uma secao unica "Quem somos", incluindo descricao da empresa, missao, visao, valores e fluxo de atendimento.
+- Preparar a base Laravel/Inertia para conteudo versionado em codigo inicialmente, com possibilidade futura de painel administrativo.
 
 ## 3. Stack tecnica
 
@@ -31,6 +32,7 @@ O foco principal da empresa deve ficar claro em toda a experiencia: automacao in
 - Empresas que precisam modernizar maquinas existentes.
 - Operacoes industriais que utilizam PLC / CLP, sensores, inversores, IHMs, paineis eletricos e sistemas de controle.
 - Gestores, engenheiros, equipes de manutencao e decisores de compra que buscam confiabilidade operacional.
+- Industrias de cosmeticos, produtos de limpeza e higiene, perfumaria, farmaceutica e outros segmentos com processos repetitivos de dosagem, embalagem e movimentacao.
 
 ## 5. Identidade visual e design system
 
@@ -60,14 +62,13 @@ O arquivo `phactorize/design-system-branded.html` deve ser usado como referencia
 - Uso dos logos
 - Botoes e estados de hover/focus
 - Cards de servico
+- Cards institucionais
 - Grids responsivos
 - Rodape
 - Overlays azuis sobre imagens industriais
-- Iconografia baseada em Font Awesome no template original, podendo ser migrada para uma biblioteca Vue se mantida a equivalencia visual
+- Iconografia baseada no Font Awesome do template original, podendo ser migrada para uma biblioteca Vue se mantida equivalencia visual
 
-## 6. Estrutura de paginas
-
-### 6.1 Pagina inicial
+## 6. Estrutura da home
 
 A pagina inicial deve conter as secoes do HTML aprovado:
 
@@ -78,23 +79,12 @@ A pagina inicial deve conter as secoes do HTML aprovado:
 - Solucoes
 - Aplicacoes industriais
 - Como trabalhamos
-- Sobre a LF PAK
+- Quem somos
 - Chamada para contato
 - Rodape com links rapidos e contatos
 - Botao flutuante de WhatsApp
 
-### 6.2 Possiveis paginas futuras
-
-Preparar a arquitetura para permitir futuras paginas ou areas:
-
-- Quem somos
-- Missao, visao e valores
-- Solucoes detalhadas
-- Cases ou projetos realizados
-- Blog tecnico
-- Area administrativa simples para edicao de conteudo, se necessario
-
-## 7. Conteudo aprovado ate o momento
+## 7. Conteudo aprovado
 
 ### 7.1 Hero
 
@@ -161,15 +151,48 @@ As imagens dos cards devem ser realistas e priorizar envasadoras, linha final, e
 - Implementacao e testes
 - Entrega e suporte
 
-### 7.7 Sobre
+### 7.7 Quem somos
 
-Texto atual:
+Texto institucional:
 
-`A LF PAK Equipamentos Industriais atua no desenvolvimento de solucoes para automacao industrial, combinando conhecimento tecnico, precisao na execucao e foco nas necessidades reais da operacao.`
+`A LF PAK e uma empresa voltada a automacao de processos de inicio e final de linha de producao, servicos de manutencao industrial, comercio de pecas, usinagem, solda e maquinas industriais.`
 
-`O objetivo e entregar sistemas confiaveis, seguros e preparados para aumentar a eficiencia da producao, melhorar o controle dos processos e apoiar equipes industriais em demandas de modernizacao, integracao e suporte.`
+`Atua em Uberaba e regiao, com especialidade em processos de final de linha para operacoes que precisam de produtividade, repetibilidade e suporte tecnico.`
 
-Observacao: missao, visao, valores e texto final de "quem somos" serao enviados posteriormente pelo cliente.
+`A empresa atende industrias de cosmeticos, produtos de limpeza e higiene, perfumaria, farmaceutica, entre outras.`
+
+Blocos de apoio:
+
+- Inicio e final de linha
+- Uberaba e regiao
+- Segmentos atendidos
+
+### 7.8 Missao, visao e valores
+
+Missao:
+
+`Criar sistemas e solucoes em automacao industrial que promovam a melhoria da produtividade, a reducao de custos e a qualidade das operacoes e dos produtos de nossos clientes.`
+
+Visao:
+
+`Ser reconhecida como empresa de automacao referencia em prover solucoes integradas as necessidades das industrias, com diferencial tecnico e operacional.`
+
+Valores:
+
+- Inovacao
+- Melhoria continua
+- Integridade
+- Etica
+- Comprometimento
+
+### 7.9 Fluxo de atendimento
+
+- Consultoria personalizada
+- Orcamento
+- Fabricacao
+- Manutencao e assistencia
+
+O fluxo deve ser implementado como HTML/CSS responsivo, nao como imagem fixa, para preservar legibilidade, acessibilidade e adaptacao a mobile.
 
 ## 8. Contatos e links
 
@@ -195,7 +218,7 @@ Links de e-mail recomendados:
 - `mailto:assistenciatecnica@lfpak.com.br?subject=Solicitacao%20de%20assistencia%20tecnica`
 - `mailto:financeiro@lfpak.com.br?subject=Contato%20financeiro`
 
-No rodape, cada e-mail deve aparecer em uma linha propria.
+No header, exibir apenas o e-mail comercial para evitar quebra visual. No rodape, cada e-mail deve aparecer em linha propria.
 
 Localidade atual:
 
@@ -210,14 +233,14 @@ Localidade atual:
 - Links de telefone e e-mail devem usar protocolos nativos (`tel:` e `mailto:`).
 - A pagina deve carregar corretamente usando assets locais.
 - O layout deve ser responsivo nos principais viewports desktop, tablet e mobile.
-- Cards de diferenciais e solucoes devem manter alinhamento e altura visual consistente.
-- O conteudo institucional futuro deve poder ser atualizado sem quebrar layout.
+- Cards de diferenciais, solucoes, missao/visao/valores e fluxo de atendimento devem manter alinhamento e altura visual consistente.
+- A secao "Quem somos" deve ser editavel via dados estruturados no Vue, mesmo que a primeira versao use conteudo estatico.
 
 ## 10. Requisitos nao funcionais
 
 - Performance: otimizar imagens e entregar assets com cache adequado.
-- Acessibilidade: usar textos alternativos em imagens, estados de foco visiveis e contraste adequado.
-- SEO: estruturar headings, metadados, descricao da empresa e textos focados em automacao industrial.
+- Acessibilidade: usar textos alternativos em imagens, estados de foco visiveis, contraste adequado e conteudo textual real em vez de textos dentro de imagem.
+- SEO: estruturar headings, metadados, descricao da empresa e textos focados em automacao industrial, envasadoras e final de linha.
 - Manutenibilidade: componentizar secoes em Vue com props ou dados configuraveis.
 - Consistencia visual: seguir `design-system-branded.html` e `color_palette.json`.
 - Compatibilidade: validar em desktop, tablet e mobile.
@@ -230,6 +253,10 @@ Mesmo que a primeira versao seja majoritariamente institucional, preparar o Post
 - `sections`: blocos de conteudo ordenaveis por pagina.
 - `services`: solucoes oferecidas com titulo, subtitulo, descricao, imagem e ordem.
 - `applications`: aplicacoes industriais com titulo, descricao, icone e ordem.
+- `features`: diferenciais com titulo, descricao, icone e ordem.
+- `process_steps`: etapas do processo de trabalho.
+- `service_flow_steps`: etapas do fluxo de atendimento.
+- `institutional_values`: missao, visao e valores.
 - `contacts`: telefones, WhatsApp, e-mails e localidade.
 - `media`: imagens usadas nas secoes.
 
@@ -251,6 +278,8 @@ A primeira entrega pode usar dados estaticos em Vue ou seeders, deixando o banco
 - `ProcessSection`
 - `ProcessCard`
 - `AboutSection`
+- `InstitutionalCards`
+- `ServiceFlow`
 - `CtaSection`
 - `SiteFooter`
 - `FloatingWhatsappButton`
@@ -274,7 +303,7 @@ Preservar o visual industrial limpo: azul institucional, superficies brancas, fu
 
 ## 14. Assets de referencia
 
-Assets principais do template exportado:
+Assets principais do pacote exportado:
 
 - `landing_page_phactorize.html`
 - `phactorize/design-system-branded.html`
@@ -286,9 +315,12 @@ Assets principais do template exportado:
 - `phactorize/assets/lfpak_service_retrofit_equipamentos.jpg`
 - `phactorize/assets/lfpak_service_sensores_ihm_inversores.jpg`
 - `phactorize/assets/lfpak_service_diagnostico_manutencao.jpg`
+- `phactorize/assets/lfpak_favicon_gears.png`
+- `phactorize/assets/lfpak_apple_touch_gears.png`
 - `lfpack_logo.png`
 - `lfpack_logo_horizontal.png`
 - `color_palette.json`
+- `AGENTS.md`
 
 ## 15. Criterios de aceite
 
@@ -298,15 +330,15 @@ Assets principais do template exportado:
 - Cliques no menu rolam para a secao correta sem esconder os titulos atras do header.
 - Cards permanecem alinhados e com padrao de altura em todos os viewports configurados.
 - Contatos usam links corretos de telefone, WhatsApp e e-mail.
+- Header exibe apenas o e-mail comercial.
 - O rodape exibe cada e-mail em linha propria.
 - As imagens de solucoes representam envasadoras, linhas finais e automacao industrial realista.
+- A secao "Quem somos" exibe descricao, missao, visao, valores e fluxo de atendimento sem depender das imagens originais enviadas pela cliente.
 - O projeto usa tokens de cor alinhados a `color_palette.json`.
 - O design system exportado esta disponivel para consulta e configuracao no Laravel Boost.
 
 ## 16. Pendencias conhecidas
 
-- Inserir missao, visao e valores quando o cliente enviar.
-- Atualizar texto final de "quem somos" quando o cliente enviar.
 - Confirmar se o cliente deseja fotos reais das maquinas ou manter imagens realistas geradas.
 - Definir se havera painel administrativo na primeira versao ou apenas conteudo versionado no codigo.
-
+- Confirmar textos finais de SEO e metadados quando houver mais informacoes institucionais.
