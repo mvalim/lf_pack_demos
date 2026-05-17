@@ -1,0 +1,1138 @@
+<!DOCTYPE html>
+<html class="js flexbox canvas canvastext webgl no-touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths" dir="ltr" lang="en">
+<head>
+<meta content="width=device-width,initial-scale=1.0" name="viewport"/>
+<meta charset="utf-8"/>
+<meta content="LF PAK Equipamentos Industriais design system and pattern library" name="description"/>
+<title>LF PAK Equipamentos Industriais Design System</title>
+<link href="assets/48a8b41d962f6b9e_favicon.png" rel="icon" type="image/png"/>
+<link href="assets/21f23c8daf6455cc_apple-touch-icon-57x57.png" rel="apple-touch-icon"/>
+<link href="assets/21f23c8daf6455cc_apple-touch-icon-57x57.png" rel="apple-touch-icon" sizes="57x57"/>
+<link href="assets/aaf11af448a24240_apple-touch-icon-72x72.png" rel="apple-touch-icon" sizes="72x72"/>
+<link href="assets/291c3aab011a6a1c_apple-touch-icon-76x76.png" rel="apple-touch-icon" sizes="76x76"/>
+<link href="assets/7d8bb0c7cdc53a7b_apple-touch-icon-114x114.png" rel="apple-touch-icon" sizes="114x114"/>
+<link href="assets/f3f06a578ec40e8f_apple-touch-icon-120x120.png" rel="apple-touch-icon" sizes="120x120"/>
+<link href="assets/854ae802edc2b372_apple-touch-icon-144x144.png" rel="apple-touch-icon" sizes="144x144"/>
+<link href="assets/e328b2a573de7a03_apple-touch-icon-152x152.png" rel="apple-touch-icon" sizes="152x152"/>
+<link href="assets/831c913f8faa4e80_apple-touch-icon-180x180.png" rel="apple-touch-icon" sizes="180x180"/>
+<link href="assets/baa32f37b62e0937_css.css" rel="stylesheet"/>
+<link href="assets/cba80548b13c66a9_css.css" rel="stylesheet"/>
+<link href="assets/f75e846cc83bd114_bootstrap.min.css" rel="stylesheet"/>
+<link href="assets/936ffccdc35bc552_font-awesome.min.css" rel="stylesheet"/>
+<link href="assets/7e0c410dc376b653_magnific-popup.css" rel="stylesheet"/>
+<link href="assets/de1e399b07289f3b_slick.css" rel="stylesheet"/>
+<link href="assets/3b794f3708960b08_owl.carousel.min.css" rel="stylesheet"/>
+<link href="assets/0db128b7e942fcaa_animate.css" rel="stylesheet"/>
+<link href="assets/c5f0cbb7a2d7c8cf_main.css" rel="stylesheet"/>
+<link href="assets/8acbede73b879e57_style.css" rel="stylesheet"/>
+<link href="assets/46123c238c9b5ed2_meanmenu.min.css" rel="stylesheet"/>
+<link href="assets/234594a9e3960b0a_responsive.css" rel="stylesheet"/>
+<style>
+:root {
+  --brand-primary: #005B9F;
+  --brand-secondary: #0077C3;
+  --brand-accent: #0090E6;
+  --brand-gray-dark: #666666;
+  --brand-gray-medium: #8C8C8C;
+  --brand-gray-light: #D9D9D9;
+  --brand-white: #FFFFFF;
+  --brand-background: #F7F8FA;
+  --brand-text: #333333;
+}
+.ds-section-label {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 800;
+  color: var(--brand-primary);
+  border-bottom: 1px dashed;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+.ds-nav {
+  background: var(--brand-primary);
+  border-top: 1px solid var(--brand-secondary);
+}
+.ds-nav ul {
+  text-align: center;
+}
+.ds-nav li {
+  display: inline-block;
+}
+.ds-nav a {
+  color: #fff;
+  display: inline-block;
+  font-weight: 600;
+  padding: 16px 18px;
+  text-transform: capitalize;
+}
+.ds-nav a:hover,
+.ds-nav a:focus {
+  background: var(--brand-accent);
+  color: #fff;
+}
+.ds-spec-row {
+  border-bottom: 1px solid #f0f0f0;
+  padding: 24px 0;
+}
+.ds-spec-name {
+  color: var(--brand-text);
+  font-weight: 600;
+  text-transform: capitalize;
+}
+.ds-spec-size {
+  color: var(--brand-gray-medium);
+  text-align: right;
+  font-weight: 500;
+}
+.ds-dark-demo {
+  background: var(--brand-primary);
+  padding: 30px;
+}
+.ds-hero-type {
+  background-image: url("assets/ced7545d94110e72_slider_1.jpg");
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+  padding: 30px;
+}
+.ds-hero-type:before {
+  background-color: rgba(15, 25, 52, 0.65);
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.ds-hero-type .slider-text {
+  position: relative;
+  top: auto;
+  transform: none;
+}
+.ds-hero-type .slider-caption {
+  margin: 0;
+}
+.ds-swatch {
+  min-height: 120px;
+  margin-bottom: 30px;
+  padding: 18px;
+}
+.ds-swatch h2,
+.ds-swatch p {
+  margin-bottom: 4px;
+}
+.ds-page-bg {
+  background: var(--brand-white);
+  border: 1px solid var(--brand-gray-light);
+}
+.ds-gray-bg {
+  background: var(--brand-background);
+}
+.ds-navy-bg {
+  background: var(--brand-primary);
+}
+.ds-blue-bg {
+  background: var(--brand-secondary);
+}
+.ds-orange-bg {
+  background: var(--brand-accent);
+}
+.ds-overlay-bg {
+  background-color: rgba(0, 91, 159, 0.90);
+}
+.ds-white-text,
+.ds-white-text h2,
+.ds-white-text p {
+  color: #fff;
+}
+.ds-component-stage {
+  margin-bottom: 40px;
+}
+.ds-state-title {
+  color: var(--brand-gray-medium);
+  font-size: 14px;
+  margin-bottom: 12px;
+  text-transform: capitalize;
+}
+.ds-state-card {
+  background: var(--brand-white);
+  margin-bottom: 30px;
+  min-height: 132px;
+  padding: 24px;
+}
+.ds-state-card .slider-text {
+  position: relative;
+  top: auto;
+  transform: none;
+  text-align: left;
+}
+.ds-state-card .slider-text ul {
+  margin-top: 0;
+}
+.ds-state-card .team-tab {
+  margin-bottom: 0;
+}
+.ds-state-card .footer-contact-form input[type="text"],
+.ds-state-card .footer-contact-form input[type="submit"] {
+  margin-bottom: 0;
+}
+.ds-active-project .project-overlay,
+.ds-active-team .team-overlay-text,
+.ds-active-service .readmore-button,
+.ds-active-service .service-thumb:before {
+  bottom: 0;
+  opacity: 1;
+  visibility: visible;
+  width: 100%;
+}
+.ds-motion-box {
+  background: var(--brand-primary);
+  color: #fff;
+  font-weight: 600;
+  margin-bottom: 20px;
+  padding: 18px;
+  text-align: center;
+  text-transform: capitalize;
+}
+.ds-icon-line li {
+  display: inline-block;
+  margin: 0 18px 18px 0;
+}
+.ds-icon-line i {
+  color: var(--brand-primary);
+  font-size: 24px;
+}
+.ds-brand-logo {
+  display: inline-block;
+  padding-top: 22px;
+}
+.ds-brand-logo img {
+  max-height: 54px;
+  width: auto;
+}
+.footer-logo.ds-brand-logo {
+  margin-bottom: 25px;
+  padding-top: 0;
+}
+.footer-logo.ds-brand-logo img {
+  background: var(--brand-white);
+  max-height: 62px;
+  padding: 8px 12px;
+}
+.ds-logo-sample {
+  background: var(--brand-white);
+  border: 1px solid var(--brand-gray-light);
+  margin-bottom: 30px;
+  padding: 30px;
+  text-align: center;
+}
+.ds-logo-sample img {
+  max-height: 120px;
+  width: auto;
+}
+.ds-logo-sample.ds-logo-sample-dark {
+  background: var(--brand-primary);
+}
+.ds-gray-dark-bg {
+  background: var(--brand-gray-dark);
+}
+.ds-gray-medium-bg {
+  background: var(--brand-gray-medium);
+}
+.ds-gray-light-bg {
+  background: var(--brand-gray-light);
+}
+.ds-text-bg {
+  background: var(--brand-text);
+}
+body {
+  background: var(--brand-white);
+  color: var(--brand-text);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+a:hover {
+  color: var(--brand-text);
+}
+.slider-overlay {
+  background-color: rgba(0, 91, 159, 0.65);
+}
+.images-overlay,
+.service-sec-overlay,
+.latest-project-overlay,
+.message-overlay,
+.footer-overlay {
+  background-color: rgba(0, 91, 159, 0.90);
+}
+.header-top-one,
+.header-right-div::before,
+.hd-sec,
+.team-tab li.active .team-tab-icon,
+.team-tab-title,
+.post-date,
+.call-to-action-text a.btn {
+  background: var(--brand-primary);
+}
+.download-button a,
+.slider-text li a,
+.why-us-readmore,
+.service-icon,
+.border-bottom,
+.readmore-btn,
+.all-team-button a,
+.plus-icon,
+.team-tab li.active .team-tab-title,
+.post-month,
+.footer-wedget-one i:hover,
+.footer-widget-menu li:hover:before,
+.footer-social li:first-child a,
+.footer-social li a:hover,
+.footer-contact-form input[type="submit"],
+.call-to-action-sec {
+  background: var(--brand-primary);
+  border-color: var(--brand-primary);
+}
+.single-service-inner:hover {
+  border-color: var(--brand-primary);
+}
+.slider-text h1 > span,
+.why-us-box-icon i,
+.why-us-subtitle,
+.faq-subtitle,
+.service-title span,
+.readmore-button a,
+.readmore-button a::before,
+.why-us-item:hover .why-us-readmore,
+.post-meta-data li a i,
+.single-post:hover .single-post-text h2 a,
+.single-post:hover a.blog-readmore,
+.footer-widget-menu li a:hover,
+.copy-right span,
+.copy-right span a {
+  color: var(--brand-primary) !important;
+}
+.slider-text li a:hover,
+.why-us-item:hover .why-us-readmore {
+  background: transparent;
+}
+.service-sec,
+.latest-project-sec {
+  background-color: var(--brand-primary);
+}
+.service-thumb::before,
+.team-overlay-text,
+.project-overlay {
+  background-color: rgba(0, 119, 195, 0.85);
+}
+.faq-single .icon,
+.ds-motion-box,
+.footer-social li a {
+  background: var(--brand-secondary);
+  color: var(--brand-white);
+}
+.sec-title h1,
+.why-us-box h1,
+.faq-title,
+.call-to-action-text h2 {
+  color: var(--brand-text);
+}
+.sec-title.white-color h1,
+.sec-title.white-color p,
+.slider-text h1,
+.slider-text p,
+.slider-text li a,
+.footer-sec h2,
+.footer-sec p,
+.footer-widget-menu li a {
+  color: var(--brand-white);
+}
+.bg-color,
+.why-choose-us-sec {
+  background: var(--brand-background);
+}
+.footer-contact-form input[type="text"],
+.footer-contact-form input[type="email"],
+.footer-contact-form textarea {
+  background: var(--brand-secondary);
+}
+</style>
+</head>
+<body class="home-v1">
+<div id="preloader">
+<div id="preloader-status"></div>
+</div>
+<header>
+<div class="header-top-one">
+<div class="container">
+<div class="row">
+<div class="col-md-9 col-sm-8">
+<div class="header-left">
+<ul>
+<li><i class="fa fa-phone"></i>+00 0123456789</li>
+<li><i class="fa fa-envelope"></i>contato@lfpak.com.br</li>
+</ul>
+</div>
+</div>
+<div class="col-md-3 col-sm-4">
+<div class="header-right-div">
+<div class="soical-profile">
+<ul>
+<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+<li><a href="#"><i class="fa fa-rss"></i></a></li>
+<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+<li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+<li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="hd-sec">
+<div class="container">
+<div class="row">
+<div class="col-xs-8 phone-layout-logo">
+<a class="ds-brand-logo" href="index.html"><img alt="LF PAK Equipamentos Industriais" src="../lfpack_logo_horizontal.png"/></a>
+</div>
+<div class="col-md-3 col-sm-12 col-xs-8 logo-area">
+<div class="logo">
+<a class="ds-brand-logo" href="index.html"><img alt="LF PAK Equipamentos Industriais" src="../lfpack_logo_horizontal.png"/></a>
+</div>
+</div>
+<div class="mobile-nav-menu"></div>
+<div class="col-md-7 col-sm-10 menu-left">
+<div class="menu">
+<nav class="main-menu" id="main-menu">
+<ul>
+<li class="active"><a href="#hero">Hero</a></li>
+<li><a href="#typography">Typography</a></li>
+<li><a href="#colors">Colors</a></li>
+<li><a href="#branding">Branding</a></li>
+<li><a href="#components">Components</a></li>
+<li><a href="#layout">Layout</a></li>
+<li><a href="#motion">Motion</a></li>
+<li><a href="#icons">Icons</a></li>
+</ul>
+</nav>
+<div class="search-bar-icon">
+<div class="site-search">
+<span data-toggle="dropdown"><i class="fa fa-search"></i></span>
+<div class="search-forum dropdown-menu animation slideUpIn">
+<form action="#">
+<input placeholder="Search For Site" type="text"/>
+<input type="submit" value="Go"/>
+</form>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-2 col-sm-2 download-button-area">
+<div class="download-button">
+<a href="#components">Get Support</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<nav class="ds-nav">
+<div class="container">
+<ul>
+<li><a href="#hero">Hero</a></li>
+<li><a href="#typography">Typography</a></li>
+<li><a href="#colors">Colors &amp; Surfaces</a></li>
+<li><a href="#branding">Branding</a></li>
+<li><a href="#components">UI Components</a></li>
+<li><a href="#layout">Layout &amp; Spacing</a></li>
+<li><a href="#motion">Motion</a></li>
+<li><a href="#icons">Icons</a></li>
+</ul>
+</div>
+</nav>
+</header>
+<div class="slider" id="hero">
+<div class="all-slide owl-item owl-carousel owl-theme">
+<div class="single-slide" style='background-image:url("assets/ced7545d94110e72_slider_1.jpg");'>
+<div class="slider-overlay"></div>
+<div class="slider-wrapper">
+<div class="slider-text">
+<div class="slider-caption">
+<h1 class="animated fadeInUp">design system for <span>LF PAK</span> interface</h1>
+<p class="animated fadeInDown">Canonical components, type, colors, spacing, and motion patterns aligned to LF PAK Equipamentos Industriais.</p>
+<ul class="animated fadeInDown">
+<li><a href="#components">view patterns</a></li>
+<li><a href="#typography">inspect type</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="single-slide" style='background-image:url("assets/1a014367ecfad89f_slider_2.jpg");'>
+<div class="slider-overlay"></div>
+<div class="slider-wrapper">
+<div class="slider-text">
+<div class="slider-caption">
+<h1 class="animated fadeInUp">living library for <span>industrial</span> pages</h1>
+<p class="animated fadeInDown">A reusable reference preserving the original HTML classes while applying LF PAK brand colors.</p>
+<ul class="animated fadeInDown">
+<li><a href="#layout">view layout</a></li>
+<li><a href="#motion">see motion</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<section class="why-us-sec pt-100 pb-70" id="typography">
+<div class="container">
+<div class="sec-title">
+<h1>typography</h1>
+<div class="border-bottom"></div>
+<p>Live text specimens use the same selectors and contexts as the reference HTML.</p>
+</div>
+<div class="row ds-spec-row">
+<div class="col-md-2 ds-spec-name">Heading 1</div>
+<div class="col-md-8">
+<div class="ds-hero-type">
+<div class="slider-text">
+<div class="slider-caption">
+<h1>factory scale <span>heading</span></h1>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-2 ds-spec-size">52px / 74px</div>
+</div>
+<div class="row ds-spec-row">
+<div class="col-md-2 ds-spec-name">Heading 2</div>
+<div class="col-md-8">
+<div class="sec-title">
+<h1>section heading</h1>
+</div>
+</div>
+<div class="col-md-2 ds-spec-size">36px / normal</div>
+</div>
+<div class="row ds-spec-row">
+<div class="col-md-2 ds-spec-name">Heading 3</div>
+<div class="col-md-8">
+<div class="why-us-box">
+<h1>industrial company headline</h1>
+</div>
+</div>
+<div class="col-md-2 ds-spec-size">34px / 49px</div>
+</div>
+<div class="row ds-spec-row">
+<div class="col-md-2 ds-spec-name">Heading 4</div>
+<div class="col-md-8">
+<div class="faq-sec">
+<h4 class="panel-title"><a href="#">accordion question title</a></h4>
+</div>
+</div>
+<div class="col-md-2 ds-spec-size">20px / normal</div>
+</div>
+<div class="row ds-spec-row">
+<div class="col-md-2 ds-spec-name">Bold L</div>
+<div class="col-md-8">
+<div class="service-title">
+<h2><a href="#">mechanical industry</a></h2>
+</div>
+</div>
+<div class="col-md-2 ds-spec-size">22px / normal</div>
+</div>
+<div class="row ds-spec-row">
+<div class="col-md-2 ds-spec-name">Bold M</div>
+<div class="col-md-8">
+<div class="team-overlay-text">
+<h2>Mary H. Whipple</h2>
+</div>
+</div>
+<div class="col-md-2 ds-spec-size">18px / normal</div>
+</div>
+<div class="row ds-spec-row">
+<div class="col-md-2 ds-spec-name">Bold S</div>
+<div class="col-md-8"><span class="why-us-subtitle">Why Choose Us</span></div>
+<div class="col-md-2 ds-spec-size">12px / normal</div>
+</div>
+<div class="row ds-spec-row">
+<div class="col-md-2 ds-spec-name">Paragraph</div>
+<div class="col-md-8">
+<div class="sec-title">
+<p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt.</p>
+</div>
+</div>
+<div class="col-md-2 ds-spec-size">22px / 30px</div>
+</div>
+<div class="row ds-spec-row">
+<div class="col-md-2 ds-spec-name">Regular L</div>
+<div class="col-md-8">
+<div class="message-sec">
+<div class="message-overlay"></div>
+<div class="container">
+<h2 class="message-subtitle">150 over countries providing service</h2>
+</div>
+</div>
+</div>
+<div class="col-md-2 ds-spec-size">20px / 30px</div>
+</div>
+<div class="row ds-spec-row">
+<div class="col-md-2 ds-spec-name">Regular M</div>
+<div class="col-md-8"><p>Default body copy uses Rubik with clear industrial page rhythm.</p></div>
+<div class="col-md-2 ds-spec-size">16px / 26px</div>
+</div>
+<div class="row ds-spec-row">
+<div class="col-md-2 ds-spec-name">Regular S</div>
+<div class="col-md-8"><a class="blog-readmore" href="#">read more</a></div>
+<div class="col-md-2 ds-spec-size">15px / 26px</div>
+</div>
+</div>
+</section>
+<section class="bg-color pt-100 pb-70" id="colors">
+<div class="container">
+<div class="sec-title">
+<h1>colors and surfaces</h1>
+<div class="border-bottom"></div>
+<p>Swatches use the source palette from color_palette.json for LF PAK Equipamentos Industriais.</p>
+</div>
+<div class="row">
+<div class="col-md-3 col-sm-6">
+<div class="ds-swatch ds-page-bg">
+<h2>White</h2>
+<p>#FFFFFF</p>
+</div>
+</div>
+<div class="col-md-3 col-sm-6">
+<div class="ds-swatch ds-gray-bg">
+<h2>Background</h2>
+<p>#F7F8FA</p>
+</div>
+</div>
+<div class="col-md-3 col-sm-6">
+<div class="ds-swatch ds-navy-bg ds-white-text">
+<h2>Primary Blue</h2>
+<p>#005B9F</p>
+</div>
+</div>
+<div class="col-md-3 col-sm-6">
+<div class="ds-swatch ds-blue-bg ds-white-text">
+<h2>Secondary Blue</h2>
+<p>#0077C3</p>
+</div>
+</div>
+<div class="col-md-3 col-sm-6">
+<div class="ds-swatch ds-orange-bg">
+<h2>Accent</h2>
+<p>#0090E6</p>
+</div>
+</div>
+<div class="col-md-3 col-sm-6">
+<div class="ds-swatch ds-overlay-bg ds-white-text">
+<h2>Section Overlay</h2>
+<p>rgba(0,91,159,.90)</p>
+</div>
+</div>
+<div class="col-md-3 col-sm-6">
+<div class="ds-swatch ds-gray-dark-bg ds-white-text">
+<h2>Gray Dark</h2>
+<p>#666666</p>
+</div>
+</div>
+<div class="col-md-3 col-sm-6">
+<div class="ds-swatch ds-gray-medium-bg ds-white-text">
+<h2>Gray Medium</h2>
+<p>#8C8C8C</p>
+</div>
+</div>
+<div class="col-md-3 col-sm-6">
+<div class="ds-swatch ds-gray-light-bg">
+<h2>Gray Light</h2>
+<p>#D9D9D9</p>
+</div>
+</div>
+<div class="col-md-3 col-sm-6">
+<div class="ds-swatch ds-text-bg ds-white-text">
+<h2>Text</h2>
+<p>#333333</p>
+</div>
+</div>
+<div class="col-md-3 col-sm-6">
+<div class="single-service-inner">
+<div class="service-title-inner">
+<div class="service-title">
+<h2><a href="#">Card Surface</a></h2>
+<span>white with accent border</span>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-3 col-sm-6">
+<div class="service-sec ds-swatch ds-white-text">
+<div class="service-sec-overlay"></div>
+<h2>Image Gradient</h2>
+<p>fixed background overlay</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="why-us-sec pt-100 pb-70" id="branding">
+<div class="container">
+<div class="sec-title">
+<h1>branding</h1>
+<div class="border-bottom"></div>
+<p>Logo assets follow AGENTS.md and color_palette.json references.</p>
+</div>
+<div class="row">
+<div class="col-md-6 col-sm-6">
+<span class="ds-section-label">horizontal logo</span>
+<div class="ds-logo-sample">
+<img alt="LF PAK Equipamentos Industriais horizontal logo" src="../lfpack_logo_horizontal.png"/>
+</div>
+</div>
+<div class="col-md-6 col-sm-6">
+<span class="ds-section-label">vertical logo</span>
+<div class="ds-logo-sample">
+<img alt="LF PAK Equipamentos Industriais logo" src="../lfpack_logo.png"/>
+</div>
+</div>
+<div class="col-md-6 col-sm-6">
+<span class="ds-section-label">footer usage</span>
+<div class="ds-logo-sample ds-logo-sample-dark">
+<img alt="LF PAK Equipamentos Industriais horizontal logo" src="../lfpack_logo_horizontal.png"/>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="service-sec pt-100 pb-70" id="components">
+<div class="service-sec-overlay"></div>
+<div class="container">
+<div class="sec-title white-color">
+<h1>ui components</h1>
+<div class="border-bottom"></div>
+<p>Default samples are live components; hover and focus states use the original browser interactions and template transitions.</p>
+</div>
+<div class="row ds-component-stage">
+<div class="col-md-3 col-sm-6">
+<div class="ds-state-card">
+<div class="ds-state-title">default</div>
+<div class="slider-text">
+<ul>
+<li><a href="#">get service</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="col-md-3 col-sm-6">
+<div class="ds-state-card">
+<div class="ds-state-title">hover target</div>
+<div class="slider-text">
+<ul>
+<li><a href="#">contact now</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="col-md-3 col-sm-6">
+<div class="ds-state-card">
+<div class="ds-state-title">active</div>
+<ul class="team-tab">
+<li class="active"><span class="team-tab-title">Engineering</span></li>
+</ul>
+</div>
+</div>
+<div class="col-md-3 col-sm-6">
+<div class="ds-state-card">
+<div class="ds-state-title">focus</div>
+<div class="footer-contact-form">
+<form action="#">
+<input autofocus="" placeholder="Name" type="text"/>
+</form>
+</div>
+</div>
+</div>
+<div class="col-md-3 col-sm-6">
+<div class="ds-state-card">
+<div class="ds-state-title">disabled</div>
+<div class="footer-contact-form">
+<form action="#">
+<input disabled="" type="submit" value="Send"/>
+</form>
+</div>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-4 col-sm-6">
+<div class="ds-state-title">service card</div>
+<div class="single-service-inner">
+<div class="service-thumb">
+<img alt="" src="assets/a1f6b1809de1f0ca_s1.jpg"/>
+<div class="service-thumb-shape"></div>
+<div class="service-thumb-shape-left"></div>
+<div class="readmore-button">
+<a href="#">read more</a>
+</div>
+</div>
+<div class="service-title-inner">
+<div class="service-title">
+<h2><a href="#">Mechanical Industry</a></h2>
+<span>Industry Featuare</span>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4 col-sm-6">
+<div class="ds-state-title">active service state</div>
+<div class="single-service-inner ds-active-service">
+<div class="service-thumb">
+<img alt="" src="assets/cd21fa83410bfde4_s2.jpg"/>
+<div class="service-thumb-shape"></div>
+<div class="service-thumb-shape-left"></div>
+<div class="readmore-button">
+<a href="#">read more</a>
+</div>
+</div>
+<div class="service-title-inner">
+<div class="service-title">
+<h2><a href="#">Chemical Research</a></h2>
+<span>Industry Featuare</span>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4 col-sm-6">
+<div class="ds-state-title">footer inputs</div>
+<div class="footer-contact-form">
+<form action="#">
+<input placeholder="Name" type="text"/>
+<input placeholder="Email" type="email"/>
+<textarea placeholder="Message"></textarea>
+<input type="submit" value="Send"/>
+</form>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-4 col-sm-6">
+<div class="ds-state-title">team card</div>
+<div class="single-team">
+<div class="plus-icon"><i class="fa fa-plus"></i></div>
+<div class="single-team-img">
+<img alt="" src="assets/ad398bdf71fa630d_team-1.jpg"/>
+<div class="team-overlay">
+<div class="team-overlay-text">
+<h2>Mary H. Whipple</h2>
+<span>Engineer</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4 col-sm-6">
+<div class="ds-state-title">active team state</div>
+<div class="single-team ds-active-team">
+<div class="plus-icon"><i class="fa fa-plus"></i></div>
+<div class="single-team-img">
+<img alt="" src="assets/f2560b4aa10f3835_team-2.jpg"/>
+<div class="team-overlay">
+<div class="team-overlay-text">
+<h2>Kenneth P. Chance</h2>
+<span>Plumber</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4 col-sm-6">
+<div class="ds-state-title">accordion</div>
+<div class="faq-sec">
+<div class="panel-group" id="ds-accordion">
+<div class="panel">
+<div class="panel-heading">
+<h4 class="panel-title"><a data-parent="#ds-accordion" data-toggle="collapse" href="#ds-collapse-one">how to use these patterns</a></h4>
+</div>
+<div class="panel-collapse collapse in" id="ds-collapse-one">
+<div class="panel-content">Reuse the exact component HTML and class stack from this library.</div>
+</div>
+</div>
+<div class="panel">
+<div class="panel-heading">
+<h4 class="panel-title"><a class="collapsed" data-parent="#ds-accordion" data-toggle="collapse" href="#ds-collapse-two">what states exist</a></h4>
+</div>
+<div class="panel-collapse collapse" id="ds-collapse-two">
+<div class="panel-content">Hover, collapse, carousel, overlay, and input focus states come from the template CSS and JS.</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="why-us-sec pt-100 pb-70" id="layout">
+<div class="container">
+<div class="sec-title">
+<h1>layout and spacing</h1>
+<div class="border-bottom"></div>
+<p>Bootstrap containers, rows, columns, section padding, and card grids are the primary page structure.</p>
+</div>
+<div class="row">
+<div class="col-md-6 col-sm-12">
+<span class="ds-section-label">hero layout</span>
+<div class="single-slide" style='background-image:url("assets/ced7545d94110e72_slider_1.jpg");'>
+<div class="slider-overlay"></div>
+<div class="slider-wrapper">
+<div class="slider-text">
+<div class="slider-caption">
+<h1>centered <span>caption</span></h1>
+<p>Wrapper, text block, caption, and button list.</p>
+<ul>
+<li><a href="#">button</a></li>
+<li><a href="#">button</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-6 col-sm-12">
+<span class="ds-section-label">split layout</span>
+<div class="why-us-box">
+<span class="why-us-subtitle">About Us Our Company</span>
+<h1>industry is a biggest company for growing industrial teams</h1>
+<div class="why-us-box-list">
+<div class="row">
+<div class="col-md-6 col-sm-6">
+<div class="why-us-box-item">
+<div class="media">
+<div class="media-left"><div class="why-us-box-icon"><i class="fa fa-check-square-o"></i></div></div>
+<div class="media-body"><div class="why-us-box-text">Mechanical Industry</div></div>
+</div>
+</div>
+</div>
+<div class="col-md-6 col-sm-6">
+<div class="why-us-box-item">
+<div class="media">
+<div class="media-left"><div class="why-us-box-icon"><i class="fa fa-check-square-o"></i></div></div>
+<div class="media-body"><div class="why-us-box-text">civil engineering</div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-12">
+<span class="ds-section-label">three column grid</span>
+</div>
+<div class="col-md-4 col-sm-6">
+<div class="why-us-item">
+<div class="why-us-item-img"><img alt="" src="assets/64b4b7b7d84e4372_why-us-2.jpg"/></div>
+<div class="why-us-item-desc">
+<h2><a href="#">our commitment</a></h2>
+<p>Grid cards use image, title, body copy, and accent button.</p>
+<a class="why-us-readmore" href="#">Read More</a>
+</div>
+</div>
+</div>
+<div class="col-md-4 col-sm-6">
+<div class="single-post">
+<div class="single-post-thumb">
+<img alt="" src="assets/169de7b3e369dbed_b1.jpg"/>
+<div class="single-post-thumb-overlay">
+<div class="post-meta">
+<span class="post-date">24</span>
+<span class="post-month">Apr</span>
+</div>
+</div>
+</div>
+<div class="single-post-text">
+<h2><a href="#">news title in here</a></h2>
+<a class="blog-readmore" href="#">read more</a>
+</div>
+</div>
+</div>
+<div class="col-md-4 col-sm-6">
+<div class="single-testimonial-v1">
+<div class="testimonial-v1-img"><img alt="" src="assets/5359578e5ff4bba7_client1.png"/></div>
+<div class="testimonial-v1-desc">
+<p>Testimonial blocks align customer media, body copy, and rating icons.</p>
+<h2><a href="#">Abigail</a></h2>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="latest-project-sec" id="motion">
+<div class="latest-project-overlay"></div>
+<div class="container">
+<div class="sec-title white-color">
+<h1>motion and interaction</h1>
+<div class="border-bottom"></div>
+<p>Animation classes, overlay reveals, scale transitions, and plugin motion are preserved from the reference.</p>
+</div>
+<div class="row">
+<div class="col-md-3 col-sm-6">
+<div class="ds-motion-box animated fadeInUp">fadeInUp</div>
+</div>
+<div class="col-md-3 col-sm-6">
+<div class="ds-motion-box animated fadeInDown">fadeInDown</div>
+</div>
+<div class="col-md-3 col-sm-6">
+<div class="single-project-item ds-active-project">
+<div class="single-project">
+<img alt="" src="assets/855594eba39d7e4d_p1.jpg"/>
+<div class="project-overlay">
+<div class="project-desc">
+<h2><a href="#">project overlay</a></h2>
+<span>bottom reveal</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-3 col-sm-6">
+<div class="single-post">
+<div class="single-post-thumb">
+<img alt="" src="assets/803217130f10765c_b2.jpg"/>
+<div class="single-post-thumb-overlay">
+<div class="post-meta">
+<span class="post-date">18</span>
+<span class="post-month">May</span>
+</div>
+</div>
+</div>
+<div class="single-post-text">
+<h2><a href="#">hover image scale</a></h2>
+<a class="blog-readmore" href="#">read more</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="why-us-sec pt-100 pb-70" id="icons">
+<div class="container">
+<div class="sec-title">
+<h1>icons</h1>
+<div class="border-bottom"></div>
+<p>Font Awesome icons and image icons inherit size and color from their original component contexts.</p>
+</div>
+<div class="row">
+<div class="col-md-4">
+<span class="ds-section-label">header social</span>
+<div class="soical-profile">
+<ul>
+<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+<li><a href="#"><i class="fa fa-rss"></i></a></li>
+<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+<li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+</ul>
+</div>
+</div>
+<div class="col-md-4">
+<span class="ds-section-label">feature icons</span>
+<ul class="ds-icon-line">
+<li><i class="fa fa-check-square-o"></i></li>
+<li><i class="fa fa-industry"></i></li>
+<li><i class="fa fa-cog"></i></li>
+<li><i class="fa fa-wrench"></i></li>
+</ul>
+</div>
+<div class="col-md-4">
+<span class="ds-section-label">image icons</span>
+<div class="row">
+<div class="col-xs-6"><img alt="" src="assets/e1208a2311a09126_secure.png"/></div>
+<div class="col-xs-6"><img alt="" src="assets/3e7d58316ab27c12_award.png"/></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<footer class="footer">
+<div class="footer-shape"></div>
+<div class="footer-overlay"></div>
+<div class="footer-sec">
+<div class="container">
+<div class="row">
+<div class="col-md-4 col-sm-6">
+<div class="footer-wedget-one">
+<a class="footer-logo ds-brand-logo" href="index.html"><img alt="LF PAK Equipamentos Industriais" src="../lfpack_logo_horizontal.png"/></a>
+<p>Design system reference aligned to LF PAK Equipamentos Industriais branding.</p>
+<div class="footer-social">
+<ul>
+<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="col-md-4 col-sm-6">
+<div class="footer-widget-menu">
+<h2>sections</h2>
+<ul>
+<li><a href="#typography">Typography</a></li>
+<li><a href="#colors">Colors &amp; Surfaces</a></li>
+<li><a href="#components">UI Components</a></li>
+<li><a href="#layout">Layout &amp; Spacing</a></li>
+</ul>
+</div>
+</div>
+<div class="col-md-4 col-sm-6">
+<div class="footer-wedget-four">
+<h2>contact form </h2>
+<div class="footer-contact-form">
+<form action="#">
+<input placeholder="Name" type="text"/>
+<input placeholder="Email" type="email"/>
+<textarea placeholder="Message"></textarea>
+<input type="submit" value="Send"/>
+</form>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="footer-bottom-sec">
+<div class="container">
+<div class="row">
+<div class="col-md-12 col-sm-12">
+<div class="copy-right">
+<p>Copyright 2026 &copy; <span><a href="#">LF PAK Equipamentos Industriais</a></span></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</footer>
+<script src="assets/05b85d96f41fff14_jquery-2.2.4.min.js"></script>
+<script src="assets/53964478a7c634e8_bootstrap.min.js"></script>
+<script src="assets/6d5f973ee0c0f066_isotope.pkgd.min.js"></script>
+<script src="assets/0c7178cc6ca34fb1_slick.min.js"></script>
+<script src="assets/3fddc6d28aba3c13_jquery.magnific-popup.min.js"></script>
+<script src="assets/83553d22ccd56e55_owl.carousel.min.js"></script>
+<script src="assets/11817a3961478f7a_owl.animate.js"></script>
+<script src="assets/b7662ba99a132eaf_jquery.scrollUp.min.js"></script>
+<script src="assets/26d40f8ffdf1b9bf_jquery.counterup.min.js"></script>
+<script src="assets/cf25ec18f223f4c5_modernizr.min.js"></script>
+<script src="assets/a0fded691aed767f_waypoints.min.js"></script>
+<script src="assets/eaf2ccc92a9f8026_jquery.meanmenu.min.js"></script>
+<script src="assets/5a65b0ca177f1c04_imagesloaded.pkgd.min.js"></script>
+<script src="assets/a87e4c0614892397_custom.js"></script>
+</body>
+</html>

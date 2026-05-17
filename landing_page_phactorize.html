@@ -5,7 +5,8 @@
 <meta content="width=device-width, initial-scale=1" name="viewport"/>
 <meta content="Landing page institucional da LF PAK Equipamentos Industriais para automacao industrial, PLC, CLP, paineis eletricos e modernizacao de maquinas." name="description"/>
 <title>LF PAK Equipamentos Industriais | Automacao Industrial</title>
-<link href="phactorize/assets/48a8b41d962f6b9e_favicon.png" rel="icon" type="image/png"/>
+<link href="phactorize/assets/lfpak_favicon_gears.png" rel="icon" type="image/png"/>
+<link href="phactorize/assets/lfpak_apple_touch_gears.png" rel="apple-touch-icon"/>
 <link href="phactorize/assets/baa32f37b62e0937_css.css" rel="stylesheet"/>
 <link href="phactorize/assets/cba80548b13c66a9_css.css" rel="stylesheet"/>
 <link href="phactorize/assets/f75e846cc83bd114_bootstrap.min.css" rel="stylesheet"/>
@@ -79,8 +80,14 @@ a:focus {
 }
 
 .header-left li,
-.header-left li i {
+.header-left li i,
+.header-left li a {
   color: var(--brand-white);
+}
+
+.header-left li a:hover,
+.header-left li a:focus {
+  color: #BFE6FF;
 }
 
 .main-header {
@@ -551,6 +558,190 @@ a:focus {
   font-weight: 600;
 }
 
+.about-section {
+  overflow: hidden;
+}
+
+.about-overview {
+  align-items: stretch;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 44px;
+}
+
+.about-copy h2 {
+  color: var(--brand-text);
+  font-size: 30px;
+  font-weight: 800;
+  line-height: 42px;
+  margin-bottom: 18px;
+}
+
+.about-copy p {
+  color: var(--brand-gray-dark);
+  font-size: 16px;
+  line-height: 29px;
+  margin-bottom: 18px;
+}
+
+.about-proof-grid {
+  display: grid;
+  gap: 18px;
+  grid-template-columns: 1fr;
+  height: 100%;
+}
+
+.about-proof-card,
+.mvv-card,
+.flow-step {
+  background: var(--brand-white);
+  border-bottom: 3px solid var(--brand-white);
+  box-shadow: var(--brand-shadow);
+  transition: all 0.4s ease 0s;
+}
+
+.about-proof-card:hover,
+.mvv-card:hover,
+.flow-step:hover {
+  border-color: var(--brand-primary);
+  transform: translateY(-4px);
+}
+
+.about-proof-card {
+  align-items: flex-start;
+  display: flex;
+  gap: 18px;
+  min-height: 142px;
+  padding: 26px;
+}
+
+.about-proof-icon,
+.mvv-icon,
+.flow-icon {
+  background: var(--brand-primary);
+  color: var(--brand-white);
+  display: inline-block;
+  flex: 0 0 58px;
+  font-size: 24px;
+  height: 58px;
+  line-height: 58px;
+  text-align: center;
+  width: 58px;
+}
+
+.about-proof-card h3,
+.mvv-card h2,
+.flow-step h3 {
+  color: var(--brand-text);
+  font-size: 21px;
+  font-weight: 800;
+  line-height: 28px;
+  margin: 0 0 8px;
+}
+
+.about-proof-card p,
+.mvv-card p,
+.flow-step p {
+  color: var(--brand-gray-dark);
+  line-height: 28px;
+  margin-bottom: 0;
+}
+
+.mvv-grid {
+  align-items: stretch;
+  display: grid;
+  gap: 24px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin-bottom: 50px;
+}
+
+.mvv-card {
+  display: flex;
+  flex-direction: column;
+  min-height: 286px;
+  padding: 32px 28px;
+}
+
+.mvv-card .mvv-icon {
+  margin-bottom: 22px;
+}
+
+.values-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  list-style: none;
+  margin: 2px 0 0;
+  padding: 0;
+}
+
+.values-list li {
+  border: 1px solid var(--brand-gray-light);
+  color: var(--brand-text);
+  font-weight: 600;
+  padding: 8px 12px;
+}
+
+.flow-header {
+  margin: 0 0 28px;
+  max-width: 720px;
+}
+
+.flow-header h2 {
+  color: var(--brand-text);
+  font-size: 30px;
+  font-weight: 800;
+  line-height: 42px;
+  margin-bottom: 10px;
+}
+
+.flow-header p {
+  color: var(--brand-gray-dark);
+  margin-bottom: 0;
+}
+
+.flow-grid {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.flow-step {
+  min-height: 254px;
+  padding: 30px 24px;
+  position: relative;
+}
+
+.flow-step:not(:last-child)::after {
+  background: var(--brand-white);
+  color: var(--brand-primary);
+  content: "\f061";
+  font-family: FontAwesome;
+  font-size: 17px;
+  height: 34px;
+  line-height: 34px;
+  position: absolute;
+  right: -29px;
+  text-align: center;
+  top: 42px;
+  width: 34px;
+  z-index: 2;
+}
+
+.flow-number {
+  color: rgba(0, 91, 159, 0.18);
+  font-family: 'Poppins', sans-serif;
+  font-size: 46px;
+  font-weight: 800;
+  position: absolute;
+  right: 22px;
+  top: 18px;
+}
+
+.flow-icon {
+  margin-bottom: 24px;
+}
+
 .cta-section {
   background-color: var(--brand-primary);
   background-image: url("phactorize/assets/5850e5f0d51e3074_call-to-action.jpg");
@@ -720,8 +911,18 @@ a:focus {
 
   .hero-grid,
   .application-list,
-  .process-line {
+  .process-line,
+  .mvv-grid,
+  .flow-grid {
     grid-template-columns: 1fr 1fr;
+  }
+
+  .flow-step:not(:last-child)::after {
+    display: none;
+  }
+
+  .mvv-card:last-child {
+    grid-column: 1 / -1;
   }
 
   .hero-grid {
@@ -754,8 +955,38 @@ a:focus {
 
   .hero-grid,
   .application-list,
-  .process-line {
+  .process-line,
+  .mvv-grid,
+  .flow-grid {
     grid-template-columns: 1fr;
+  }
+
+  .about-overview {
+    display: block;
+  }
+
+  .mvv-card:last-child {
+    grid-column: auto;
+  }
+
+  .about-copy h2,
+  .flow-header h2 {
+    font-size: 28px;
+    line-height: 38px;
+  }
+
+  .about-proof-card,
+  .mvv-card,
+  .flow-step {
+    min-height: auto;
+  }
+
+  .about-proof-card {
+    display: block;
+  }
+
+  .about-proof-icon {
+    margin-bottom: 18px;
   }
 
   .hero-copy h1 {
@@ -801,8 +1032,8 @@ a:focus {
 <div class="col-md-9 col-sm-8">
 <div class="header-left">
 <ul>
-<li><i class="fa fa-phone"></i>Telefone: (34) 3322-2612 | WhatsApp: (34) 98817-6301</li>
-<li><i class="fa fa-envelope"></i>E-mails: comercial@lfpak.com.br / assistenciatecnica@lfpak.com.br / financeiro@lfpak.com.br</li>
+<li><i class="fa fa-phone"></i>Telefone: <a href="tel:+553433222612">(34) 3322-2612</a> | WhatsApp: <a href="https://wa.me/5534988176301" target="_blank" rel="noopener">(34) 98817-6301</a></li>
+<li><i class="fa fa-envelope"></i>E-mail: <a href="mailto:comercial@lfpak.com.br?subject=Contato%20comercial">comercial@lfpak.com.br</a></li>
 </ul>
 </div>
 </div>
@@ -822,7 +1053,7 @@ a:focus {
 <li><a href="#inicio">Início</a></li>
 <li><a href="#solucoes">Soluções</a></li>
 <li><a href="#aplicacoes">Aplicações</a></li>
-<li><a href="#sobre">Sobre</a></li>
+<li><a href="#sobre">Quem somos</a></li>
 <li><a href="#contato">Contato</a></li>
 </ul>
 </nav>
@@ -1074,37 +1305,103 @@ a:focus {
 </div>
 </section>
 
-<section class="bg-color pt-100 pb-70" id="sobre">
+<section class="bg-color pt-100 pb-70 about-section" id="sobre">
 <div class="container">
-<div class="row">
+<div class="sec-title">
+<span class="section-kicker">Quem somos</span>
+<h1>automação para início e final de linha de produção</h1>
+<div class="border-bottom"></div>
+<p>A LF PAK reúne automação industrial, manutenção e suporte técnico para empresas que precisam elevar a confiabilidade dos processos de produção.</p>
+</div>
+<div class="row about-overview">
 <div class="col-md-6 col-sm-12">
-<div class="about-image">
-<img alt="Técnico de automação analisando painel elétrico industrial" src="phactorize/assets/64b4b7b7d84e4372_why-us-2.jpg"/>
+<div class="about-copy">
+<h2>LF PAK Equipamentos Industriais</h2>
+<p>A LF PAK é uma empresa voltada à automação de processos de início e final de linha de produção, serviços de manutenção industrial, comércio de peças, usinagem, solda e máquinas industriais.</p>
+<p>Atua em Uberaba e região, com especialidade em processos de final de linha para operações que precisam de produtividade, repetibilidade e suporte técnico.</p>
+<p>A empresa atende indústrias de cosméticos, produtos de limpeza e higiene, perfumaria, farmacêutica, entre outras.</p>
 </div>
 </div>
 <div class="col-md-6 col-sm-12">
-<div class="why-us-box">
-<span class="why-us-subtitle">Sobre a LF PAK</span>
-<h1>soluções industriais com precisão técnica e foco na operação</h1>
-<p>A LF PAK Equipamentos Industriais atua no desenvolvimento de soluções para automação industrial, combinando conhecimento técnico, precisão na execução e foco nas necessidades reais da operação.</p>
-<p>O objetivo é entregar sistemas confiáveis, seguros e preparados para aumentar a eficiência da produção, melhorar o controle dos processos e apoiar equipes industriais em demandas de modernização, integração e suporte.</p>
-<div class="why-us-box-list">
-<div class="row">
-<div class="col-md-6 col-sm-6">
-<div class="why-us-box-item"><div class="media"><div class="media-left"><div class="why-us-box-icon"><i class="fa fa-check-square-o"></i></div></div><div class="media-body"><div class="why-us-box-text">Controle de processo</div></div></div></div>
+<div class="about-proof-grid">
+<article class="about-proof-card">
+<span class="about-proof-icon"><i class="fa fa-industry"></i></span>
+<div>
+<h3>Início e final de linha</h3>
+<p>Automação aplicada aos pontos críticos da produção, do controle de processo às etapas de envase, embalagem e movimentação.</p>
 </div>
-<div class="col-md-6 col-sm-6">
-<div class="why-us-box-item"><div class="media"><div class="media-left"><div class="why-us-box-icon"><i class="fa fa-check-square-o"></i></div></div><div class="media-body"><div class="why-us-box-text">Confiabilidade produtiva</div></div></div></div>
+</article>
+<article class="about-proof-card">
+<span class="about-proof-icon"><i class="fa fa-map-marker"></i></span>
+<div>
+<h3>Uberaba e região</h3>
+<p>Atuação próxima às indústrias locais, com atendimento técnico voltado à realidade de operação e manutenção em campo.</p>
 </div>
-<div class="col-md-6 col-sm-6">
-<div class="why-us-box-item"><div class="media"><div class="media-left"><div class="why-us-box-icon"><i class="fa fa-check-square-o"></i></div></div><div class="media-body"><div class="why-us-box-text">Integração de sistemas</div></div></div></div>
+</article>
+<article class="about-proof-card">
+<span class="about-proof-icon"><i class="fa fa-flask"></i></span>
+<div>
+<h3>Segmentos atendidos</h3>
+<p>Cosméticos, limpeza, higiene, perfumaria, farmacêutica e linhas industriais com demandas de dosagem, embalagem e controle.</p>
 </div>
-<div class="col-md-6 col-sm-6">
-<div class="why-us-box-item"><div class="media"><div class="media-left"><div class="why-us-box-icon"><i class="fa fa-check-square-o"></i></div></div><div class="media-body"><div class="why-us-box-text">Suporte especializado</div></div></div></div>
+</article>
 </div>
 </div>
 </div>
+<div class="mvv-grid">
+<article class="mvv-card">
+<span class="mvv-icon"><i class="fa fa-bullseye"></i></span>
+<h2>Missão</h2>
+<p>Criar sistemas e soluções em automação industrial que promovam a melhoria da produtividade, a redução de custos e a qualidade das operações e dos produtos de nossos clientes.</p>
+</article>
+<article class="mvv-card">
+<span class="mvv-icon"><i class="fa fa-eye"></i></span>
+<h2>Visão</h2>
+<p>Ser reconhecida como empresa de automação referência em prover soluções integradas às necessidades das indústrias, com diferencial técnico e operacional.</p>
+</article>
+<article class="mvv-card">
+<span class="mvv-icon"><i class="fa fa-diamond"></i></span>
+<h2>Valores</h2>
+<ul class="values-list">
+<li>Inovação</li>
+<li>Melhoria contínua</li>
+<li>Integridade</li>
+<li>Ética</li>
+<li>Comprometimento</li>
+</ul>
+</article>
 </div>
+<div class="service-flow">
+<div class="flow-header">
+<span class="section-kicker">Fluxo de atendimento</span>
+<h2>da consultoria personalizada ao suporte técnico</h2>
+<p>O atendimento acompanha a necessidade da indústria desde o entendimento do processo até a continuidade operacional depois da entrega.</p>
+</div>
+<div class="flow-grid">
+<article class="flow-step">
+<span class="flow-number">01</span>
+<span class="flow-icon"><i class="fa fa-comments-o"></i></span>
+<h3>Consultoria personalizada</h3>
+<p>Entendimento da linha, da máquina, dos gargalos e das metas de produção para direcionar a solução correta.</p>
+</article>
+<article class="flow-step">
+<span class="flow-number">02</span>
+<span class="flow-icon"><i class="fa fa-file-text-o"></i></span>
+<h3>Orçamento</h3>
+<p>Definição técnica e comercial do escopo, componentes, prazos e recursos necessários para execução.</p>
+</article>
+<article class="flow-step">
+<span class="flow-number">03</span>
+<span class="flow-icon"><i class="fa fa-cogs"></i></span>
+<h3>Fabricação</h3>
+<p>Desenvolvimento, montagem, programação e testes dos sistemas de automação conforme o projeto aprovado.</p>
+</article>
+<article class="flow-step">
+<span class="flow-number">04</span>
+<span class="flow-icon"><i class="fa fa-wrench"></i></span>
+<h3>Manutenção e assistência</h3>
+<p>Suporte técnico para ajustes, diagnóstico, retomada de equipamentos e continuidade da operação industrial.</p>
+</article>
 </div>
 </div>
 </div>
@@ -1141,7 +1438,7 @@ a:focus {
 <li><a href="#inicio">Início</a></li>
 <li><a href="#solucoes">Soluções</a></li>
 <li><a href="#aplicacoes">Aplicações</a></li>
-<li><a href="#sobre">Sobre</a></li>
+<li><a href="#sobre">Quem somos</a></li>
 <li><a href="#contato">Contato</a></li>
 </ul>
 </div>

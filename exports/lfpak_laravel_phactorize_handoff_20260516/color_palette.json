@@ -1,0 +1,32 @@
+{
+  "brand": "LF PAK Equipamentos Industriais",
+  "logo": {
+    "horizontal": "lfpak_logo_horizontal.png",
+    "vertical": "lfpak_logo.png"
+  },
+  "colors": {
+    "blue": {
+      "primary": "#005B9F",
+      "secondary": "#0077C3",
+      "accent": "#0090E6"
+    },
+    "gray": {
+      "dark": "#666666",
+      "medium": "#8C8C8C",
+      "light": "#D9D9D9"
+    },
+    "neutral": {
+      "white": "#FFFFFF",
+      "background": "#F7F8FA",
+      "text": "#333333"
+    }
+  },
+  "usage": {
+    "primary": "Use #005B9F para elementos principais da marca, títulos, botões primários e destaques institucionais.",
+    "secondary": "Use #0077C3 para links, variações de botão, ícones e elementos de apoio.",
+    "accent": "Use #0090E6 com moderação para hover, badges, realces e pequenos detalhes.",
+    "grayDark": "Use #666666 para textos secundários fortes, subtítulos e elementos industriais/metálicos.",
+    "grayMedium": "Use #8C8C8C para textos auxiliares, placeholders e elementos menos importantes.",
+    "grayLight": "Use #D9D9D9 para bordas, divisórias e fundos discretos."
+  }
+}
