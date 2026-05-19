@@ -4,9 +4,9 @@
 
 Criar um novo projeto institucional e comercial para a LF PAK Equipamentos Industriais usando Laravel, Inertia.js com Vue, Tailwind CSS, Laravel Boost e PostgreSQL.
 
-O projeto deve partir do template aprovado `phactorize`, preservando a identidade visual da LF PAK, os assets gerados, a estrutura de conteudo validada e o design system presente em `phactorize/design-system-branded.html`.
+O projeto deve partir da landing page aprovada no template `phactorize`, preservando a identidade visual da LF PAK, os assets gerados, a estrutura de conteudo validada e o design system presente em `phactorize/design-system-branded.html`.
 
-O foco principal da empresa deve ficar claro em toda a experiencia: automacao industrial aplicada a envasadoras, equipamentos de inicio e final de linha, PLC / CLP, paineis eletricos, retrofit, integracao de sistemas, manutencao industrial e suporte tecnico.
+O foco principal da empresa deve ficar claro em toda a experiencia: automacao industrial aplicada a envasadoras, produtos de inicio e final de linha, PLC / CLP, paineis eletricos, retrofit, integracao de sistemas, manutencao industrial e suporte tecnico.
 
 ## 2. Objetivos do produto
 
@@ -78,15 +78,28 @@ A pagina inicial deve conter as secoes do HTML aprovado:
 - Diferenciais
 - Solucoes
 - Aplicacoes industriais
-- Como trabalhamos
+- Processo tecnico de trabalho
 - Quem somos
 - Chamada para contato
 - Rodape com links rapidos e contatos
-- Botao flutuante de WhatsApp
 
 ## 7. Conteudo aprovado
 
-### 7.1 Hero
+### Header
+
+Contatos visiveis no topo:
+
+- Telefone: `(34) 3322-2612`
+- WhatsApp: `(34) 98817-6301`
+- E-mail principal no header: `comercial@lfpak.com.br`
+
+Todos os contatos devem ter links funcionais:
+
+- `tel:+553433222612`
+- `https://wa.me/5534988176301`
+- `mailto:comercial@lfpak.com.br?subject=Contato%20comercial`
+
+### Hero
 
 Titulo:
 
@@ -96,33 +109,42 @@ Texto:
 
 `A LF PAK desenvolve solucoes em PLC, integracao de sistemas e modernizacao de maquinas para empresas que precisam de controle, confiabilidade e performance na producao.`
 
-CTAs:
+CTA principal:
 
-- Solicitar orcamento
-- Conhecer solucoes
+`Solicitar orcamento`
 
-### 7.2 Destaque do hero
+CTA secundario:
 
-Titulo:
+`Conhecer solucoes`
 
-`Controle industrial com foco em continuidade operacional`
+Imagem de fundo:
 
-Texto:
+- `phactorize/assets/lfpak_envasadora_hero_bg.jpg`
 
-`Projetos orientados a reduzir paradas, organizar comandos e dar mais previsibilidade ao processo produtivo.`
+Imagem do card inicial:
 
-### 7.3 Diferenciais
+- `phactorize/assets/lfpak_hero_card_envasadora_cliente.png`
+- Descricao: envasadora de perfumes LF PAK com 16 bicos em ambiente industrial.
 
-- Projetos sob medida
+Card do hero:
+
+- Titulo: `Controle industrial com foco em continuidade operacional`
+- Texto: `Projetos orientados a reduzir paradas, organizar comandos e dar mais previsibilidade ao processo produtivo.`
+
+### Diferenciais
+
+Cards de diferenciais:
+
+- Engenharia aplicada a producao
 - Especialistas em PLC / CLP
 - Modernizacao de maquinas
 - Integracao industrial
 - Suporte tecnico
 - Produtividade e seguranca
 
-Os cards devem manter altura padronizada e alinhamento correto em desktop, tablet e mobile.
+### Solucoes
 
-### 7.4 Solucoes
+Lista de solucoes:
 
 - Programacao de PLC / CLP
 - Paineis eletricos
@@ -131,9 +153,20 @@ Os cards devem manter altura padronizada e alinhamento correto em desktop, table
 - Sensores, inversores e IHMs
 - Diagnostico e manutencao
 
-As imagens dos cards devem ser realistas e priorizar envasadoras, linha final, equipamentos industriais, paineis eletricos e manutencao tecnica.
+As imagens dos cards de solucoes devem ser realistas e alinhadas ao foco de envasadoras e final de linha. Os cards devem manter largura consistente em todos os viewports e altura padronizada.
 
-### 7.5 Aplicacoes industriais
+Assets usados:
+
+- `phactorize/assets/lfpak_service_plc_clp.jpg`
+- `phactorize/assets/lfpak_service_paineis_eletricos.jpg`
+- `phactorize/assets/lfpak_service_automacao_maquinas.jpg`
+- `phactorize/assets/lfpak_service_retrofit_equipamentos.jpg`
+- `phactorize/assets/lfpak_service_sensores_ihm_inversores.jpg`
+- `phactorize/assets/lfpak_service_diagnostico_manutencao.jpg`
+
+### Aplicacoes
+
+Aplicacoes industriais:
 
 - Linhas de producao
 - Maquinas de embalagem
@@ -144,30 +177,27 @@ As imagens dos cards devem ser realistas e priorizar envasadoras, linha final, e
 - Celulas industriais
 - Monitoramento
 
-### 7.6 Processo de trabalho
+### Processo tecnico
+
+Etapas:
 
 - Diagnostico tecnico
 - Planejamento da solucao
 - Implementacao e testes
 - Entrega e suporte
 
-### 7.7 Quem somos
+### Quem somos
+
+Usar uma unica secao "Quem somos" para agrupar os conteudos institucionais, missao, visao, valores e fluxo de atendimento.
 
 Texto institucional:
 
-`A LF PAK e uma empresa voltada a automacao de processos de inicio e final de linha de producao, servicos de manutencao industrial, comercio de pecas, usinagem, solda e maquinas industriais.`
+`A LF PAK e uma empresa voltada para automacao de processos de inicio e final de linha de producao, servicos de manutencao industrial, comercio de pecas, usinagem, solda e maquinas industriais.`
 
-`Atua em Uberaba e regiao, com especialidade em processos de final de linha para operacoes que precisam de produtividade, repetibilidade e suporte tecnico.`
+Complementos:
 
-`A empresa atende industrias de cosmeticos, produtos de limpeza e higiene, perfumaria, farmaceutica, entre outras.`
-
-Blocos de apoio:
-
-- Inicio e final de linha
-- Uberaba e regiao
-- Segmentos atendidos
-
-### 7.8 Missao, visao e valores
+- Empresa de automacao em Uberaba e regiao, especializada em processos de final de linha.
+- Atua em industrias de cosmeticos, produtos de limpeza e higiene, perfumaria, farmaceutica, entre outras.
 
 Missao:
 
@@ -185,160 +215,170 @@ Valores:
 - Etica
 - Comprometimento
 
-### 7.9 Fluxo de atendimento
+Fluxo de atendimento:
 
 - Consultoria personalizada
 - Orcamento
 - Fabricacao
 - Manutencao e assistencia
 
-O fluxo deve ser implementado como HTML/CSS responsivo, nao como imagem fixa, para preservar legibilidade, acessibilidade e adaptacao a mobile.
+### Rodape
 
-## 8. Contatos e links
+Texto institucional:
 
-Telefone:
+`Automacao industrial, PLC / CLP, paineis eletricos, integracao de sistemas e modernizacao de maquinas para operacoes que precisam de confiabilidade.`
 
-- Texto: `(34) 3322-2612`
-- Link: `tel:+553433222612`
+Contatos no rodape:
 
-WhatsApp:
+- Telefone: `(34) 3322-2612`
+- WhatsApp: `(34) 98817-6301`
+- E-mail comercial: `comercial@lfpak.com.br`
+- E-mail assistencia tecnica: `assistenciatecnica@lfpak.com.br`
+- E-mail financeiro: `financeiro@lfpak.com.br`
+- Cidade/Estado: manter como `informar localidade` ate confirmacao do cliente.
 
-- Texto: `(34) 98817-6301`
-- Link: `https://wa.me/5534988176301`
+Cada e-mail no rodape deve ficar em linha propria e usar `mailto:` com assunto condizente:
 
-E-mails:
+- Comercial: `Contato comercial`
+- Assistencia tecnica: `Assistencia tecnica`
+- Financeiro: `Contato financeiro`
 
-- Comercial: `comercial@lfpak.com.br`
-- Assistencia tecnica: `assistenciatecnica@lfpak.com.br`
-- Financeiro: `financeiro@lfpak.com.br`
+## 8. Requisitos funcionais
 
-Links de e-mail recomendados:
+- A home deve renderizar como uma landing page unica.
+- O menu deve rolar para as secoes corretas: Inicio, Solucoes, Aplicacoes, Quem somos e Contato.
+- O header deve permanecer fixo apos a rolagem, sem cobrir o conteudo ancorado.
+- Os links de telefone, WhatsApp e e-mail devem funcionar.
+- O botao flutuante de WhatsApp deve apontar para `https://wa.me/5534988176301`.
+- A navegacao mobile deve abrir e fechar corretamente.
+- As imagens devem usar `alt` descritivo.
+- Os cards de solucoes devem manter largura consistente em todos os breakpoints.
+- O favicon deve usar apenas as engrenagens da logomarca: `phactorize/assets/lfpak_favicon_gears.png`.
 
-- `mailto:comercial@lfpak.com.br?subject=Contato%20comercial`
-- `mailto:assistenciatecnica@lfpak.com.br?subject=Solicitacao%20de%20assistencia%20tecnica`
-- `mailto:financeiro@lfpak.com.br?subject=Contato%20financeiro`
+## 9. Requisitos nao funcionais
 
-No header, exibir apenas o e-mail comercial para evitar quebra visual. No rodape, cada e-mail deve aparecer em linha propria.
+- Layout responsivo para mobile, tablet e desktop.
+- Boa performance de carregamento de imagens.
+- HTML sem dependencias desnecessarias depois da migracao para Vue.
+- Acessibilidade basica: contraste adequado, foco visivel, labels/aria onde necessario e textos alternativos para imagens.
+- SEO basico: title, description, headings semanticos e metadados Open Graph quando possivel.
+- Estrutura preparada para deploy em ambiente Laravel.
 
-Localidade atual:
+## 10. Arquitetura sugerida no Laravel/Inertia
 
-- `Uberaba / MG`
+### Rotas
 
-## 9. Requisitos funcionais
+- `GET /` -> `Home/Index`
+- `GET /obrigado` -> pagina simples futura apos envio de formulario, se houver formulario backend.
 
-- O usuario deve conseguir navegar pelas secoes via menu.
-- O header deve permanecer fixo apos rolagem.
-- Links ancora devem respeitar o offset do header fixo sem esconder titulos.
-- O botao flutuante de WhatsApp deve abrir conversa em nova aba.
-- Links de telefone e e-mail devem usar protocolos nativos (`tel:` e `mailto:`).
-- A pagina deve carregar corretamente usando assets locais.
-- O layout deve ser responsivo nos principais viewports desktop, tablet e mobile.
-- Cards de diferenciais, solucoes, missao/visao/valores e fluxo de atendimento devem manter alinhamento e altura visual consistente.
-- A secao "Quem somos" deve ser editavel via dados estruturados no Vue, mesmo que a primeira versao use conteudo estatico.
+### Componentes Vue sugeridos
 
-## 10. Requisitos nao funcionais
+- `AppHeader.vue`
+- `HeaderTopBar.vue`
+- `MainNav.vue`
+- `HeroSection.vue`
+- `FeatureGrid.vue`
+- `ServiceCards.vue`
+- `ApplicationsSection.vue`
+- `ProcessSection.vue`
+- `AboutSection.vue`
+- `MvvCards.vue`
+- `ServiceFlow.vue`
+- `CtaSection.vue`
+- `FooterSection.vue`
+- `WhatsappFloatingButton.vue`
 
-- Performance: otimizar imagens e entregar assets com cache adequado.
-- Acessibilidade: usar textos alternativos em imagens, estados de foco visiveis, contraste adequado e conteudo textual real em vez de textos dentro de imagem.
-- SEO: estruturar headings, metadados, descricao da empresa e textos focados em automacao industrial, envasadoras e final de linha.
-- Manutenibilidade: componentizar secoes em Vue com props ou dados configuraveis.
-- Consistencia visual: seguir `design-system-branded.html` e `color_palette.json`.
-- Compatibilidade: validar em desktop, tablet e mobile.
+### Dados em codigo
 
-## 11. Modelo de dados inicial sugerido
+Inicialmente, manter arrays de conteudo em arquivos TypeScript/JavaScript, por exemplo:
 
-Mesmo que a primeira versao seja majoritariamente institucional, preparar o PostgreSQL para evolucao:
+- `resources/js/data/navigation.ts`
+- `resources/js/data/contact.ts`
+- `resources/js/data/services.ts`
+- `resources/js/data/applications.ts`
+- `resources/js/data/about.ts`
 
-- `pages`: paginas editaveis como home, sobre e contato.
-- `sections`: blocos de conteudo ordenaveis por pagina.
-- `services`: solucoes oferecidas com titulo, subtitulo, descricao, imagem e ordem.
-- `applications`: aplicacoes industriais com titulo, descricao, icone e ordem.
-- `features`: diferenciais com titulo, descricao, icone e ordem.
-- `process_steps`: etapas do processo de trabalho.
-- `service_flow_steps`: etapas do fluxo de atendimento.
-- `institutional_values`: missao, visao e valores.
-- `contacts`: telefones, WhatsApp, e-mails e localidade.
-- `media`: imagens usadas nas secoes.
+### PostgreSQL
 
-A primeira entrega pode usar dados estaticos em Vue ou seeders, deixando o banco preparado para administracao futura.
+Banco de dados pode ser preparado para fases futuras. Entidades opcionais:
 
-## 12. Componentizacao recomendada em Inertia/Vue
+- `contacts` para leads recebidos por formulario.
+- `site_settings` para contatos e dados institucionais editaveis.
+- `service_categories` e `services` se o conteudo de solucoes se tornar administravel.
 
-- `AppLayout`
-- `SiteHeader`
-- `TopContactBar`
-- `HeroSection`
-- `HeroFeatureCard`
-- `FeatureGrid`
-- `FeatureCard`
-- `ServicesSection`
-- `ServiceCard`
-- `ApplicationsSection`
-- `ApplicationCard`
-- `ProcessSection`
-- `ProcessCard`
-- `AboutSection`
-- `InstitutionalCards`
-- `ServiceFlow`
-- `CtaSection`
-- `SiteFooter`
-- `FloatingWhatsappButton`
+Na primeira versao, o PostgreSQL pode ser usado apenas para estrutura base e migrations iniciais, sem painel administrativo obrigatorio.
 
-Os dados dos cards devem ficar em arrays/objetos para facilitar edicao e futura migracao para banco.
+## 11. Orientacoes para Laravel Boost
 
-## 13. Tailwind e tokens
+Ao configurar o Laravel Boost, usar o design system branded como referencia principal:
 
-Configurar tokens do Tailwind com a paleta LF PAK:
+- Ler `phactorize/design-system-branded.html`.
+- Migrar as decisoes visuais para tokens Tailwind.
+- Preservar logos oficiais como imagens.
+- Preservar hierarquia visual e espacamentos do HTML aprovado.
+- Evitar recriar uma landing generica; o primeiro viewport deve continuar sendo a experiencia aprovada da LF PAK.
+- Manter foco visual em envasadoras, final de linha e ambiente industrial realista.
+
+Tokens sugeridos para `tailwind.config.js`:
 
 - `brand.primary`: `#005B9F`
 - `brand.secondary`: `#0077C3`
 - `brand.accent`: `#0090E6`
-- `brand.gray.dark`: `#666666`
-- `brand.gray.medium`: `#8C8C8C`
-- `brand.gray.light`: `#D9D9D9`
-- `brand.background`: `#F7F8FA`
 - `brand.text`: `#333333`
+- `brand.muted`: `#666666`
+- `brand.surface`: `#F7F8FA`
+- `brand.border`: `#D9D9D9`
 
-Preservar o visual industrial limpo: azul institucional, superficies brancas, fundos claros, overlays azuis em imagens e cards com hierarquia forte.
+## 12. Assets obrigatorios no projeto Laravel
 
-## 14. Assets de referencia
+Copiar para `public/assets/lfpak` ou estrutura equivalente:
 
-Assets principais do pacote exportado:
+- `lfpack_logo.png`
+- `lfpack_logo_horizontal.png`
+- `phactorize/assets/lfpak_favicon_gears.png`
+- `phactorize/assets/lfpak_apple_touch_gears.png`
+- `phactorize/assets/lfpak_envasadora_hero_bg.jpg`
+- `phactorize/assets/lfpak_hero_card_envasadora_cliente.png`
+- Todos os assets `phactorize/assets/lfpak_service_*.jpg`
+- Imagens de fundo e dependencias visuais usadas pelo template `phactorize`
+
+Tambem manter no pacote de referencia:
 
 - `landing_page_phactorize.html`
 - `phactorize/design-system-branded.html`
-- `phactorize/assets/lfpak_envasadora_hero_bg.jpg`
-- `phactorize/assets/lfpak_envasadora_card.jpg`
-- `phactorize/assets/lfpak_service_plc_clp.jpg`
-- `phactorize/assets/lfpak_service_paineis_eletricos.jpg`
-- `phactorize/assets/lfpak_service_automacao_maquinas.jpg`
-- `phactorize/assets/lfpak_service_retrofit_equipamentos.jpg`
-- `phactorize/assets/lfpak_service_sensores_ihm_inversores.jpg`
-- `phactorize/assets/lfpak_service_diagnostico_manutencao.jpg`
-- `phactorize/assets/lfpak_favicon_gears.png`
-- `phactorize/assets/lfpak_apple_touch_gears.png`
-- `lfpack_logo.png`
-- `lfpack_logo_horizontal.png`
 - `color_palette.json`
 - `AGENTS.md`
 
-## 15. Criterios de aceite
+## 13. Criterios de aceite
 
-- A home em Laravel/Inertia reproduz a estrutura visual e o conteudo aprovado no HTML `phactorize`.
-- Logos oficiais aparecem como imagem, nunca como texto.
-- Header fixo funciona em desktop e mobile.
-- Cliques no menu rolam para a secao correta sem esconder os titulos atras do header.
-- Cards permanecem alinhados e com padrao de altura em todos os viewports configurados.
-- Contatos usam links corretos de telefone, WhatsApp e e-mail.
-- Header exibe apenas o e-mail comercial.
-- O rodape exibe cada e-mail em linha propria.
-- As imagens de solucoes representam envasadoras, linhas finais e automacao industrial realista.
-- A secao "Quem somos" exibe descricao, missao, visao, valores e fluxo de atendimento sem depender das imagens originais enviadas pela cliente.
-- O projeto usa tokens de cor alinhados a `color_palette.json`.
-- O design system exportado esta disponivel para consulta e configuracao no Laravel Boost.
+- A home em Laravel/Inertia reproduz a landing aprovada visualmente.
+- Header fixo e ancoras funcionam em mobile, tablet e desktop.
+- Cards de solucoes mantem largura consistente em todos os viewports.
+- Contatos usam links corretos de telefone, WhatsApp e mailto.
+- Secao "Quem somos" inclui texto institucional, missao, visao, valores e fluxo de atendimento.
+- Favicon de engrenagens aparece no navegador.
+- Nenhuma logo oficial e substituida por texto puro.
+- Imagens usadas sao realistas e coerentes com envasadoras/final de linha.
+- O design system branded foi considerado na implementacao Tailwind.
 
-## 16. Pendencias conhecidas
+## 14. Fora de escopo da primeira versao
 
-- Confirmar se o cliente deseja fotos reais das maquinas ou manter imagens realistas geradas.
-- Definir se havera painel administrativo na primeira versao ou apenas conteudo versionado no codigo.
-- Confirmar textos finais de SEO e metadados quando houver mais informacoes institucionais.
+- Painel administrativo completo.
+- Blog.
+- Area de clientes.
+- Catalogo detalhado de maquinas.
+- Integracao com CRM.
+- Envio real de formulario por e-mail, salvo se solicitado em etapa posterior.
+
+## 15. Pacote de handoff
+
+O pacote ZIP de handoff deve incluir:
+
+- HTML aprovado: `landing_page_phactorize.html`
+- Pasta `phactorize/assets`
+- Design system: `phactorize/design-system-branded.html`
+- Logos oficiais
+- Paleta: `color_palette.json`
+- Este PRD: `PRD_LF_PAK_Laravel_Inertia.md`
+
+O ZIP deve ser usado como fonte de referencia para a implementacao no novo projeto Laravel/Inertia.

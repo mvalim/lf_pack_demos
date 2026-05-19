@@ -453,13 +453,18 @@ a:focus {
 }
 
 .service-sec .row > [class*="col-"] {
+  box-sizing: border-box;
   display: flex;
+  flex: 0 0 100%;
+  margin-bottom: 30px;
+  max-width: 100%;
+  width: 100%;
 }
 
 .service-sec .single-service-inner {
   display: flex;
   flex-direction: column;
-  height: calc(100% - 30px);
+  height: 100%;
   width: 100%;
 }
 
@@ -483,6 +488,22 @@ a:focus {
 
 .service-sec .service-title h2 {
   min-height: 58px;
+}
+
+@media (min-width: 768px) {
+  .service-sec .row > [class*="col-"] {
+    flex-basis: 50%;
+    max-width: 50%;
+    width: 50%;
+  }
+}
+
+@media (min-width: 992px) {
+  .service-sec .row > [class*="col-"] {
+    flex-basis: 33.333333%;
+    max-width: 33.333333%;
+    width: 33.333333%;
+  }
 }
 
 .single-service-inner:hover {
@@ -1075,7 +1096,7 @@ a:focus {
 </div>
 </div>
 <div class="hero-card animated fadeInUp">
-<img alt="Envasadora industrial automatizada em ambiente de fábrica" src="phactorize/assets/lfpak_envasadora_card.jpg"/>
+<img alt="Envasadora de perfumes LF PAK com 16 bicos em ambiente industrial" src="phactorize/assets/lfpak_hero_card_envasadora_cliente.png"/>
 <div class="hero-card-info">
 <h2>Controle industrial com foco em continuidade operacional</h2>
 <p>Projetos orientados a reduzir paradas, organizar comandos e dar mais previsibilidade ao processo produtivo.</p>
